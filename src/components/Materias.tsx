@@ -1,4 +1,4 @@
-import materias from "../data/materias.json";
+import {materias} from "../data/data.json";
 
 import Header from "./Header";
 import { Stack, Link } from "@mui/joy";
@@ -17,6 +17,7 @@ function Materias() {
       >
         {materias.map(({ nombre, id }) => (
           <Link
+            key={id}
             underline="none"
             color="neutral"
             variant="soft"

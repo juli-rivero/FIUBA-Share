@@ -35,7 +35,6 @@ function Header({ itemsBreadcrumb }: { itemsBreadcrumb: Array<string> }) {
   const { mode } = useColorScheme();
   const theme = useTheme();
   const esCelular = useMediaQuery(theme.breakpoints.down("md"));
-  console.log(esCelular);
 
   return (
     <>
