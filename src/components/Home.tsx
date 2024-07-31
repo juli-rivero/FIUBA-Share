@@ -1,11 +1,19 @@
 import logoDark from "../assets/FI_Share-dark.svg";
 import logoLight from "../assets/FI_Share-light.svg";
 
-import {Button, Link, Typography, typographyClasses, AspectRatio, Box, Container} from "@mui/joy";
+import {
+  Button,
+  Link,
+  Typography,
+  typographyClasses,
+  AspectRatio,
+  Box,
+  Container,
+} from "@mui/joy";
 import ArrowForward from "@mui/icons-material/ArrowForward";
 
 import ThemeToggle from "./utils/ThemeToggle";
-import { useColorScheme } from '@mui/joy/styles';
+import { useColorScheme } from "@mui/joy/styles";
 
 function Home() {
   const { mode } = useColorScheme();
@@ -67,11 +75,15 @@ function Home() {
               textColor="text.secondary"
               lineHeight="lg"
             >
-              Compara con otros trabajos prácticos, saca nuevas ideas, guíate para
-              un trabajo a entregar, date una idea de como es una materia, de como se maneja el curso y más.
+              Compara con otros trabajos prácticos, saca nuevas ideas, guíate
+              para un trabajo a entregar, date una idea de como es una materia,
+              de como se maneja el curso y más.
             </Typography>
             <a href="materias">
-              <Button size="lg" endDecorator={<ArrowForward fontSize="large" />}>
+              <Button
+                size="lg"
+                endDecorator={<ArrowForward fontSize="large" />}
+              >
                 Explorar
               </Button>
             </a>
@@ -96,7 +108,11 @@ function Home() {
               flexBasis: "50%",
             })}
           >
-            <img style={{objectFit:"contain"}} src={mode == "dark" ? logoDark : logoLight} alt="Logo de Fi Share" />
+            <img
+              style={{ objectFit: "contain" }}
+              src={mode == "dark" ? logoDark : logoLight}
+              alt="Logo de Fi Share"
+            />
           </AspectRatio>
         </Container>
       </Box>
