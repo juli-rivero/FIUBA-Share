@@ -7,22 +7,21 @@ import GitHubLogo from "../assets/github.svg";
 
 import ThemeToggle from "./utils/ThemeToggle";
 
-function Navegacion() {
-  const links = ["Materias", "Intro", "Camejo", "Web"];
+function Navegacion({ itemsBreadcrumb }: { itemsBreadcrumb: Array<string> }) {
   return (
     <Breadcrumbs
       size="md"
       separator={<KeyboardArrowRightRounded />}
       aria-label="breadcrumbs"
     >
-      {links.map((item: string, index: number) => (
+      {itemsBreadcrumb.map((item: string, index: number) => (
         <Link
           key={item}
           paddingBlock="0.5rem"
           paddingInline="1rem"
           color="neutral"
           href="#"
-          variant={index == links.length - 1 ? "outlined" : "plain"}
+          variant={index == itemsBreadcrumb.length - 1 ? "outlined" : "plain"}
           underline="none"
         >
           {item}
@@ -32,7 +31,7 @@ function Navegacion() {
   );
 }
 
-function Header() {
+function Header({ itemsBreadcrumb }: { itemsBreadcrumb: Array<string> }) {
   const { mode } = useColorScheme();
   const theme = useTheme();
   const esCelular = useMediaQuery(theme.breakpoints.down("md"));
@@ -47,7 +46,7 @@ function Header() {
           gridTemplateColumns: "auto 1px 4fr auto auto",
           columnGap: "1rem",
           alignItems: "center",
-          justifyContent:"flex-end",
+          justifyContent: "flex-end",
           paddingInline: "1rem",
         }}
       >
@@ -60,13 +59,23 @@ function Header() {
             }}
             src={icon}
             alt="Icon"
-            />
+          />
         </Link>
         <Divider orientation="vertical" />
 
-        {!esCelular && <Navegacion />}
+        {!esCelular && <Navegacion itemsBreadcrumb={itemsBreadcrumb} />}
 
-        <Button sx={{ height: "fit-content", width: "fit-content", marginLeft: "auto", marginBlock: "1rem", textWrap:"wrap" }} color="neutral" variant="soft">
+        <Button
+          sx={{
+            height: "fit-content",
+            width: "fit-content",
+            marginLeft: "auto",
+            marginBlock: "1rem",
+            textWrap: "wrap",
+          }}
+          color="neutral"
+          variant="soft"
+        >
           Iniciar sesión con GitHub
           <img
             src={GitHubLogo}
@@ -87,7 +96,7 @@ function Header() {
           }}
         />
       </header>
-      {esCelular && <Navegacion />}
+      {esCelular && <Navegacion itemsBreadcrumb={itemsBreadcrumb} />}
     </>
   );
 }
