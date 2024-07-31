@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 
 import { useColorScheme, IconButton } from "@mui/joy";
+import { SxProps } from "@mui/material";
 
 import DarkModeRoundedIcon from "@mui/icons-material/DarkModeRounded";
 import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
 
-function ThemeToggle() {
+function ThemeToggle({sx}:{sx:SxProps}) {
   const { mode, setMode } = useColorScheme();
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
@@ -27,14 +28,7 @@ function ThemeToggle() {
           setMode("light");
         }
       }}
-      sx={{
-        position: "fixed",
-        zIndex: 999,
-        top: "1rem",
-        right: "1rem",
-        borderRadius: "50%",
-        boxShadow: "sm",
-      }}
+      sx={sx}
     >
       {mode === "light" ? <DarkModeRoundedIcon /> : <LightModeRoundedIcon />}
     </IconButton>

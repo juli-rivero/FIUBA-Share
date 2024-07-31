@@ -6,11 +6,16 @@ import { CssVarsProvider, CssBaseline } from "@mui/joy";
 import framesxTheme from "./theme.tsx";
 
 import Home from "./components/Home.tsx";
+import Materias from "./components/Materias.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/materias",
+    element: <Materias />,
   },
 ]);
 
