@@ -1,13 +1,16 @@
-import {materias} from "../data/data.json";
+import { materias } from "../data/data.json";
 
 import Header from "./Header";
-import { Stack, Link } from "@mui/joy";
+import { Stack, Card, CardContent } from "@mui/joy";
 import { Unstable_Grid } from "@mui/system";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function Materias() {
+  const [hover, setHover] = useState<number | null>(null);
   return (
     <Stack sx={{ height: "100%" }} gridTemplateRows="auto 2fr">
-      <Header itemsBreadcrumb={["Materias"]} />
+      <Header itemsBreadcrumb={[{ nombre: "Materias" }]} />
       <Unstable_Grid
         sx={{ height: "100%" }}
         container
@@ -15,17 +18,20 @@ function Materias() {
         alignItems="center"
         justifyContent="center"
       >
-        {materias.map(({ nombre, id }) => (
+        {materias.map(({ nombre, id }, index) => (
           <Link
+            style={{ textDecoration: "none" }}
             key={id}
-            underline="none"
-            color="neutral"
-            variant="soft"
-            padding="1.5rem"
-            borderRadius={4}
-            href={`./fechas?materia=${id}`}
+            to={`fechas?materia=${id}`}
           >
-            {nombre}
+            <Card
+              onMouseOver={() => setHover(index)}
+              onMouseLeave={() => setHover(null)}
+              color="neutral"
+              variant={hover === index ? "solid" : "soft"}
+            >
+              <CardContent>{nombre}</CardContent>
+            </Card>
           </Link>
         ))}
       </Unstable_Grid>

@@ -1,37 +1,54 @@
-import { Breadcrumbs, Link, useColorScheme, Divider, Button } from "@mui/joy";
+import {
+  Breadcrumbs,
+  Card,
+  CardContent,
+  useColorScheme,
+  Divider,
+  Button,
+} from "@mui/joy";
 import { useMediaQuery, useTheme } from "@mui/material";
 import { KeyboardArrowRightRounded } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 import icon from "../assets/icono.jpeg";
 import GitHubLogo from "../assets/github.svg";
 
 import ThemeToggle from "./utils/ThemeToggle";
 
-function Navegacion({ itemsBreadcrumb }: { itemsBreadcrumb: Array<string> }) {
+import { useState } from "react";
+
+function Navegacion({ itemsBreadcrumb }: { itemsBreadcrumb: Array<{nombre:string, href?:string}> }) {
+  const [hover, setHover] = useState<number | null>(null);
+
   return (
     <Breadcrumbs
       size="md"
       separator={<KeyboardArrowRightRounded />}
       aria-label="breadcrumbs"
     >
-      {itemsBreadcrumb.map((item: string, index: number) => (
+      {itemsBreadcrumb.map(({nombre, href}, index: number) => (
         <Link
-          key={item}
-          paddingBlock="0.5rem"
-          paddingInline="1rem"
-          color="neutral"
-          href="#"
-          variant={index == itemsBreadcrumb.length - 1 ? "outlined" : "plain"}
-          underline="none"
+          key={index}
+          style={{ textDecoration: "none" }}
+          reloadDocument={!href}
+          to={href || location.search}
+          
         >
-          {item}
+          <Card
+            onMouseOver={() => setHover(index)}
+            onMouseLeave={() => setHover(null)}
+            color="neutral"
+            variant={hover === index ? "solid" : "soft"}
+          >
+            <CardContent>{nombre}</CardContent>
+          </Card>
         </Link>
       ))}
     </Breadcrumbs>
   );
 }
 
-function Header({ itemsBreadcrumb }: { itemsBreadcrumb: Array<string> }) {
+function Header({ itemsBreadcrumb }: { itemsBreadcrumb: Array<{nombre:string, href?:string}> }) {
   const { mode } = useColorScheme();
   const theme = useTheme();
   const esCelular = useMediaQuery(theme.breakpoints.down("md"));
@@ -49,7 +66,7 @@ function Header({ itemsBreadcrumb }: { itemsBreadcrumb: Array<string> }) {
           paddingInline: "1rem",
         }}
       >
-        <Link href="/">
+        <Link to="/">
           <img
             style={{
               height: "3rem",

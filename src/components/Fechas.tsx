@@ -1,20 +1,28 @@
-import {materias} from "../data/data.json";
+import { materias } from "../data/data.json";
 
 import { useSearchParams } from "react-router-dom";
 import Header from "./Header";
-import { Stack, Link } from "@mui/joy";
+import { Stack, Card, CardContent } from "@mui/joy";
+import { Link } from "react-router-dom";
 import { Unstable_Grid } from "@mui/system";
+import { useState } from "react";
 
 function Fechas() {
   const [URLSearchParams] = useSearchParams();
+  const [hover, setHover] = useState<number | null>(null);
+
   const materiaId = URLSearchParams.get("materia");
-  console.log(materiaId);
-  
+
   const materia = materias.find((materia) => materia.id == materiaId);
   if (!materia) return "Error, materia no encontrada";
   return (
     <Stack sx={{ height: "100%" }} gridTemplateRows="auto 2fr">
-      <Header itemsBreadcrumb={["Materias", materia.nombre]} />
+      <Header
+        itemsBreadcrumb={[
+          { nombre: "Materias", href: "../" },
+          { nombre: materia.nombre },
+        ]}
+      />
       <Unstable_Grid
         sx={{ height: "100%" }}
         container
@@ -22,18 +30,23 @@ function Fechas() {
         alignItems="center"
         justifyContent="center"
       >
-        {materia.fechas.map(({ año, cuatrimestre }) => (
+        {materia.fechas.map(({ año, cuatrimestre }, index) => (
           <Link
-            key={`${año}-${cuatrimestre}`}
-            underline="none"
+          style={{ textDecoration: "none" }}
+          key={`${año}-${cuatrimestre}`}
+
+          to={`./cursos?materia=${materiaId}&anio=${año}&cuatrimestre=${cuatrimestre}`}
+        >
+          <Card
+            onMouseOver={() => setHover(index)}
+            onMouseLeave={() => setHover(null)}
             color="neutral"
-            variant="soft"
-            padding="1.5rem"
-            borderRadius={4}
-            href={`./cursos?materia=${materiaId}&anio=${año}&cuatrimestre=${cuatrimestre}`}
+            variant={hover === index ? "solid" : "soft"}
           >
-            {`${año} - ${cuatrimestre}° Cuatrimestre`}
-          </Link>
+            <CardContent>            {`${año} - ${cuatrimestre}° Cuatrimestre`}
+          </CardContent>
+          </Card>
+        </Link>
         ))}
       </Unstable_Grid>
     </Stack>

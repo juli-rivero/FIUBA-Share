@@ -3,7 +3,6 @@ import logoLight from "../assets/FI_Share-light.svg";
 
 import {
   Button,
-  Link,
   Typography,
   typographyClasses,
   AspectRatio,
@@ -11,6 +10,7 @@ import {
   Container,
 } from "@mui/joy";
 import ArrowForward from "@mui/icons-material/ArrowForward";
+import { Link } from "react-router-dom";
 
 import ThemeToggle from "./utils/ThemeToggle";
 import { useColorScheme } from "@mui/joy/styles";
@@ -86,17 +86,17 @@ function Home() {
               para un trabajo a entregar, date una idea de como es una materia,
               de como se maneja el curso y más.
             </Typography>
-            <a href="materias">
+            <Link to="materias">
               <Button
                 size="lg"
                 endDecorator={<ArrowForward fontSize="large" />}
               >
                 Explorar
               </Button>
-            </a>
+            </Link>
             <Typography>
               Queres subir tu resolución?{" "}
-              <Link fontWeight="lg">Iniciar sesion con GitHub</Link>
+              <Link to="" style={{fontWeight:"bold"}}>Iniciar sesion con GitHub</Link>
             </Typography>
           </Box>
           <AspectRatio
