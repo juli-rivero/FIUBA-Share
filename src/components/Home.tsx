@@ -19,14 +19,16 @@ function Home() {
   const { mode } = useColorScheme();
   return (
     <>
-      <ThemeToggle sx={{
-        position: "fixed",
-        zIndex: 999,
-        top: "1rem",
-        right: "1rem",
-        borderRadius: "50%",
-        boxShadow: "sm",
-      }}/>
+      <ThemeToggle
+        sx={{
+          position: "fixed",
+          zIndex: 999,
+          top: "1rem",
+          right: "1rem",
+          borderRadius: "50%",
+          boxShadow: "sm",
+        }}
+      />
       <Box
         sx={{
           height: "100vh",
@@ -96,7 +98,9 @@ function Home() {
             </Link>
             <Typography>
               Queres subir tu resolución?{" "}
-              <Link to="" style={{fontWeight:"bold"}}>Iniciar sesion con GitHub</Link>
+              <Link to="" style={{ fontWeight: "bold" }}>
+                Iniciar sesion con GitHub
+              </Link>
             </Typography>
           </Box>
           <AspectRatio

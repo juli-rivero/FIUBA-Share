@@ -6,7 +6,7 @@ import { SxProps } from "@mui/material";
 import DarkModeRoundedIcon from "@mui/icons-material/DarkModeRounded";
 import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
 
-function ThemeToggle({sx}:{sx:SxProps}) {
+function ThemeToggle({ sx }: { sx: SxProps }) {
   const { mode, setMode } = useColorScheme();
   const [mounted, setMounted] = useState(false);
   useEffect(() => {

@@ -32,21 +32,21 @@ function Fechas() {
       >
         {materia.fechas.map(({ año, cuatrimestre }, index) => (
           <Link
-          style={{ textDecoration: "none" }}
-          key={`${año}-${cuatrimestre}`}
-
-          to={`./cursos?materia=${materiaId}&anio=${año}&cuatrimestre=${cuatrimestre}`}
-        >
-          <Card
-            onMouseOver={() => setHover(index)}
-            onMouseLeave={() => setHover(null)}
-            color="neutral"
-            variant={hover === index ? "solid" : "soft"}
+            style={{ textDecoration: "none" }}
+            key={`${año}-${cuatrimestre}`}
+            to={`./cursos?materia=${materiaId}&anio=${año}&cuatrimestre=${cuatrimestre}`}
           >
-            <CardContent>            {`${año} - ${cuatrimestre}° Cuatrimestre`}
-          </CardContent>
-          </Card>
-        </Link>
+            <Card
+              onMouseOver={() => setHover(index)}
+              onMouseLeave={() => setHover(null)}
+              color="neutral"
+              variant={hover === index ? "solid" : "soft"}
+            >
+              <CardContent>
+                {`${año} - ${cuatrimestre}° Cuatrimestre`}
+              </CardContent>
+            </Card>
+          </Link>
         ))}
       </Unstable_Grid>
     </Stack>

@@ -17,7 +17,11 @@ import ThemeToggle from "./utils/ThemeToggle";
 
 import { useState } from "react";
 
-function Navegacion({ itemsBreadcrumb }: { itemsBreadcrumb: Array<{nombre:string, href?:string}> }) {
+function Navegacion({
+  itemsBreadcrumb,
+}: {
+  itemsBreadcrumb: Array<{ nombre: string; href?: string }>;
+}) {
   const [hover, setHover] = useState<number | null>(null);
 
   return (
@@ -26,13 +30,12 @@ function Navegacion({ itemsBreadcrumb }: { itemsBreadcrumb: Array<{nombre:string
       separator={<KeyboardArrowRightRounded />}
       aria-label="breadcrumbs"
     >
-      {itemsBreadcrumb.map(({nombre, href}, index: number) => (
+      {itemsBreadcrumb.map(({ nombre, href }, index: number) => (
         <Link
           key={index}
           style={{ textDecoration: "none" }}
           reloadDocument={!href}
           to={href || location.search}
-          
         >
           <Card
             onMouseOver={() => setHover(index)}
@@ -48,7 +51,11 @@ function Navegacion({ itemsBreadcrumb }: { itemsBreadcrumb: Array<{nombre:string
   );
 }
 
-function Header({ itemsBreadcrumb }: { itemsBreadcrumb: Array<{nombre:string, href?:string}> }) {
+function Header({
+  itemsBreadcrumb,
+}: {
+  itemsBreadcrumb: Array<{ nombre: string; href?: string }>;
+}) {
   const { mode } = useColorScheme();
   const theme = useTheme();
   const esCelular = useMediaQuery(theme.breakpoints.down("md"));
