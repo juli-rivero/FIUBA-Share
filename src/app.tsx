@@ -8,6 +8,7 @@ import framesxTheme from "./theme.tsx";
 import Home from "./components/Home.tsx";
 import Materias from "./components/Materias.tsx";
 import Fechas from "./components/Fechas.tsx";
+import Cursos from "./components/Cursos.tsx";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,15 @@ const router = createBrowserRouter([
           {
             index:true,
             element: <Fechas />,
+          },
+          {
+            path: "cursos/",
+            children:[
+              {
+                index:true,
+                element: <Cursos />
+              }
+            ]
           }
         ]
       },

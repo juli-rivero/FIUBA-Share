@@ -8,9 +8,10 @@ import { useState } from "react";
 
 function Materias() {
   const [hover, setHover] = useState<number | null>(null);
+
   return (
     <Stack sx={{ height: "100%" }} gridTemplateRows="auto 2fr">
-      <Header itemsBreadcrumb={[{ nombre: "Materias" }]} />
+      <Header breadcrumb={[{ nombre: "Materias" }]} />
       <Unstable_Grid
         sx={{ height: "100%" }}
         container

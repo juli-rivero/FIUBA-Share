@@ -6,31 +6,34 @@ import { Stack, Card, CardContent } from "@mui/joy";
 import { Link } from "react-router-dom";
 import { Unstable_Grid } from "@mui/system";
 import { useEffect, useState } from "react";
-import { Fecha, ItemBreadCrumb } from "../data/interfaces";
+import { Curso, ItemBreadCrumb } from "../data/interfaces";
 
-function Fechas() {
+function Cursos() {
   const [searchParams] = useSearchParams();
   const [hover, setHover] = useState<number | null>(null);
-
   const [breadcrumb, setBreadcrumb] = useState<ItemBreadCrumb[]>([]);
-  const [fechas, setFechas] = useState<Fecha[]>([]);
+  const [cursos, setCursos] = useState<Curso[]>([]);
 
   useEffect(() => {
     const materia = materias.find(
       (materia) => materia.id == searchParams.get("materia")
     );
+    const fecha = materia!.fechas.find((fecha) => 
+      fecha.año.toString() == searchParams.get("anio") &&
+        fecha.cuatrimestre.toString() == searchParams.get("cuatrimestre")
+    );
+    
     setBreadcrumb([
-      { nombre: "Materias", href: "../" },
-      { nombre: materia!.nombre },
+      { nombre: "Materias", href: "../../" },
+      { nombre: materia!.nombre, href: "../" },
+      { nombre: `${fecha!.año} - ${fecha!.cuatrimestre}° Cuatrimestre` },
     ]);
-    setFechas(materia!.fechas);
+    setCursos(fecha!.cursos);
   }, []);
 
   return (
     <Stack sx={{ height: "100%" }} gridTemplateRows="auto 2fr">
-      <Header
-        breadcrumb={breadcrumb}
-      />
+      <Header breadcrumb={breadcrumb} />
       <Unstable_Grid
         sx={{ height: "100%" }}
         container
@@ -38,11 +41,15 @@ function Fechas() {
         alignItems="center"
         justifyContent="center"
       >
-        {fechas.map(({ año, cuatrimestre }, index) => (
+        {cursos.map(({ id, nombre }, index) => (
           <Link
             style={{ textDecoration: "none" }}
-            key={`${año}-${cuatrimestre}`}
-            to={`./cursos?materia=${searchParams.get("materia")}&anio=${año}&cuatrimestre=${cuatrimestre}`}
+            key={index}
+            to={`./tps?materia=${searchParams.get(
+              "materia"
+            )}&anio=${searchParams.get("anio")}&cuatrimestre=${searchParams.get(
+              "cuatrimestre"
+            )}&curso=${id}`}
           >
             <Card
               onMouseOver={() => setHover(index)}
@@ -50,9 +57,7 @@ function Fechas() {
               color="neutral"
               variant={hover === index ? "solid" : "soft"}
             >
-              <CardContent>
-                {`${año} - ${cuatrimestre}° Cuatrimestre`}
-              </CardContent>
+              <CardContent>{`${id} - ${nombre}`}</CardContent>
             </Card>
           </Link>
         ))}
@@ -61,4 +66,4 @@ function Fechas() {
   );
 }
 
-export default Fechas;
+export default Cursos;

@@ -16,11 +16,12 @@ import GitHubLogo from "../assets/github.svg";
 import ThemeToggle from "./utils/ThemeToggle";
 
 import { useState } from "react";
+import { ItemBreadCrumb } from "../data/interfaces";
 
 function Navegacion({
-  itemsBreadcrumb,
+  breadcrumb,
 }: {
-  itemsBreadcrumb: Array<{ nombre: string; href?: string }>;
+  breadcrumb: ItemBreadCrumb[];
 }) {
   const [hover, setHover] = useState<number | null>(null);
 
@@ -30,7 +31,7 @@ function Navegacion({
       separator={<KeyboardArrowRightRounded />}
       aria-label="breadcrumbs"
     >
-      {itemsBreadcrumb.map(({ nombre, href }, index: number) => (
+      {breadcrumb.map(({ nombre, href }, index: number) => (
         <Link
           key={index}
           style={{ textDecoration: "none" }}
@@ -52,9 +53,9 @@ function Navegacion({
 }
 
 function Header({
-  itemsBreadcrumb,
+  breadcrumb,
 }: {
-  itemsBreadcrumb: Array<{ nombre: string; href?: string }>;
+  breadcrumb: ItemBreadCrumb[];
 }) {
   const { mode } = useColorScheme();
   const theme = useTheme();
@@ -86,7 +87,7 @@ function Header({
         </Link>
         <Divider orientation="vertical" />
 
-        {!esCelular && <Navegacion itemsBreadcrumb={itemsBreadcrumb} />}
+        {!esCelular && <Navegacion breadcrumb={breadcrumb} />}
 
         <Button
           sx={{
@@ -119,7 +120,7 @@ function Header({
           }}
         />
       </header>
-      {esCelular && <Navegacion itemsBreadcrumb={itemsBreadcrumb} />}
+      {esCelular && <Navegacion breadcrumb={breadcrumb} />}
     </>
   );
 }
