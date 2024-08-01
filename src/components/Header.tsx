@@ -41,8 +41,9 @@ function Navegacion({
           <Card
             onMouseOver={() => setHover(index)}
             onMouseLeave={() => setHover(null)}
+            size="sm"
             color="neutral"
-            variant={hover === index ? "solid" : "soft"}
+            variant={hover === index ? "outlined" : "soft"}
           >
             <CardContent>{nombre}</CardContent>
           </Card>
@@ -57,6 +58,7 @@ function Header({
 }: {
   breadcrumb: ItemBreadCrumb[];
 }) {
+  const [scaleLogo, setScaleLogo] = useState(1)
   const { mode } = useColorScheme();
   const theme = useTheme();
   const esCelular = useMediaQuery(theme.breakpoints.down("md"));
@@ -74,7 +76,12 @@ function Header({
           paddingInline: "1rem",
         }}
       >
-        <Link to="/">
+        <Link to="/"
+        onMouseOver={() => setScaleLogo(1.1)}
+        title="Inicio"
+        onMouseLeave={() => setScaleLogo(1)}
+        style={{transform:`scale(${scaleLogo})`}}
+        >
           <img
             style={{
               height: "3rem",

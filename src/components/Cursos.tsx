@@ -25,7 +25,7 @@ function Cursos() {
     
     setBreadcrumb([
       { nombre: "Materias", href: "../../" },
-      { nombre: materia!.nombre, href: "../" },
+      { nombre: materia!.nombre, href: `../?materia=${searchParams.get("materia")}` },
       { nombre: `${fecha!.año} - ${fecha!.cuatrimestre}° Cuatrimestre` },
     ]);
     setCursos(fecha!.cursos);
