@@ -36,14 +36,14 @@ function Repos() {
     const tp = curso!.tps.find((tp) => tp.id == searchParams.get("tp"));
 
     setBreadcrumb([
-      { nombre: "Materias", href: "../../../" },
+      { nombre: "Materias", href: "../../../../" },
       {
         nombre: materia!.nombre,
-        href: `../../?materia=${searchParams.get("materia")}`,
+        href: `../../../?materia=${searchParams.get("materia")}`,
       },
       {
         nombre: `${fecha!.año} - ${fecha!.cuatrimestre}° Cuatrimestre`,
-        href: `../?materia=${searchParams.get(
+        href: `../../?materia=${searchParams.get(
           "materia"
         )}&anio=${searchParams.get("anio")}&cuatrimestre=${searchParams.get(
           "cuatrimestre"

@@ -35,7 +35,6 @@ function Navegacion({
         <Link
           key={index}
           style={{ textDecoration: "none" }}
-          reloadDocument={!href}
           to={href || location.search}
         >
           <Card
@@ -76,7 +75,7 @@ function Header({
           paddingInline: "1rem",
         }}
       >
-        <Link to="/"
+        <Link to="/FIUBA-Share"
         onMouseOver={() => setScaleLogo(1.1)}
         title="Inicio"
         onMouseLeave={() => setScaleLogo(1)}
