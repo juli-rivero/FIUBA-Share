@@ -1,13 +1,14 @@
 import { lazy, StrictMode } from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import { CssVarsProvider, CssBaseline } from "@mui/joy";
 import theme from "./theme.tsx";
 
-const router = createBrowserRouter([
+//usando HashRouter para que el reload en gh-pages funcione
+const router = createHashRouter([
   {
-    path: "/FIUBA-Share/",
+    path: "/",
     children: [
       {
         index: true,
@@ -68,8 +69,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <CssVarsProvider disableTransitionOnChange theme={theme}>
       <CssBaseline />
-
-      <RouterProvider future={{ v7_startTransition: true }} router={router} />
+      <RouterProvider future={{v7_startTransition:true}} router={router} />
     </CssVarsProvider>
   </StrictMode>
 );
