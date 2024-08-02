@@ -40,7 +40,7 @@ Para agregar el enunciado de el/los trabajos practicos a agregar se deben añadi
 Para hacerlo hay que hacer un fork y agregar la Materia/Año/Cuatrimeste/Cursada/TP/archivo_TP en tu repositorio. Luego, hay que hacer un pull request en la pestaña de github a este repositorio, para despues yo aceptarlo (voy a estar continuamente viendo los pull requests).
 
 > [!TIP]
-> Si elegis esta opcion vas a quedar como **colaborador** en el proyecto :wink:
+> Si elegis esta opcion vas a quedar como **contribuidor** en el proyecto :wink:
 
 ## Añadir feature o fixear un issue
 
