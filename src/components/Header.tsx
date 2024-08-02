@@ -35,7 +35,8 @@ function Navegacion({
         <Link
           key={index}
           style={{ textDecoration: "none" }}
-          to={href || location.search}
+          reloadDocument={!href}
+          to={href || location.href}
         >
           <Card
             onMouseOver={() => setHover(index)}
