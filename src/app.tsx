@@ -9,6 +9,7 @@ import Home from "./components/Home.tsx";
 import Materias from "./components/Materias.tsx";
 import Fechas from "./components/Fechas.tsx";
 import Cursos from "./components/Cursos.tsx";
+import TPs from "./components/TPs.tsx";
 
 const router = createBrowserRouter([
   {
@@ -19,29 +20,37 @@ const router = createBrowserRouter([
     path: "materias/",
     children: [
       {
-        index:true,
+        index: true,
         element: <Materias />,
       },
       {
         path: "fechas/",
         children: [
           {
-            index:true,
+            index: true,
             element: <Fechas />,
           },
           {
             path: "cursos/",
-            children:[
+            children: [
               {
-                index:true,
-                element: <Cursos />
-              }
-            ]
-          }
-        ]
+                index: true,
+                element: <Cursos />,
+              },
+              {
+                path: "tps/",
+                children: [
+                  {
+                    index: true,
+                    element: <TPs />,
+                  },
+                ],
+              },
+            ],
+          },
+        ],
       },
-
-    ]
+    ],
   },
 ]);
 
