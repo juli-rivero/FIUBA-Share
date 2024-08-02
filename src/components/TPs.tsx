@@ -47,7 +47,7 @@ function TPs() {
           <Link
             style={{ textDecoration: "none" }}
             key={index}
-            to={`./tps?materia=${searchParams.get(
+            to={`./repos?materia=${searchParams.get(
               "materia"
             )}&anio=${searchParams.get("anio")}&cuatrimestre=${searchParams.get(
               "cuatrimestre"
