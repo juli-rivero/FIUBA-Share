@@ -2,13 +2,13 @@ import { materias } from "../data/data.json";
 
 import { useSearchParams } from "react-router-dom";
 import Header from "./Header";
-import { Stack, Card, CardContent, Typography, Skeleton, Chip } from "@mui/joy";
-import {CopyAllOutlined} from "@mui/icons-material"
-import { Link } from "react-router-dom";
+import { Stack, Typography, Skeleton, Chip } from "@mui/joy";
+import { CopyAllOutlined } from "@mui/icons-material";
 import { Unstable_Grid } from "@mui/system";
 import { useEffect, useState } from "react";
 import { ItemBreadCrumb } from "../data/interfaces";
 import useData from "../hooks/useData";
+import CartaRepo from "./CartaRepo";
 
 function Repos() {
   const [searchParams] = useSearchParams();
@@ -17,7 +17,6 @@ function Repos() {
   )}-${searchParams.get("cuatrimestre")}-${searchParams.get(
     "curso"
   )}-${searchParams.get("tp")}`;
-  const [hover, setHover] = useState<number | null>(null);
   const [breadcrumb, setBreadcrumb] = useState<ItemBreadCrumb[]>([]);
   const [repos, partialLoading] = useData(topic);
 
@@ -64,11 +63,24 @@ function Repos() {
   return (
     <Stack sx={{ height: "100%" }} gridTemplateRows="auto 2fr">
       <Header breadcrumb={breadcrumb} />
-      <Typography variant="soft" display="flex" alignItems="center" width="fit-content" margin={2} paddingInline={1} paddingBlock={.5} marginLeft="auto">
+      <Typography
+        variant="soft"
+        display="flex"
+        alignItems="center"
+        width="fit-content"
+        margin={2}
+        paddingInline={1}
+        paddingBlock={0.5}
+        marginLeft="auto"
+      >
         Topic:
-        <Chip variant="outlined" sx={{borderRadius:2, marginInline:1, bgcolor:"inherit"}}>{topic}
+        <Chip
+          variant="outlined"
+          sx={{ borderRadius: 2, marginInline: 1, bgcolor: "inherit" }}
+        >
+          {topic}
 
-        <CopyAllOutlined sx={{cursor:"pointer", marginLeft:1}}/>
+          <CopyAllOutlined sx={{ cursor: "pointer", marginLeft: 1 }} />
         </Chip>
       </Typography>
       <Unstable_Grid
@@ -85,28 +97,15 @@ function Repos() {
                 primero en agregar uno!
               </Typography>
             )
-          : repos.map(({ name, html_url }, index) => (
-              <Link
-                style={{ textDecoration: "none" }}
-                key={index}
-                to={html_url}
-              >
-                <Card
-                  onMouseOver={() => setHover(index)}
-                  onMouseLeave={() => setHover(null)}
-                  color="neutral"
-                  variant={hover === index ? "solid" : "soft"}
-                >
-                  <CardContent>{`${name}`}</CardContent>
-                </Card>
-              </Link>
+          : repos.map((repo, index) => (
+              <CartaRepo repositorio={repo} key={index} />
             ))}
         {partialLoading && (
           <Skeleton
             variant="rectangular"
             sx={{ borderRadius: 4 }}
-            width={210}
-            height={60}
+            width={340}
+            height={200}
           />
         )}
       </Unstable_Grid>

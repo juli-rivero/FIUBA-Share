@@ -76,7 +76,7 @@ function Header({
           paddingInline: "1rem",
         }}
       >
-        <Link to="/FIUBA-Share"
+        <Link to="/"
         onMouseOver={() => setScaleLogo(1.1)}
         title="Inicio"
         onMouseLeave={() => setScaleLogo(1)}
