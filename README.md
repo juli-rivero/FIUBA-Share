@@ -20,6 +20,9 @@ El proyecto esta hecho con varios propositos:
 
 Lo unico que tenes que hacer es ir al trabajo practico en cuestión, copiar el topic, dirigirte a tu repositorio a agregar y añadirle el topic copiado. Los topics se editan desde la página principal del repo, a la derecha (donde se cambia la descripción).
 
+> [!TIP]
+> Tambien agregale el topic `fiuba`
+
 ## No veo mi Materia/Año/Cuatrimeste/Cursada/TP
 
 Como no logro encontrar una forma de agarrarlas desde la oferta de horario o de comisiones del siu guaraní ni de ningun otro lado, estas se deben agregar a mano, de alguna de las dos siguientes formas:

@@ -11,6 +11,9 @@ import {
   Stack,
   List,
   ListItem,
+  Chip,
+  ListItemContent,
+  ListSubheader,
 } from "@mui/joy";
 import ArrowForward from "@mui/icons-material/ArrowForward";
 import { Link } from "react-router-dom";
@@ -36,10 +39,7 @@ function Home() {
             boxShadow: "sm",
           }}
         >
-          <Button
-            size="lg"
-            endDecorator={<ArrowForward fontSize="large" />}
-          >
+          <Button size="lg" endDecorator={<ArrowForward fontSize="large" />}>
             Explorar
           </Button>
         </Link>
@@ -78,7 +78,7 @@ function Home() {
               textAlign: "center",
               flexShrink: 999,
               [theme.breakpoints.up(834)]: {
-                minWidth: 420,
+                minWidth: 500,
                 alignItems: "flex-start",
                 textAlign: "initial",
               },
@@ -115,24 +115,31 @@ function Home() {
               >
                 Subir tu propia resolucion es sencillo:
               </Typography>
-              <List>
-                <ListItem>
-                  Opcion 1:{" "}
-                  <Link
-                    to=""
-                    style={{
-                      fontWeight: "bold",
-                    }}
-                  >
-                    Iniciar sesion con GitHub
-                  </Link>{" "}
-                  (En progreso)
+              <List sx={{gap:1}}>
+                <ListItem sx={{alignItems:"start"}}>
+                  <ListSubheader sx={{whiteSpace:"nowrap", padding:0, minHeight:"1.5rem"}}>Opcion 1: </ListSubheader>
+                  <ListItemContent>
+                    <Link
+                      to=""
+                      style={{
+                        fontWeight: "bold",
+                      }}
+                    >
+                      Iniciar sesion con GitHub
+                    </Link>{" "}
+                    (En progreso)
+                  </ListItemContent>
                 </ListItem>
-                <ListItem>
-                  Opcion 2:{" "}
-                  <Typography>
-                    Copiar y pegar el topic en tu repositorio
-                  </Typography>
+                <ListItem sx={{alignItems:"start"}}>
+                  <ListSubheader sx={{whiteSpace:"nowrap", padding:0, minHeight:"1.5rem"}}>Opcion 2: </ListSubheader>
+                  <ListItemContent>
+                    <Typography>
+                      Copiar y pegar el topic en tu repositorio.
+                    </Typography>
+                    <Typography>
+                      No olvides también de agregarle el topic{" "} <Chip>fiuba</Chip>
+                    </Typography>
+                  </ListItemContent>
                 </ListItem>
               </List>
             </Box>
