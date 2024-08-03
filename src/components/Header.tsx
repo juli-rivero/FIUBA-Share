@@ -106,6 +106,7 @@ function Header({
           }}
           color="neutral"
           variant="soft"
+          disabled={true}
         >
           Iniciar sesión con GitHub
           <img

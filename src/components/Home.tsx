@@ -8,6 +8,9 @@ import {
   AspectRatio,
   Box,
   Container,
+  Stack,
+  List,
+  ListItem,
 } from "@mui/joy";
 import ArrowForward from "@mui/icons-material/ArrowForward";
 import { Link } from "react-router-dom";
@@ -19,16 +22,28 @@ function Home() {
   const { mode } = useColorScheme();
   return (
     <>
-      <ThemeToggle
-        sx={{
-          position: "fixed",
-          zIndex: 999,
-          top: "1rem",
-          right: "1rem",
-          borderRadius: "50%",
-          boxShadow: "sm",
-        }}
-      />
+      <Stack direction="row-reverse" gap={2} margin={2} justifyContent="end">
+        <ThemeToggle
+          sx={{
+            borderRadius: "50%",
+            boxShadow: "sm",
+          }}
+        />
+        <Link
+          to="materias"
+          style={{
+            borderRadius: "50%",
+            boxShadow: "sm",
+          }}
+        >
+          <Button
+            size="lg"
+            endDecorator={<ArrowForward fontSize="large" />}
+          >
+            Explorar
+          </Button>
+        </Link>
+      </Stack>
       <Box
         sx={{
           height: "100vh",
@@ -75,9 +90,10 @@ function Home() {
             <Typography
               level="h1"
               fontWeight="xl"
+              color="primary"
               fontSize="clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)"
             >
-              Visualiza las resoluciones de los trabajos prácticos de FIUBA.
+              Visualiza las resoluciones de los TPs de FIUBA.
             </Typography>
             <Typography
               fontSize="lg"
@@ -88,20 +104,38 @@ function Home() {
               para un trabajo a entregar, date una idea de como es una materia,
               de como se maneja el curso y más.
             </Typography>
-            <Link to="materias">
-              <Button
-                size="lg"
-                endDecorator={<ArrowForward fontSize="large" />}
+
+            <Box>
+              <Typography
+                padding={0}
+                margin={0}
+                level="title-lg"
+                fontWeight={800}
+                color="primary"
               >
-                Explorar
-              </Button>
-            </Link>
-            <Typography>
-              Queres subir tu resolución?{" "}
-              <Link to="" style={{ fontWeight: "bold" }}>
-                Iniciar sesion con GitHub
-              </Link>
-            </Typography>
+                Subir tu propia resolucion es sencillo:
+              </Typography>
+              <List>
+                <ListItem>
+                  Opcion 1:{" "}
+                  <Link
+                    to=""
+                    style={{
+                      fontWeight: "bold",
+                    }}
+                  >
+                    Iniciar sesion con GitHub
+                  </Link>{" "}
+                  (En progreso)
+                </ListItem>
+                <ListItem>
+                  Opcion 2:{" "}
+                  <Typography>
+                    Copiar y pegar el topic en tu repositorio
+                  </Typography>
+                </ListItem>
+              </List>
+            </Box>
           </Box>
           <AspectRatio
             ratio={507 / 338}
