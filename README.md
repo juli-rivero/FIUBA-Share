@@ -11,7 +11,7 @@ El proyecto esta hecho con varios propositos:
 #### En proceso
 
 - [x] Se muestran las resoluciones compartidas
-- [ ] Mostrar mucho mas sobre el repositorio compartido, como el avatar con su link al perfil, descripcion, etc
+- [x] Mostrar mucho mas sobre el repositorio compartido, como el avatar con su link al perfil, descripcion, etc
 - [ ] El boton de copiar en topic funcione.
 - [ ] Hacer una forma mas sencilla de agregar una resolucion, al loguearse con github.
 - [ ] Mostrar el enunciado del trabajo practico
