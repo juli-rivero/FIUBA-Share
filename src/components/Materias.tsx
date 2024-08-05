@@ -23,7 +23,7 @@ function Materias() {
           <Link
             style={{ textDecoration: "none" }}
             key={id}
-            to={`fechas?materia=${id}`}
+            to={`periodos?materia=${id}`}
           >
             <Card
               onMouseOver={() => setHover(index)}

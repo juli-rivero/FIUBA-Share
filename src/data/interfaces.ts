@@ -9,6 +9,7 @@ interface Curso {
 }
 
 interface Fecha {
+  id:string;
   año: number;
   cuatrimestre: number;
   cursos: Curso[];

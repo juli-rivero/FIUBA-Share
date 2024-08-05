@@ -18,17 +18,26 @@ function TPs() {
     const materia = materias.find(
       (materia) => materia.id == searchParams.get("materia")
     );
-    const fecha = materia!.fechas.find((fecha) => 
-      fecha.año.toString() == searchParams.get("anio") &&
-        fecha.cuatrimestre.toString() == searchParams.get("cuatrimestre")
+    const periodo = materia!.periodos.find(
+      (periodo) => periodo.id == searchParams.get("periodo")
     );
-    const curso = fecha!.cursos.find((curso) => curso.id == searchParams.get("curso") )
-    
+    const curso = periodo!.cursos.find(
+      (curso) => curso.id == searchParams.get("curso")
+    );
+
     setBreadcrumb([
       { nombre: "Materias", href: "../../../" },
-      { nombre: materia!.nombre, href: `../../?materia=${searchParams.get("materia")}` },
-      { nombre: `${fecha!.año} - ${fecha!.cuatrimestre}° Cuatrimestre`, href: `../?materia=${searchParams.get("materia")}&anio=${searchParams.get("anio")}&cuatrimestre=${searchParams.get("cuatrimestre")}` },
-      { nombre: `${curso!.id} - ${curso!.nombre}` },
+      {
+        nombre: materia!.nombre,
+        href: `../../?materia=${searchParams.get("materia")}`,
+      },
+      {
+        nombre: `${periodo!.año} - ${periodo!.cuatrimestre}° Cuatrimestre`,
+        href: `../?materia=${searchParams.get(
+          "materia"
+        )}&periodo=${searchParams.get("periodo")}`,
+      },
+      { nombre: `${curso!.nombre}` },
     ]);
     setTps(curso!.tps);
   }, []);
@@ -49,9 +58,9 @@ function TPs() {
             key={index}
             to={`./repos?materia=${searchParams.get(
               "materia"
-            )}&anio=${searchParams.get("anio")}&cuatrimestre=${searchParams.get(
-              "cuatrimestre"
-            )}&curso=${searchParams.get("curso")}&tp=${id}`}
+            )}&periodo=${searchParams.get("periodo")}&curso=${searchParams.get(
+              "curso"
+            )}&tp=${id}`}
           >
             <Card
               onMouseOver={() => setHover(index)}

@@ -22,11 +22,11 @@ const router = createHashRouter([
             Component: lazy(() => import("./components/Materias.tsx")),
           },
           {
-            path: "fechas/",
+            path: "periodos/",
             children: [
               {
                 index: true,
-                Component: lazy(() => import("./components/Fechas.tsx")),
+                Component: lazy(() => import("./components/Periodos.tsx")),
               },
               {
                 path: "cursos/",

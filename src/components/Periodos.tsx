@@ -8,12 +8,12 @@ import { Unstable_Grid } from "@mui/system";
 import { useEffect, useState } from "react";
 import { Fecha, ItemBreadCrumb } from "../data/interfaces";
 
-function Fechas() {
+function Periodos() {
   const [searchParams] = useSearchParams();
   const [hover, setHover] = useState<number | null>(null);
 
   const [breadcrumb, setBreadcrumb] = useState<ItemBreadCrumb[]>([]);
-  const [fechas, setFechas] = useState<Fecha[]>([]);
+  const [periodos, setPeriodos] = useState<Fecha[]>([]);
 
   useEffect(() => {
     const materia = materias.find(
@@ -23,7 +23,7 @@ function Fechas() {
       { nombre: "Materias", href: "../" },
       { nombre: materia!.nombre },
     ]);
-    setFechas(materia!.fechas);
+    setPeriodos(materia!.periodos);
   }, []);
 
   return (
@@ -38,11 +38,11 @@ function Fechas() {
         alignItems="center"
         justifyContent="center"
       >
-        {fechas.map(({ año, cuatrimestre }, index) => (
+        {periodos.map(({ año, cuatrimestre, id }, index) => (
           <Link
             style={{ textDecoration: "none" }}
             key={`${año}-${cuatrimestre}`}
-            to={`./cursos?materia=${searchParams.get("materia")}&anio=${año}&cuatrimestre=${cuatrimestre}`}
+            to={`./cursos?materia=${searchParams.get("materia")}&periodo=${id}`}
           >
             <Card
               onMouseOver={() => setHover(index)}
@@ -61,4 +61,4 @@ function Fechas() {
   );
 }
 
-export default Fechas;
+export default Periodos;

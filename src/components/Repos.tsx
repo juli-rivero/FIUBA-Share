@@ -13,8 +13,8 @@ import CartaRepo from "./CartaRepo";
 function Repos() {
   const [searchParams] = useSearchParams();
   const topic = `${searchParams.get("materia")}-${searchParams.get(
-    "anio"
-  )}-${searchParams.get("cuatrimestre")}-${searchParams.get(
+    "periodo"
+  )}-${searchParams.get(
     "curso"
   )}-${searchParams.get("tp")}`;
   const [breadcrumb, setBreadcrumb] = useState<ItemBreadCrumb[]>([]);
@@ -24,12 +24,10 @@ function Repos() {
     const materia = materias.find(
       (materia) => materia.id == searchParams.get("materia")
     );
-    const fecha = materia!.fechas.find(
-      (fecha) =>
-        fecha.año.toString() == searchParams.get("anio") &&
-        fecha.cuatrimestre.toString() == searchParams.get("cuatrimestre")
+    const periodo = materia!.periodos.find(
+      (periodo) => periodo.id == searchParams.get("periodo")
     );
-    const curso = fecha!.cursos.find(
+    const curso = periodo!.cursos.find(
       (curso) => curso.id == searchParams.get("curso")
     );
     const tp = curso!.tps.find((tp) => tp.id == searchParams.get("tp"));
@@ -41,20 +39,16 @@ function Repos() {
         href: `../../../?materia=${searchParams.get("materia")}`,
       },
       {
-        nombre: `${fecha!.año} - ${fecha!.cuatrimestre}° Cuatrimestre`,
+        nombre: `${periodo!.año} - ${periodo!.cuatrimestre}° Cuatrimestre`,
         href: `../../?materia=${searchParams.get(
           "materia"
-        )}&anio=${searchParams.get("anio")}&cuatrimestre=${searchParams.get(
-          "cuatrimestre"
-        )}`,
+        )}&periodo=${searchParams.get("periodo")}`,
       },
       {
         nombre: `${curso!.id} - ${curso!.nombre}`,
         href: `../?materia=${searchParams.get(
           "materia"
-        )}&anio=${searchParams.get("anio")}&cuatrimestre=${searchParams.get(
-          "cuatrimestre"
-        )}&curso=${searchParams.get("curso")}`,
+        )}&periodo=${searchParams.get("periodo")}&curso=${searchParams.get("curso")}`,
       },
       { nombre: `${tp!.id} - ${tp!.nombre}` },
     ]);

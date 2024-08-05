@@ -10,7 +10,7 @@ import { Curso, ItemBreadCrumb } from "../data/interfaces";
 
 function Cursos() {
   const [searchParams] = useSearchParams();
-  const [hover, setHover] = useState<number | null>(null);
+  const [hover, setHover] = useState<string | null>(null);
   const [breadcrumb, setBreadcrumb] = useState<ItemBreadCrumb[]>([]);
   const [cursos, setCursos] = useState<Curso[]>([]);
 
@@ -18,17 +18,19 @@ function Cursos() {
     const materia = materias.find(
       (materia) => materia.id == searchParams.get("materia")
     );
-    const fecha = materia!.fechas.find((fecha) => 
-      fecha.año.toString() == searchParams.get("anio") &&
-        fecha.cuatrimestre.toString() == searchParams.get("cuatrimestre")
+    const periodo = materia!.periodos.find(
+      (periodo) => periodo.id == searchParams.get("periodo")
     );
-    
+
     setBreadcrumb([
       { nombre: "Materias", href: "../../" },
-      { nombre: materia!.nombre, href: `../?materia=${searchParams.get("materia")}` },
-      { nombre: `${fecha!.año} - ${fecha!.cuatrimestre}° Cuatrimestre` },
+      {
+        nombre: materia!.nombre,
+        href: `../?materia=${searchParams.get("materia")}`,
+      },
+      { nombre: `${periodo!.año} - ${periodo!.cuatrimestre}° Cuatrimestre` },
     ]);
-    setCursos(fecha!.cursos);
+    setCursos(periodo!.cursos);
   }, []);
 
   return (
@@ -41,23 +43,21 @@ function Cursos() {
         alignItems="center"
         justifyContent="center"
       >
-        {cursos.map(({ id, nombre }, index) => (
+        {cursos.map(({ id, nombre }) => (
           <Link
             style={{ textDecoration: "none" }}
-            key={index}
+            key={id}
             to={`./tps?materia=${searchParams.get(
               "materia"
-            )}&anio=${searchParams.get("anio")}&cuatrimestre=${searchParams.get(
-              "cuatrimestre"
-            )}&curso=${id}`}
+            )}&periodo=${searchParams.get("periodo")}&curso=${id}`}
           >
             <Card
-              onMouseOver={() => setHover(index)}
+              onMouseOver={() => setHover(id)}
               onMouseLeave={() => setHover(null)}
               color="neutral"
-              variant={hover === index ? "solid" : "soft"}
+              variant={hover === id ? "solid" : "soft"}
             >
-              <CardContent>{`${id} - ${nombre}`}</CardContent>
+              <CardContent>{`${nombre}`}</CardContent>
             </Card>
           </Link>
         ))}
