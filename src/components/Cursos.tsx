@@ -1,7 +1,7 @@
 import { materias } from "../data/data.json";
 
 import { useSearchParams } from "react-router-dom";
-import { Card, CardContent } from "@mui/joy";
+import { Card, CardContent, List, ListItem, Typography } from "@mui/joy";
 import { Link } from "react-router-dom";
 import { Unstable_Grid } from "@mui/system";
 import { useEffect, useState } from "react";
@@ -38,7 +38,7 @@ function Cursos() {
       alignItems="center"
       justifyContent="center"
     >
-      {cursos.map(({ id, nombre }) => (
+      {cursos.map(({ id, nombre, docentes }) => (
         <Link
           style={{ textDecoration: "none" }}
           key={id}
@@ -52,7 +52,14 @@ function Cursos() {
             color="neutral"
             variant={hover === id ? "solid" : "soft"}
           >
-            <CardContent>{`${nombre}`}</CardContent>
+            <CardContent>
+              <Typography level="title-lg">{nombre}</Typography>
+              <List>
+                {docentes.split(",").map((docente) => (
+                  <ListItem sx={{fontSize:".85rem"}} key={docente}>{docente}</ListItem>
+                ))}
+              </List>
+            </CardContent>
           </Card>
         </Link>
       ))}

@@ -5,6 +5,7 @@ interface TP {
 interface Curso {
   id: string;
   nombre: string;
+  docentes: string;
   tps: TP[];
 }
 
