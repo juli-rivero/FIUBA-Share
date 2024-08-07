@@ -10,12 +10,6 @@
           "cuatrimestre": 1,
           "cursos": [
             {
-              "id": "54278",
-              "nombre": "CONDICIONALES",
-              "docentes": "CAMMILLERI ADA LEONOR, GRYNBERG SEBASTIAN PABLO, VARGAS GABRIELA",
-              "tps": []
-            },
-            {
               "id": "54285",
               "nombre": "CURSO: 01A",
               "docentes": "VARGAS GABRIELA, PALACIOS PATRICIA ELIZABE, SOSA MARINA",
@@ -136,12 +130,6 @@
           "año": 2024,
           "cuatrimestre": 2,
           "cursos": [
-            {
-              "id": "54278",
-              "nombre": "CONDICIONALES",
-              "docentes": "CAMMILLERI ADA LEONOR, GRYNBERG SEBASTIAN PABLO, VARGAS GABRIELA",
-              "tps": []
-            },
             {
               "id": "54285",
               "nombre": "CURSO: 01A",
@@ -328,12 +316,6 @@
               "nombre": "CURSO: 05-Schmidt A2",
               "docentes": "SIROTINSKY SERGIO, SCHMIDT GUSTAVO ADOLFO",
               "tps": []
-            },
-            {
-              "id": "54580",
-              "nombre": "CONDICIONALES",
-              "docentes": "BUCHWALD MARTÍN EZEQUIEL, JUAREZ ANDRÉS ALBERTO, MENDEZ MARIANO, SCHMIDT GUSTAVO ADOLFO, PANDOLFO LUCAS HERNAN",
-              "tps": []
             }
           ]
         },
@@ -401,12 +383,6 @@
               "nombre": "CURSO: 05-Schmidt A2",
               "docentes": "SIROTINSKY SERGIO, SCHMIDT GUSTAVO ADOLFO",
               "tps": []
-            },
-            {
-              "id": "54580",
-              "nombre": "CONDICIONALES",
-              "docentes": "BUCHWALD MARTÍN EZEQUIEL, JUAREZ ANDRÉS ALBERTO, MENDEZ MARIANO, SCHMIDT GUSTAVO ADOLFO, PANDOLFO LUCAS HERNAN",
-              "tps": []
             }
           ]
         }
@@ -425,12 +401,6 @@
               "id": "54248",
               "nombre": "CURSO: 01",
               "docentes": "ACERO FERNANDO RODOLFO, PEÑA NELLY HAYDEE, SMILOVICH DAMIAN NICOLAS",
-              "tps": []
-            },
-            {
-              "id": "54249",
-              "nombre": "CONDICIONALES",
-              "docentes": "MANCILLA AGUILAR JOSE LUIS, CAMMILLERI ADA LEONOR",
               "tps": []
             },
             {
@@ -582,12 +552,6 @@
               "id": "54248",
               "nombre": "CURSO: 01",
               "docentes": "ACERO FERNANDO RODOLFO, PEÑA NELLY HAYDEE, SMILOVICH DAMIAN NICOLAS",
-              "tps": []
-            },
-            {
-              "id": "54249",
-              "nombre": "CONDICIONALES",
-              "docentes": "MANCILLA AGUILAR JOSE LUIS, CAMMILLERI ADA LEONOR",
               "tps": []
             },
             {
@@ -802,12 +766,6 @@
               "nombre": "CURSO: 01-Merlino",
               "docentes": "IERACHE JORGE SALVADOR, MERLINO HERNAN DANIEL",
               "tps": []
-            },
-            {
-              "id": "54583",
-              "nombre": "CONDICIONALES",
-              "docentes": "Sin docentes",
-              "tps": []
             }
           ]
         },
@@ -820,12 +778,6 @@
               "id": "54555",
               "nombre": "CURSO: 01-Merlino",
               "docentes": "IERACHE JORGE SALVADOR, MERLINO HERNAN DANIEL",
-              "tps": []
-            },
-            {
-              "id": "54583",
-              "nombre": "CONDICIONALES",
-              "docentes": "Sin docentes",
               "tps": []
             }
           ]
@@ -846,12 +798,6 @@
               "nombre": "CURSO: 01-Calonico",
               "docentes": "CALONICO CHRISTIAN MARIO, RUGILO GUILLERMO HERNÁN",
               "tps": []
-            },
-            {
-              "id": "54584",
-              "nombre": "CONDICIONALES",
-              "docentes": "CALONICO CHRISTIAN MARIO, RUGILO GUILLERMO HERNÁN",
-              "tps": []
             }
           ]
         },
@@ -863,12 +809,6 @@
             {
               "id": "54573",
               "nombre": "CURSO: 01-Calonico",
-              "docentes": "CALONICO CHRISTIAN MARIO, RUGILO GUILLERMO HERNÁN",
-              "tps": []
-            },
-            {
-              "id": "54584",
-              "nombre": "CONDICIONALES",
               "docentes": "CALONICO CHRISTIAN MARIO, RUGILO GUILLERMO HERNÁN",
               "tps": []
             }
@@ -896,12 +836,6 @@
               "nombre": "CURSO: 02-Merlino",
               "docentes": "MERLINO HERNAN DANIEL",
               "tps": []
-            },
-            {
-              "id": "54547",
-              "nombre": "CONDICIONALES",
-              "docentes": "MERLINO HERNAN DANIEL, ROMAN LUCAS ALEJANDRO",
-              "tps": []
             }
           ]
         },
@@ -920,12 +854,6 @@
               "id": "54400",
               "nombre": "CURSO: 02-Merlino",
               "docentes": "MERLINO HERNAN DANIEL",
-              "tps": []
-            },
-            {
-              "id": "54547",
-              "nombre": "CONDICIONALES",
-              "docentes": "MERLINO HERNAN DANIEL, ROMAN LUCAS ALEJANDRO",
               "tps": []
             }
           ]
@@ -1022,12 +950,6 @@
               "nombre": "CURSO: 01-Di Mauro",
               "docentes": "DI MAURO FRANCO, GODOY ANDRES ALEJANDRO",
               "tps": []
-            },
-            {
-              "id": "54565",
-              "nombre": "CONDICIONALES",
-              "docentes": "DI MAURO FRANCO, GODOY ANDRES ALEJANDRO",
-              "tps": []
             }
           ]
         },
@@ -1039,12 +961,6 @@
             {
               "id": "54477",
               "nombre": "CURSO: 01-Di Mauro",
-              "docentes": "DI MAURO FRANCO, GODOY ANDRES ALEJANDRO",
-              "tps": []
-            },
-            {
-              "id": "54565",
-              "nombre": "CONDICIONALES",
               "docentes": "DI MAURO FRANCO, GODOY ANDRES ALEJANDRO",
               "tps": []
             }
@@ -1066,12 +982,6 @@
               "nombre": "CURSO: 01-Di Mauro",
               "docentes": "DI MAURO FRANCO",
               "tps": []
-            },
-            {
-              "id": "54576",
-              "nombre": "CONDICIONALES",
-              "docentes": "DI MAURO FRANCO",
-              "tps": []
             }
           ]
         },
@@ -1083,12 +993,6 @@
             {
               "id": "54572",
               "nombre": "CURSO: 01-Di Mauro",
-              "docentes": "DI MAURO FRANCO",
-              "tps": []
-            },
-            {
-              "id": "54576",
-              "nombre": "CONDICIONALES",
               "docentes": "DI MAURO FRANCO",
               "tps": []
             }
@@ -1167,12 +1071,6 @@
               "tps": []
             },
             {
-              "id": "54560",
-              "nombre": "CONDICIONALES",
-              "docentes": "AZCURRA DIEGO ANDRES, ESSAYA DIEGO NICOLAS, GUARNA PABLO FRANCISCO, MENDEZ MARIANO",
-              "tps": []
-            },
-            {
               "id": "54563",
               "nombre": "CURSO: 05-Mendez",
               "docentes": "MENDEZ MARIANO, LOPEZ JUAN JOSE, MARTOS PEDRO IGNACIO DOMINGO",
@@ -1207,12 +1105,6 @@
               "id": "54475",
               "nombre": "CURSO: 02-Azcurra",
               "docentes": "AZCURRA DIEGO ANDRES, SALVIA MARTIN MIGUEL, BIANCHI GUSTAVO OSCAR, OTERO MARCOS JULIAN",
-              "tps": []
-            },
-            {
-              "id": "54560",
-              "nombre": "CONDICIONALES",
-              "docentes": "AZCURRA DIEGO ANDRES, ESSAYA DIEGO NICOLAS, GUARNA PABLO FRANCISCO, MENDEZ MARIANO",
               "tps": []
             },
             {
@@ -1273,12 +1165,6 @@
               "tps": []
             },
             {
-              "id": "54551",
-              "nombre": "CONDICIONALES",
-              "docentes": "GONZALEZ NORBERTO DANIEL, LEVERONI LUCIANO, VILLAGRA SERGIO GUSTAVO, TURRI ALEJANDRO",
-              "tps": []
-            },
-            {
               "id": "54609",
               "nombre": "CURSO: 02-Villagra",
               "docentes": "VILLAGRA SERGIO GUSTAVO",
@@ -1301,12 +1187,6 @@
               "id": "54478",
               "nombre": "CURSO:01- Leveroni",
               "docentes": "LEVERONI LUCIANO, BURELLA JUAN MATIAS, GUTSON ANA GABRIELA",
-              "tps": []
-            },
-            {
-              "id": "54551",
-              "nombre": "CONDICIONALES",
-              "docentes": "GONZALEZ NORBERTO DANIEL, LEVERONI LUCIANO, VILLAGRA SERGIO GUSTAVO, TURRI ALEJANDRO",
               "tps": []
             },
             {
@@ -1398,12 +1278,6 @@
               "nombre": "CURSO: 05-Lanzillotta",
               "docentes": "LANZILLOTTA BRUNO, CAPRA FRANCO DANIEL, SOSA CRISTIAN MARTIN",
               "tps": []
-            },
-            {
-              "id": "54476",
-              "nombre": "CONDICIONALES",
-              "docentes": "CAMEJO MANUEL, LANZILLOTTA BRUNO",
-              "tps": []
             }
           ]
         },
@@ -1423,12 +1297,6 @@
               "nombre": "CURSO: 05-Lanzillotta",
               "docentes": "LANZILLOTTA BRUNO, CAPRA FRANCO DANIEL, SOSA CRISTIAN MARTIN",
               "tps": []
-            },
-            {
-              "id": "54476",
-              "nombre": "CONDICIONALES",
-              "docentes": "CAMEJO MANUEL, LANZILLOTTA BRUNO",
-              "tps": []
             }
           ]
         }
@@ -1443,12 +1311,6 @@
           "año": 2024,
           "cuatrimestre": 1,
           "cursos": [
-            {
-              "id": "54448",
-              "nombre": "CONDICIONALES",
-              "docentes": "CAVALIERE MIGUEL ANGEL, GRIGGIO DANIEL ADALBERTO, RE MARIANO, RODRIGUEZ DANIEL FABIAN, SCHWARZ RODOLFO ALEJANDRO, TARELA PABLO ADRIAN, MASTROPIETRO GABRIEL MARCELO",
-              "tps": []
-            },
             {
               "id": "54449",
               "nombre": "CURSO: 01-Re",
@@ -1504,12 +1366,6 @@
           "año": 2024,
           "cuatrimestre": 2,
           "cursos": [
-            {
-              "id": "54448",
-              "nombre": "CONDICIONALES",
-              "docentes": "CAVALIERE MIGUEL ANGEL, GRIGGIO DANIEL ADALBERTO, RE MARIANO, RODRIGUEZ DANIEL FABIAN, SCHWARZ RODOLFO ALEJANDRO, TARELA PABLO ADRIAN, MASTROPIETRO GABRIEL MARCELO",
-              "tps": []
-            },
             {
               "id": "54449",
               "nombre": "CURSO: 01-Re",
@@ -1590,12 +1446,6 @@
               "tps": []
             },
             {
-              "id": "54642",
-              "nombre": "CONDICIONALES",
-              "docentes": "MARCHI EDGARDO JOSE, BENITEZ CARLOS EDUARDO, BURIN ABRAHAM ALBERTO DA",
-              "tps": []
-            },
-            {
               "id": "54690",
               "nombre": "CURSO: 04-Stola",
               "docentes": "STOLA GERARDO LUIS, MORA TOMÁS ANDRÉS",
@@ -1630,12 +1480,6 @@
               "id": "54394",
               "nombre": "CURSO: 03-Burin",
               "docentes": "BURIN ABRAHAM ALBERTO DA, GUTIERREZ NESTOR SERGIO, NOVODVORETZ OSCAR DARIO",
-              "tps": []
-            },
-            {
-              "id": "54642",
-              "nombre": "CONDICIONALES",
-              "docentes": "MARCHI EDGARDO JOSE, BENITEZ CARLOS EDUARDO, BURIN ABRAHAM ALBERTO DA",
               "tps": []
             },
             {
@@ -1680,12 +1524,6 @@
               "nombre": "CURSO: 03-Corsi",
               "docentes": "CORSI DIEGO PABLO, ESSAYA DIEGO NICOLAS",
               "tps": []
-            },
-            {
-              "id": "54444",
-              "nombre": "CONDICIONALES",
-              "docentes": "CORSI DIEGO PABLO, ESSAYA DIEGO NICOLAS, SUAREZ JOSE PABLO, CANO MATÍAS JOSÉ",
-              "tps": []
             }
           ]
         },
@@ -1711,12 +1549,6 @@
               "nombre": "CURSO: 03-Corsi",
               "docentes": "CORSI DIEGO PABLO, ESSAYA DIEGO NICOLAS",
               "tps": []
-            },
-            {
-              "id": "54444",
-              "nombre": "CONDICIONALES",
-              "docentes": "CORSI DIEGO PABLO, ESSAYA DIEGO NICOLAS, SUAREZ JOSE PABLO, CANO MATÍAS JOSÉ",
-              "tps": []
             }
           ]
         }
@@ -1731,12 +1563,6 @@
           "año": 2024,
           "cuatrimestre": 1,
           "cursos": [
-            {
-              "id": "54329",
-              "nombre": "CONDICIONALES",
-              "docentes": "BELLO IGNACIO ALBERTO",
-              "tps": []
-            },
             {
               "id": "54330",
               "nombre": "CURSO: 21",
@@ -1774,12 +1600,6 @@
           "año": 2024,
           "cuatrimestre": 2,
           "cursos": [
-            {
-              "id": "54329",
-              "nombre": "CONDICIONALES",
-              "docentes": "BELLO IGNACIO ALBERTO",
-              "tps": []
-            },
             {
               "id": "54330",
               "nombre": "CURSO: 21",
@@ -1828,12 +1648,6 @@
               "nombre": "CURSO: 01-Deymonnaz",
               "docentes": "DEYMONNAZ PABLO ANDRES, SCARPINELLI ARIEL ALEJANDRO",
               "tps": []
-            },
-            {
-              "id": "54446",
-              "nombre": "CONDICIONALES",
-              "docentes": "DEYMONNAZ PABLO ANDRES",
-              "tps": []
             }
           ]
         },
@@ -1846,12 +1660,6 @@
               "id": "54404",
               "nombre": "CURSO: 01-Deymonnaz",
               "docentes": "DEYMONNAZ PABLO ANDRES, SCARPINELLI ARIEL ALEJANDRO",
-              "tps": []
-            },
-            {
-              "id": "54446",
-              "nombre": "CONDICIONALES",
-              "docentes": "DEYMONNAZ PABLO ANDRES",
               "tps": []
             }
           ]
@@ -1878,12 +1686,6 @@
               "nombre": "CURSO: 02-Alvarez Hamelin",
               "docentes": "ALVAREZ HAMELIN JOSE IGNACIO",
               "tps": []
-            },
-            {
-              "id": "54445",
-              "nombre": "CONDICIONALES",
-              "docentes": "ALVAREZ HAMELIN JOSE IGNACIO",
-              "tps": []
             }
           ]
         },
@@ -1901,12 +1703,6 @@
             {
               "id": "54420",
               "nombre": "CURSO: 02-Alvarez Hamelin",
-              "docentes": "ALVAREZ HAMELIN JOSE IGNACIO",
-              "tps": []
-            },
-            {
-              "id": "54445",
-              "nombre": "CONDICIONALES",
               "docentes": "ALVAREZ HAMELIN JOSE IGNACIO",
               "tps": []
             }
@@ -1992,12 +1788,6 @@
               "nombre": "CURSO: 01-Mendez",
               "docentes": "MENDEZ MARIANO, MUCCIO ADRIAN, ESPINA EMMANUEL EDUARDO, IRIBARNE CATELLA PATRICIO",
               "tps": []
-            },
-            {
-              "id": "54564",
-              "nombre": "CONDICIONALES",
-              "docentes": "MENDEZ MARIANO",
-              "tps": []
             }
           ]
         },
@@ -2010,12 +1800,6 @@
               "id": "54395",
               "nombre": "CURSO: 01-Mendez",
               "docentes": "MENDEZ MARIANO, MUCCIO ADRIAN, ESPINA EMMANUEL EDUARDO, IRIBARNE CATELLA PATRICIO",
-              "tps": []
-            },
-            {
-              "id": "54564",
-              "nombre": "CONDICIONALES",
-              "docentes": "MENDEZ MARIANO",
               "tps": []
             }
           ]
@@ -2042,12 +1826,6 @@
               "nombre": "CURSO: 02-Deymonnaz",
               "docentes": "DEYMONNAZ PABLO ANDRES, MILETTA CARLOS MARTIN, TOSCANO GONNELLA MAURO FABRICIO",
               "tps": []
-            },
-            {
-              "id": "54550",
-              "nombre": "CONDICIONALES",
-              "docentes": "DEYMONNAZ PABLO ANDRES, VEIGA ANDRES ARTURO",
-              "tps": []
             }
           ]
         },
@@ -2067,12 +1845,6 @@
               "nombre": "CURSO: 02-Deymonnaz",
               "docentes": "DEYMONNAZ PABLO ANDRES, MILETTA CARLOS MARTIN, TOSCANO GONNELLA MAURO FABRICIO",
               "tps": []
-            },
-            {
-              "id": "54550",
-              "nombre": "CONDICIONALES",
-              "docentes": "DEYMONNAZ PABLO ANDRES, VEIGA ANDRES ARTURO",
-              "tps": []
             }
           ]
         }
@@ -2087,12 +1859,6 @@
           "año": 2024,
           "cuatrimestre": 1,
           "cursos": [
-            {
-              "id": "54442",
-              "nombre": "CONDICIONALES",
-              "docentes": "BUCHWALD MARTÍN EZEQUIEL, PODBEREZSKI VICTOR DANIEL",
-              "tps": []
-            },
             {
               "id": "54443",
               "nombre": "CURSO: 01-Podberezski",
@@ -2118,12 +1884,6 @@
           "año": 2024,
           "cuatrimestre": 2,
           "cursos": [
-            {
-              "id": "54442",
-              "nombre": "CONDICIONALES",
-              "docentes": "BUCHWALD MARTÍN EZEQUIEL, PODBEREZSKI VICTOR DANIEL",
-              "tps": []
-            },
             {
               "id": "54443",
               "nombre": "CURSO: 01-Podberezski",
