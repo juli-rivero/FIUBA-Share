@@ -14,8 +14,12 @@ import {
   Chip,
   ListItemContent,
   ListSubheader,
+  Dropdown,
+  IconButton,
+  MenuButton,
+  Menu,
 } from "@mui/joy";
-import ArrowForward from "@mui/icons-material/ArrowForward";
+import { ArrowForward, InfoOutlined } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 import ThemeToggle from "./utils/ThemeToggle";
@@ -32,6 +36,42 @@ function Home() {
             boxShadow: "sm",
           }}
         />
+        <Dropdown>
+          <MenuButton
+            slots={{ root: IconButton }}
+            slotProps={{ root: { variant: "outlined", color: "neutral" } }}
+            size="lg"
+            variant="soft"
+            color="neutral"
+          >
+            <InfoOutlined />
+          </MenuButton>
+          <Menu
+            sx={{
+              width: "15rem",
+              padding: 2,
+              display: "block",
+              textAlign: "justify",
+            }}
+            placement="bottom-end"
+            modifiers={[
+              {
+                name: "offset",
+                options: {
+                  offset: () => {
+                    return [0, 20];
+                  },
+                },
+              },
+            ]}
+          >
+            Este sitio es un remake de{" "}
+            <a target="_blank" href="https://fede.dm/FIUBA-Repos/">
+              FIUBA-Repos
+            </a>
+            , pero aun así ambos sitios cumplen propositos diferentes.
+          </Menu>
+        </Dropdown>
         <Link
           to="materias"
           style={{
@@ -115,9 +155,17 @@ function Home() {
               >
                 Subir tu propia resolucion es sencillo:
               </Typography>
-              <List sx={{gap:1}}>
-                <ListItem sx={{alignItems:"start"}}>
-                  <ListSubheader sx={{whiteSpace:"nowrap", padding:0, minHeight:"1.5rem"}}>Opcion 1: </ListSubheader>
+              <List sx={{ gap: 1 }}>
+                <ListItem sx={{ alignItems: "start" }}>
+                  <ListSubheader
+                    sx={{
+                      whiteSpace: "nowrap",
+                      padding: 0,
+                      minHeight: "1.5rem",
+                    }}
+                  >
+                    Opcion 1:{" "}
+                  </ListSubheader>
                   <ListItemContent>
                     <Link
                       to=""
@@ -130,19 +178,40 @@ function Home() {
                     (En progreso)
                   </ListItemContent>
                 </ListItem>
-                <ListItem sx={{alignItems:"start"}}>
-                  <ListSubheader sx={{whiteSpace:"nowrap", padding:0, minHeight:"1.5rem"}}>Opcion 2: </ListSubheader>
+                <ListItem sx={{ alignItems: "start" }}>
+                  <ListSubheader
+                    sx={{
+                      whiteSpace: "nowrap",
+                      padding: 0,
+                      minHeight: "1.5rem",
+                    }}
+                  >
+                    Opcion 2:{" "}
+                  </ListSubheader>
                   <ListItemContent>
                     <Typography>
                       Copiar y pegar el topic en tu repositorio.
                     </Typography>
                     <Typography>
-                      No olvides también de agregarle el topic{" "} <Chip>fiuba</Chip>
+                      No olvides también de agregarle el topic{" "}
+                      <Chip component="span">fiuba</Chip>
                     </Typography>
                   </ListItemContent>
                 </ListItem>
               </List>
             </Box>
+            <Typography
+              fontSize="lg"
+              textColor="text.secondary"
+              lineHeight="lg"
+            >
+              Visitá{" "}
+              <a target="_blank" href="https://fede.dm/FIUBA-Repos/">
+                FIUBA-Repos
+              </a>
+              , donde vas a ver repositorios <b>tendencia</b> y otras opciones,
+              como una <b>clasificacion por materias</b>
+            </Typography>
           </Box>
           <AspectRatio
             ratio={507 / 338}
