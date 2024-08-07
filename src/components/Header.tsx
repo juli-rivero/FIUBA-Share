@@ -8,7 +8,7 @@ import {
 } from "@mui/joy";
 import { useMediaQuery, useTheme } from "@mui/material";
 import { KeyboardArrowRightRounded } from "@mui/icons-material";
-import { Link } from "react-router-dom";
+import { Link, resolvePath } from "react-router-dom";
 
 import icon from "../assets/icono.jpeg";
 import GitHubLogo from "../assets/github.svg";
@@ -18,12 +18,10 @@ import ThemeToggle from "./utils/ThemeToggle";
 import { useState } from "react";
 import { ItemBreadCrumb } from "../data/interfaces";
 
-function Navegacion({
-  breadcrumb,
-}: {
-  breadcrumb: ItemBreadCrumb[];
-}) {
+function Navegacion({ breadcrumb }: { breadcrumb: ItemBreadCrumb[] }) {
   const [hover, setHover] = useState<number | null>(null);
+  const [hash, search] = location.hash.split("?");
+  const path = hash.slice(1);
 
   return (
     <Breadcrumbs
@@ -31,12 +29,18 @@ function Navegacion({
       separator={<KeyboardArrowRightRounded />}
       aria-label="breadcrumbs"
     >
-      {breadcrumb.map(({ nombre, href }, index: number) => (
+      {breadcrumb.map(({ nombre }, index: number) => (
         <Link
           key={index}
           style={{ textDecoration: "none" }}
-          reloadDocument={!href}
-          to={href || location.href}
+          reloadDocument={breadcrumb.length - 1 == index}
+          to={resolvePath(
+            {
+              pathname: "../".repeat(breadcrumb.length - 1 - index),
+              search: search ? search.split("&").slice(0, index).join("&") : "",
+            },
+            path
+          )}
         >
           <Card
             onMouseOver={() => setHover(index)}
@@ -53,12 +57,8 @@ function Navegacion({
   );
 }
 
-function Header({
-  breadcrumb,
-}: {
-  breadcrumb: ItemBreadCrumb[];
-}) {
-  const [scaleLogo, setScaleLogo] = useState(1)
+function Header({ breadcrumb }: { breadcrumb: ItemBreadCrumb[] }) {
+  const [scaleLogo, setScaleLogo] = useState(1);
   const { mode } = useColorScheme();
   const theme = useTheme();
   const esCelular = useMediaQuery(theme.breakpoints.down("md"));
@@ -76,11 +76,12 @@ function Header({
           paddingInline: "1rem",
         }}
       >
-        <Link to="/"
-        onMouseOver={() => setScaleLogo(1.1)}
-        title="Inicio"
-        onMouseLeave={() => setScaleLogo(1)}
-        style={{transform:`scale(${scaleLogo})`}}
+        <Link
+          to="/"
+          onMouseOver={() => setScaleLogo(1.1)}
+          title="Inicio"
+          onMouseLeave={() => setScaleLogo(1)}
+          style={{ transform: `scale(${scaleLogo})` }}
         >
           <img
             style={{

@@ -1,82 +1,69 @@
 import { materias } from "../data/data.json";
 
 import { useSearchParams } from "react-router-dom";
-import Header from "./Header";
-import { Stack, Typography, Skeleton, Chip } from "@mui/joy";
+import { Typography, Skeleton, Chip } from "@mui/joy";
 import { CopyAllOutlined } from "@mui/icons-material";
 import { Unstable_Grid } from "@mui/system";
 import { useEffect, useState } from "react";
-import { ItemBreadCrumb } from "../data/interfaces";
 import useData from "../hooks/useData";
 import CartaRepo from "./CartaRepo";
+import useSetBreadcrumb from "../hooks/useSetBreadcrumb";
 
 function Repos() {
   const [searchParams] = useSearchParams();
-  const topic = `${searchParams.get("materia")}-${searchParams.get(
-    "periodo"
-  )}-${searchParams.get(
-    "curso"
-  )}-${searchParams.get("tp")}`;
-  const [breadcrumb, setBreadcrumb] = useState<ItemBreadCrumb[]>([]);
+  const [topic, setTopic] = useState<string | null>(null);
   const [repos, partialLoading] = useData(topic);
+  const setBreadcrumb = useSetBreadcrumb();
 
   useEffect(() => {
-    const materia = materias.find(
-      (materia) => materia.id == searchParams.get("materia")
-    );
+    const materiaId = searchParams.get("materia"),
+      periodoId = searchParams.get("periodo"),
+      cursoId = searchParams.get("curso"),
+      tpId = searchParams.get("tp");
+
+    setTopic(`${materiaId}-${periodoId}-${cursoId}-${tpId}`);
+
+    const materia = materias.find((materia) => materia.id == materiaId);
     const periodo = materia!.periodos.find(
-      (periodo) => periodo.id == searchParams.get("periodo")
+      (periodo) => periodo.id == periodoId
     );
-    const curso = periodo!.cursos.find(
-      (curso) => curso.id == searchParams.get("curso")
-    );
-    const tp = curso!.tps.find((tp) => tp.id == searchParams.get("tp"));
+    const curso = periodo!.cursos.find((curso) => curso.id == cursoId);
+    const tp = curso!.tps.find((tp) => tp.id == tpId);
 
     setBreadcrumb([
-      { nombre: "Materias", href: "../../../../" },
-      {
-        nombre: materia!.nombre,
-        href: `../../../?materia=${searchParams.get("materia")}`,
-      },
-      {
-        nombre: `${periodo!.año} - ${periodo!.cuatrimestre}° Cuatrimestre`,
-        href: `../../?materia=${searchParams.get(
-          "materia"
-        )}&periodo=${searchParams.get("periodo")}`,
-      },
-      {
-        nombre: `${curso!.id} - ${curso!.nombre}`,
-        href: `../?materia=${searchParams.get(
-          "materia"
-        )}&periodo=${searchParams.get("periodo")}&curso=${searchParams.get("curso")}`,
-      },
+      { nombre: "Materias" },
+      { nombre: materia!.nombre },
+      { nombre: `${periodo!.año} - ${periodo!.cuatrimestre}° Cuatrimestre` },
+      { nombre: `${curso!.nombre}` },
       { nombre: `${tp!.id} - ${tp!.nombre}` },
     ]);
-  }, []);
+  }, [setBreadcrumb, searchParams]);
 
   return (
-    <Stack sx={{ height: "100%" }} gridTemplateRows="auto 2fr">
-      <Header breadcrumb={breadcrumb} />
-      <Typography
-        variant="soft"
-        display="flex"
-        alignItems="center"
-        width="fit-content"
-        margin={2}
-        paddingInline={1}
-        paddingBlock={0.5}
-        marginLeft="auto"
-      >
-        Topic:
-        <Chip
-          variant="outlined"
-          sx={{ borderRadius: 2, marginInline: 1, bgcolor: "inherit" }}
+    <>
+      {topic && (
+        <Typography
+          variant="soft"
+          display="flex"
+          alignItems="center"
+          width="fit-content"
+          margin={2}
+          paddingInline={1}
+          paddingBlock={0.5}
+          marginLeft="auto"
         >
-          {topic}
+          Topic:
+          <Chip
+          component="span"
+            variant="outlined"
+            sx={{ borderRadius: 2, marginInline: 1, bgcolor: "inherit" }}
+          >
+            {topic}
 
-          <CopyAllOutlined sx={{ cursor: "pointer", marginLeft: 1 }} />
-        </Chip>
-      </Typography>
+            <CopyAllOutlined sx={{ cursor: "pointer", marginLeft: 1 }} />
+          </Chip>
+        </Typography>
+      )}
       <Unstable_Grid
         sx={{ height: "100%" }}
         container
@@ -103,7 +90,7 @@ function Repos() {
           />
         )}
       </Unstable_Grid>
-    </Stack>
+    </>
   );
 }
 

@@ -4,7 +4,7 @@
 import { useEffect, useState } from "react";
 import { Repository, ResponseData } from "../data/githubInterfaces";
 
-function useData(topic?: string):[Repository[], boolean]  {
+function useData(topic: string | null):[Repository[], boolean]  {
   const [data, setData] = useState<Repository[]>([]);
   const [partialLoading, setPartialLoading] = useState(false);
 
@@ -45,7 +45,7 @@ function useData(topic?: string):[Repository[], boolean]  {
       setPartialLoading(false);
     };
     fetchData();
-  }, []);
+  }, [topic]);
 
   return [data, partialLoading];
 }

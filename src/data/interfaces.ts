@@ -31,7 +31,6 @@ interface Params {
 
 interface ItemBreadCrumb {
   nombre: string;
-  href?: string;
 }
 
 export type { TP, Curso, Fecha, Materia, Params, ItemBreadCrumb };

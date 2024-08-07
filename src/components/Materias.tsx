@@ -1,17 +1,19 @@
 import { materias } from "../data/data.json";
 
-import Header from "./Header";
-import { Stack, Card, CardContent } from "@mui/joy";
+import { Card, CardContent } from "@mui/joy";
 import { Unstable_Grid } from "@mui/system";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import useSetBreadcrumb from "../hooks/useSetBreadcrumb";
 
 function Materias() {
-  const [hover, setHover] = useState<number | null>(null);
-
+  const [hover, setHover] = useState<string | null>(null);
+  const setBreadcrumb = useSetBreadcrumb()
+  useEffect(()=> {
+    setBreadcrumb([{nombre:"Materias"}])
+  }, [setBreadcrumb])
+  
   return (
-    <Stack sx={{ height: "100%" }} gridTemplateRows="auto 2fr">
-      <Header breadcrumb={[{ nombre: "Materias" }]} />
       <Unstable_Grid
         sx={{ height: "100%" }}
         container
@@ -19,24 +21,23 @@ function Materias() {
         alignItems="center"
         justifyContent="center"
       >
-        {materias.map(({ nombre, id }, index) => (
+        {materias.map(({ nombre, id }) => (
           <Link
             style={{ textDecoration: "none" }}
             key={id}
             to={`periodos?materia=${id}`}
           >
             <Card
-              onMouseOver={() => setHover(index)}
+              onMouseOver={() => setHover(id)}
               onMouseLeave={() => setHover(null)}
               color="neutral"
-              variant={hover === index ? "solid" : "soft"}
+              variant={hover === id ? "solid" : "soft"}
             >
               <CardContent>{nombre}</CardContent>
             </Card>
           </Link>
         ))}
       </Unstable_Grid>
-    </Stack>
   );
 }
 

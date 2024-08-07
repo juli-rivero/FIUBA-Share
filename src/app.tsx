@@ -9,49 +9,43 @@ import theme from "./theme.tsx";
 const router = createHashRouter([
   {
     path: "/",
+    Component: lazy(() => import("./components/Home.tsx")),
+  },
+  {
+    path: "/materias/",
+    Component: lazy(() => import("./components/Layout.tsx")),
     children: [
       {
         index: true,
-        Component: lazy(() => import("./components/Home.tsx")),
+        Component: lazy(() => import("./components/Materias.tsx")),
       },
       {
-        path: "materias/",
+        path: "periodos/",
         children: [
           {
             index: true,
-            Component: lazy(() => import("./components/Materias.tsx")),
+            Component: lazy(() => import("./components/Periodos.tsx")),
           },
           {
-            path: "periodos/",
+            path: "cursos/",
             children: [
               {
                 index: true,
-                Component: lazy(() => import("./components/Periodos.tsx")),
+                Component: lazy(() => import("./components/Cursos.tsx")),
               },
               {
-                path: "cursos/",
+                path: "tps/",
                 children: [
                   {
                     index: true,
-                    Component: lazy(() => import("./components/Cursos.tsx")),
+                    Component: lazy(() => import("./components/TPs.tsx")),
                   },
                   {
-                    path: "tps/",
+                    path: "repos/",
                     children: [
                       {
                         index: true,
-                        Component: lazy(() => import("./components/TPs.tsx")),
-                      },
-                      {
-                        path: "repos/",
-                        children: [
-                          {
-                            index: true,
-                            Component: lazy(
-                              () => import("./components/Repos.tsx")
-                            ),
-                          },
-                        ],
+                        Component: lazy(() => import("./components/Repos.tsx")),
                       },
                     ],
                   },
@@ -69,7 +63,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <CssVarsProvider disableTransitionOnChange theme={theme}>
       <CssBaseline />
-      <RouterProvider future={{v7_startTransition:true}} router={router} />
+      <RouterProvider future={{ v7_startTransition: true }} router={router} />
     </CssVarsProvider>
   </StrictMode>
 );
