@@ -1,19 +1,18 @@
-import { materias } from "../data/data.json";
-
-import { useSearchParams } from "react-router-dom";
+import { useOutletContext, useSearchParams } from "react-router-dom";
 import { Typography, Skeleton, Chip } from "@mui/joy";
 import { CopyAllOutlined } from "@mui/icons-material";
 import { Unstable_Grid } from "@mui/system";
 import { useEffect, useState } from "react";
-import useData from "../hooks/useData";
 import CartaRepo from "./CartaRepo";
-import useSetBreadcrumb from "../hooks/useSetBreadcrumb";
+import { OutletContextType } from "../data/interfaces";
+import { Repository } from "../data/githubInterfaces";
 
 function Repos() {
   const [searchParams] = useSearchParams();
   const [topic, setTopic] = useState<string | null>(null);
-  const [repos, partialLoading] = useData(topic);
-  const setBreadcrumb = useSetBreadcrumb();
+  const { setBreadcrumb, materias, partialLoading } =
+    useOutletContext<OutletContextType>();
+  const [repos, setRepos] = useState<Repository[]>([]);
 
   useEffect(() => {
     const materiaId = searchParams.get("materia"),
@@ -37,7 +36,8 @@ function Repos() {
       { nombre: `${curso!.nombre}` },
       { nombre: `${tp!.id} - ${tp!.nombre}` },
     ]);
-  }, [setBreadcrumb, searchParams]);
+    setRepos(tp!.repos);
+  }, [setBreadcrumb, searchParams, materias]);
 
   return (
     <>
@@ -54,12 +54,11 @@ function Repos() {
         >
           Topic:
           <Chip
-          component="span"
+            component="span"
             variant="outlined"
             sx={{ borderRadius: 2, marginInline: 1, bgcolor: "inherit" }}
           >
             {topic}
-
             <CopyAllOutlined sx={{ cursor: "pointer", marginLeft: 1 }} />
           </Chip>
         </Typography>
@@ -68,6 +67,8 @@ function Repos() {
         sx={{ height: "100%" }}
         container
         gap={4}
+        padding={8}
+        overflow="auto"
         alignItems="center"
         justifyContent="center"
       >

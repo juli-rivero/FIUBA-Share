@@ -1,17 +1,15 @@
-import { materias } from "../data/data.json";
-
-import { useSearchParams } from "react-router-dom";
+import { useOutletContext, useSearchParams } from "react-router-dom";
 import { Card, CardContent, List, ListItem, Typography } from "@mui/joy";
 import { Link } from "react-router-dom";
 import { Unstable_Grid } from "@mui/system";
 import { useEffect, useState } from "react";
-import { Curso } from "../data/interfaces";
-import useSetBreadcrumb from "../hooks/useSetBreadcrumb";
+import { Curso, OutletContextType } from "../data/interfaces";
+import CardOverflowReposCount from "./utils/CardOverflowReposCount";
 
 function Cursos() {
   const [searchParams] = useSearchParams();
   const [hover, setHover] = useState<string | null>(null);
-  const setBreadcrumb = useSetBreadcrumb();
+  const { setBreadcrumb, materias } = useOutletContext<OutletContextType>();
   const [cursos, setCursos] = useState<Curso[]>([]);
 
   useEffect(() => {
@@ -28,17 +26,19 @@ function Cursos() {
       { nombre: `${periodo!.año} - ${periodo!.cuatrimestre}° Cuatrimestre` },
     ]);
     setCursos(periodo!.cursos);
-  }, [searchParams, setBreadcrumb]);
+  }, [searchParams, setBreadcrumb, materias]);
 
   return (
     <Unstable_Grid
       sx={{ height: "100%" }}
       container
       gap={4}
+      padding={8}
+      overflow="auto"
       alignItems="center"
       justifyContent="center"
     >
-      {cursos.map(({ id, nombre, docentes }) => (
+      {cursos.map(({ id, nombre, docentes, reposCount }) => (
         <Link
           style={{ textDecoration: "none" }}
           key={id}
@@ -47,6 +47,7 @@ function Cursos() {
           )}&periodo=${searchParams.get("periodo")}&curso=${id}`}
         >
           <Card
+            orientation="horizontal"
             onMouseOver={() => setHover(id)}
             onMouseLeave={() => setHover(null)}
             color="neutral"
@@ -56,10 +57,13 @@ function Cursos() {
               <Typography level="title-lg">{nombre}</Typography>
               <List>
                 {docentes.split(",").map((docente) => (
-                  <ListItem sx={{fontSize:".85rem"}} key={docente}>{docente}</ListItem>
+                  <ListItem sx={{ fontSize: ".85rem" }} key={docente}>
+                    {docente}
+                  </ListItem>
                 ))}
               </List>
             </CardContent>
+            <CardOverflowReposCount reposCount={reposCount} />
           </Card>
         </Link>
       ))}

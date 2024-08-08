@@ -4,13 +4,11 @@
 import { useEffect, useState } from "react";
 import { Repository, ResponseData } from "../data/githubInterfaces";
 
-function useData(topic: string | null):[Repository[], boolean]  {
+function useData():[Repository[], boolean]  {
   const [data, setData] = useState<Repository[]>([]);
   const [partialLoading, setPartialLoading] = useState(false);
 
   useEffect(() => {
-    if (!topic) return;
-
     const fetchData = async () => {
       let totalCount = null;
       const items: Repository[] = [];
@@ -20,17 +18,17 @@ function useData(topic: string | null):[Repository[], boolean]  {
         const res = await fetch(
           `https://api.github.com/search/repositories?` +
             new URLSearchParams({
-              q: "topic:" + topic,
+              q: "topic:fiuba fork:true",
               sort: "updated",
               order: "desc",
               page: i.toString(),
-              per_page: "100",
+              per_page: "1000", //cambiar en produccion
             }),
           {
             headers: {
               Accept: "application/vnd.github.v3+json",
             },
-          }
+          },
         );
 
         const json: ResponseData = await res.json();
@@ -45,8 +43,8 @@ function useData(topic: string | null):[Repository[], boolean]  {
       setPartialLoading(false);
     };
     fetchData();
-  }, [topic]);
-
+  }, []);
+  
   return [data, partialLoading];
 }
 

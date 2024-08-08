@@ -1,25 +1,31 @@
+import { Repository } from "./githubInterfaces";
+
 interface TP {
   id: string;
   nombre: string;
+  repos: Repository[];
 }
 interface Curso {
   id: string;
   nombre: string;
   docentes: string;
   tps: TP[];
+  reposCount: number;
 }
 
-interface Fecha {
+interface Periodo {
   id:string;
   año: number;
   cuatrimestre: number;
   cursos: Curso[];
+  reposCount: number;
 }
 
 interface Materia {
   id: string;
   nombre: string;
-  fechas: Fecha[];
+  periodos: Periodo[];
+  reposCount: number;
 }
 
 interface Params {
@@ -34,4 +40,10 @@ interface ItemBreadCrumb {
   nombre: string;
 }
 
-export type { TP, Curso, Fecha, Materia, Params, ItemBreadCrumb };
+type OutletContextType = {
+  setBreadcrumb: React.Dispatch<React.SetStateAction<ItemBreadCrumb[]>>;
+  materias: Materia[];
+  partialLoading: boolean;
+};
+
+export type { TP, Curso, Periodo, Materia, Params, ItemBreadCrumb, OutletContextType };

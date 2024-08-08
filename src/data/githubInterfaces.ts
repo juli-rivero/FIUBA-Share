@@ -109,6 +109,7 @@ interface License {
     disabled: boolean;
     visibility: string;
     license: License;
+    topics: string[];
   }
   
   interface ResponseData {
