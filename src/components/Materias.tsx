@@ -13,7 +13,17 @@ function Materias() {
   useEffect(() => {
     setBreadcrumb(["Materias"]);
   }, [setBreadcrumb]);
-
+  
+  function sortAlfabetico({nombre:a}:{nombre:string}, {nombre:b}:{nombre:string}) {
+    if (a > b) return 1
+    else if (b < a) return -1
+    else return 0
+  }
+  function sortReposCount({reposCount:a}:{reposCount:number}, {reposCount:b}:{reposCount:number}) {
+    if (a < b) return 1
+    else if (b > a) return -1
+    else return 0
+  }
   return (
     <>
       <IconButton
@@ -24,7 +34,16 @@ function Materias() {
       }}
       color="neutral"
       variant="soft"
-        onClick={()=>setSort((sort) => sort == "a-z" ? "reposCount" : "a-z")}
+        onClick={()=>{
+          switch(sort) {
+            case "a-z":
+              setSort("reposCount")
+              break;
+              case "reposCount":
+              setSort("a-z")
+              break;
+          }
+        }}
         >
         <SortIcon sort={sort} />
       </IconButton>
@@ -37,7 +56,7 @@ function Materias() {
         alignItems="center"
         justifyContent="center"
       >
-        {materias.map(({ nombre, id, reposCount }) => (
+        {materias.toSorted(sort == "a-z" ? sortAlfabetico : sortReposCount).map(({ nombre, id, reposCount }) => (
           <Link
             style={{ textDecoration: "none" }}
             key={id}
