@@ -11,7 +11,7 @@ function TPs() {
   const [hover, setHover] = useState<string | null>(null);
 
   const [tps, setTps] = useState<TP[]>([]);
-  const {setBreadcrumb, materias} = useOutletContext<OutletContextType>();
+  const { setBreadcrumb, materias } = useOutletContext<OutletContextType>();
 
   useEffect(() => {
     const materia = materias.find(
@@ -25,10 +25,10 @@ function TPs() {
     );
 
     setBreadcrumb([
-      { nombre: "Materias" },
-      { nombre: materia!.nombre },
-      { nombre: `${periodo!.año} - ${periodo!.cuatrimestre}° Cuatrimestre` },
-      { nombre: `${curso!.nombre}` },
+      "Materias",
+      materia!.nombre,
+      `${periodo!.año} - ${periodo!.cuatrimestre}° Cuatrimestre`,
+      `${curso!.nombre}`,
     ]);
     setTps(curso!.tps);
   }, [materias, setBreadcrumb, searchParams]);
@@ -61,7 +61,7 @@ function TPs() {
             variant={hover === id ? "solid" : "soft"}
           >
             <CardContent>{`${id} - ${nombre}`}</CardContent>
-            <CardOverflowReposCount reposCount={repos.length}/>
+            <CardOverflowReposCount reposCount={repos.length} />
           </Card>
         </Link>
       ))}

@@ -1,11 +1,11 @@
 import { Repository } from "./githubInterfaces";
 
-interface TP {
+type TP = {
   id: string;
   nombre: string;
   repos: Repository[];
 }
-interface Curso {
+type Curso = {
   id: string;
   nombre: string;
   docentes: string;
@@ -13,7 +13,7 @@ interface Curso {
   reposCount: number;
 }
 
-interface Periodo {
+type Periodo = {
   id:string;
   año: number;
   cuatrimestre: number;
@@ -21,29 +21,25 @@ interface Periodo {
   reposCount: number;
 }
 
-interface Materia {
+type Materia = {
   id: string;
   nombre: string;
   periodos: Periodo[];
   reposCount: number;
 }
 
-interface Params {
-  materia?: string;
-  anio?: number;
-  cuatrimestre?: number;
-  curso?: string;
-  tp?: string;
-}
-
-interface ItemBreadCrumb {
-  nombre: string;
-}
+type ItemBreadCrumb = string;
 
 type OutletContextType = {
   setBreadcrumb: React.Dispatch<React.SetStateAction<ItemBreadCrumb[]>>;
   materias: Materia[];
-  partialLoading: boolean;
+  loading: boolean;
 };
 
-export type { TP, Curso, Periodo, Materia, Params, ItemBreadCrumb, OutletContextType };
+type SortMaterias = "a-z" | "reposCount";
+type SortPeriodos = "periodo" | "reposCount";
+type SortCursos = "a-z" | "reposCount";
+type SortTPs = "a-z" | "reposCount" | "id";
+type SortRepos = "a-z" | "points" | "recent";
+
+export type { TP, Curso, Periodo, Materia, ItemBreadCrumb, OutletContextType, SortMaterias, SortPeriodos, SortCursos, SortTPs, SortRepos };

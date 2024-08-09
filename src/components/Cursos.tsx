@@ -21,10 +21,12 @@ function Cursos() {
     );
 
     setBreadcrumb([
-      { nombre: "Materias" },
-      { nombre: materia!.nombre },
-      { nombre: `${periodo!.año} - ${periodo!.cuatrimestre}° Cuatrimestre` },
+      "Materias",
+      materia!.nombre,
+      `${periodo!.año} - ${periodo!.cuatrimestre}° Cuatrimestre`,
     ]);
+    console.log(periodo?.cursos);
+    
     setCursos(periodo!.cursos);
   }, [searchParams, setBreadcrumb, materias]);
 

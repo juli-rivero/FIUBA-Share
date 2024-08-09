@@ -30,11 +30,11 @@ function Repos() {
     const tp = curso!.tps.find((tp) => tp.id == tpId);
 
     setBreadcrumb([
-      { nombre: "Materias" },
-      { nombre: materia!.nombre },
-      { nombre: `${periodo!.año} - ${periodo!.cuatrimestre}° Cuatrimestre` },
-      { nombre: `${curso!.nombre}` },
-      { nombre: `${tp!.id} - ${tp!.nombre}` },
+      "Materias",
+      materia!.nombre,
+      `${periodo!.año} - ${periodo!.cuatrimestre}° Cuatrimestre`,
+      `${curso!.nombre}`,
+      `${tp!.id} - ${tp!.nombre}`,
     ]);
     setRepos(tp!.repos);
   }, [setBreadcrumb, searchParams, materias]);

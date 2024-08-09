@@ -54,16 +54,7 @@ function Home() {
               textAlign: "justify",
             }}
             placement="bottom-end"
-            modifiers={[
-              {
-                name: "offset",
-                options: {
-                  offset: () => {
-                    return [0, 20];
-                  },
-                },
-              },
-            ]}
+            modifiers={[{ name: "offset", options: { offset: [0, 20] } }]}
           >
             Este sitio es un remake de{" "}
             <a target="_blank" href="https://fede.dm/FIUBA-Repos/">

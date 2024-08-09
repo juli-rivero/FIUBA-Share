@@ -29,7 +29,7 @@ function Navegacion({ breadcrumb }: { breadcrumb: ItemBreadCrumb[] }) {
       separator={<KeyboardArrowRightRounded />}
       aria-label="breadcrumbs"
     >
-      {breadcrumb.map(({ nombre }, index: number) => (
+      {breadcrumb.map((nombre, index) => (
         <Link
           key={index}
           style={{ textDecoration: "none" }}

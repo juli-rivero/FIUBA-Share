@@ -22,7 +22,7 @@ function useData():[Repository[], boolean]  {
               sort: "updated",
               order: "desc",
               page: i.toString(),
-              per_page: "1000", //cambiar en produccion
+              per_page: "100", //cambiar en produccion
             }),
           {
             headers: {

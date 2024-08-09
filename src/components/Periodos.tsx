@@ -17,7 +17,7 @@ function Periodos() {
     const materia = materias.find(
       (materia) => materia.id == searchParams.get("materia")
     );
-    setBreadcrumb([{ nombre: "Materias" }, { nombre: materia!.nombre }]);
+    setBreadcrumb([ "Materias", materia!.nombre ]);
     setPeriodos(materia!.periodos);
   }, [setBreadcrumb, materias, searchParams]);
 

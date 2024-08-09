@@ -1,4 +1,4 @@
-import { lazy, StrictMode } from "react";
+import { lazy } from "react";
 import ReactDOM from "react-dom/client";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 
@@ -60,10 +60,8 @@ const router = createHashRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <CssVarsProvider disableTransitionOnChange theme={theme}>
-      <CssBaseline />
-      <RouterProvider future={{ v7_startTransition: true }} router={router} />
-    </CssVarsProvider>
-  </StrictMode>
+  <CssVarsProvider disableTransitionOnChange theme={theme}>
+    <CssBaseline />
+    <RouterProvider future={{ v7_startTransition: true }} router={router} />
+  </CssVarsProvider>
 );
