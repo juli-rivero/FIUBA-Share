@@ -10,7 +10,7 @@ import { Repository } from "../data/githubInterfaces";
 function Repos() {
   const [searchParams] = useSearchParams();
   const [topic, setTopic] = useState<string | null>(null);
-  const { setBreadcrumb, materias, partialLoading } =
+  const { setBreadcrumb, materias, loading } =
     useOutletContext<OutletContextType>();
   const [repos, setRepos] = useState<Repository[]>([]);
 
@@ -73,7 +73,7 @@ function Repos() {
         justifyContent="center"
       >
         {repos.length == 0
-          ? !partialLoading && (
+          ? !loading && (
               <Typography>
                 No hay ningun repositorio en este trabajo práctico. Se el
                 primero en agregar uno!
@@ -82,7 +82,7 @@ function Repos() {
           : repos.map((repo, index) => (
               <CartaRepo repositorio={repo} key={index} />
             ))}
-        {partialLoading && (
+        {loading && (
           <Skeleton
             variant="rectangular"
             sx={{ borderRadius: 4 }}
