@@ -59,7 +59,7 @@ function Materias() {
           .toSorted(sort == "a-z" ? sortAlfabetico : sortReposCount)
           .map(({ nombre, id, reposCount }) => (
             <Link
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: "none", flexGrow:1 }}
               key={id}
               to={`periodos?materia=${id}`}
             >
