@@ -13,38 +13,37 @@ function Materias() {
   useEffect(() => {
     setBreadcrumb(["Materias"]);
   }, [setBreadcrumb]);
-  
-  function sortAlfabetico({nombre:a}:{nombre:string}, {nombre:b}:{nombre:string}) {
-    if (a > b) return 1
-    else if (b < a) return -1
-    else return 0
-  }
-  function sortReposCount({reposCount:a}:{reposCount:number}, {reposCount:b}:{reposCount:number}) {
-    if (a < b) return 1
-    else if (b > a) return -1
-    else return 0
-  }
+
+  const sortAlfabetico = (
+    { nombre: a }: { nombre: string },
+    { nombre: b }: { nombre: string }
+  ) => a > b ? 1 : -1;
+  const sortReposCount = (
+    { reposCount: a }: { reposCount: number },
+    { reposCount: b }: { reposCount: number }
+  ) => b - a;
+
   return (
     <>
       <IconButton
-      sx={{
-        position:"absolute",
-        bottom:"1rem",
-        right:"1rem"
-      }}
-      color="neutral"
-      variant="soft"
-        onClick={()=>{
-          switch(sort) {
+        sx={{
+          position: "absolute",
+          bottom: "1rem",
+          right: "1rem",
+        }}
+        color="neutral"
+        variant="soft"
+        onClick={() => {          
+          switch (sort) {
             case "a-z":
-              setSort("reposCount")
+              setSort("reposCount");
               break;
-              case "reposCount":
-              setSort("a-z")
+            case "reposCount":
+              setSort("a-z");
               break;
           }
         }}
-        >
+      >
         <SortIcon sort={sort} />
       </IconButton>
       <Unstable_Grid
@@ -56,24 +55,26 @@ function Materias() {
         alignItems="center"
         justifyContent="center"
       >
-        {materias.toSorted(sort == "a-z" ? sortAlfabetico : sortReposCount).map(({ nombre, id, reposCount }) => (
-          <Link
-            style={{ textDecoration: "none" }}
-            key={id}
-            to={`periodos?materia=${id}`}
-          >
-            <Card
-              orientation="horizontal"
-              onMouseOver={() => setHover(id)}
-              onMouseLeave={() => setHover(null)}
-              color="neutral"
-              variant={hover === id ? "solid" : "soft"}
+        {materias
+          .toSorted(sort == "a-z" ? sortAlfabetico : sortReposCount)
+          .map(({ nombre, id, reposCount }) => (
+            <Link
+              style={{ textDecoration: "none" }}
+              key={id}
+              to={`periodos?materia=${id}`}
             >
-              <CardContent>{nombre}</CardContent>
-              <CardOverflowReposCount reposCount={reposCount} />
-            </Card>
-          </Link>
-        ))}
+              <Card
+                orientation="horizontal"
+                onMouseOver={() => setHover(id)}
+                onMouseLeave={() => setHover(null)}
+                color="neutral"
+                variant={hover === id ? "solid" : "soft"}
+              >
+                <CardContent>{nombre}</CardContent>
+                <CardOverflowReposCount reposCount={reposCount} />
+              </Card>
+            </Link>
+          ))}
       </Unstable_Grid>
     </>
   );
