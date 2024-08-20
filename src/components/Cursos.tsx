@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 import { Curso, OutletContextType, SortCursos } from "../data/interfaces";
 import CardOverflowReposCount from "./utils/CardOverflowReposCount";
 import SortIcon from "./utils/SortIcon";
+import { Repository } from "../data/githubInterfaces";
 
 function Cursos() {
   const [searchParams] = useSearchParams();
@@ -44,9 +45,9 @@ function Cursos() {
     { nombre: b }: { nombre: string }
   ) => (a > b ? 1 : -1);
   const sortReposCount = (
-    { reposCount: a }: { reposCount: number },
-    { reposCount: b }: { reposCount: number }
-  ) => b - a;
+    { repos: a }: { repos: Repository[] },
+    { repos: b }: { repos: Repository[] }
+  ) => b.length - a.length;
 
   return (
     <>
@@ -82,11 +83,11 @@ function Cursos() {
       >
         {cursos
           .toSorted(sort == "a-z" ? sortAlfabetico : sortReposCount)
-          .map(({ id, nombre, docentes, reposCount }) => (
+          .map(({ id, nombre, docentes, repos }) => (
             <Link
               style={{ textDecoration: "none" }}
               key={id}
-              to={`./tps?materia=${searchParams.get(
+              to={`./repos?materia=${searchParams.get(
                 "materia"
               )}&periodo=${searchParams.get("periodo")}&curso=${id}`}
             >
@@ -107,7 +108,7 @@ function Cursos() {
                     ))}
                   </List>
                 </CardContent>
-                <CardOverflowReposCount reposCount={reposCount} />
+                <CardOverflowReposCount reposCount={repos.length} />
               </Card>
             </Link>
           ))}

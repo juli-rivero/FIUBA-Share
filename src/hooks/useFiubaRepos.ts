@@ -4,8 +4,8 @@
 import { useEffect, useState } from "react";
 import { Repository, ResponseData } from "../data/githubInterfaces";
 
-function useData():[Repository[], boolean]  {
-  const [data, setData] = useState<Repository[]>([]);
+function useFiubaRepos(): [Repository[], boolean] {
+  const [fiubaRepos, setFiubaRepos] = useState<Repository[]>([]);
   const [partialLoading, setPartialLoading] = useState(false);
 
   useEffect(() => {
@@ -28,7 +28,7 @@ function useData():[Repository[], boolean]  {
             headers: {
               Accept: "application/vnd.github.v3+json",
             },
-          },
+          }
         );
 
         const json: ResponseData = await res.json();
@@ -37,16 +37,15 @@ function useData():[Repository[], boolean]  {
         }
         totalCount = json.total_count;
         items.push(...json.items);
-        setData(() => [...items]);
+        setFiubaRepos(() => [...items]);
         i++;
       }
       setPartialLoading(false);
     };
     fetchData();
   }, []);
-  
-  return [data, partialLoading];
+
+  return [fiubaRepos, partialLoading];
 }
 
-export default useData;
-
+export default useFiubaRepos;

@@ -1,16 +1,10 @@
 import { Repository } from "./githubInterfaces";
 
-type TP = {
-  id: string;
-  nombre: string;
-  repos: Repository[];
-}
 type Curso = {
   id: string;
   nombre: string;
   docentes: string;
-  tps: TP[];
-  reposCount: number;
+  repos: Repository[];
 }
 
 type Periodo = {
@@ -42,4 +36,4 @@ type SortCursos = "a-z" | "reposCount";
 type SortTPs = "a-z" | "reposCount" | "id";
 type SortRepos = "a-z" | "points" | "recent";
 
-export type { TP, Curso, Periodo, Materia, ItemBreadCrumb, OutletContextType, SortMaterias, SortPeriodos, SortCursos, SortTPs, SortRepos };
+export type { Curso, Periodo, Materia, ItemBreadCrumb, OutletContextType, SortMaterias, SortPeriodos, SortCursos, SortTPs, SortRepos };
