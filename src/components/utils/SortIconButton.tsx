@@ -1,27 +1,20 @@
 import {
   EventNote,
-  FormatListNumbered,
   Schedule,
   SortByAlpha,
   StarBorder,
 } from "@mui/icons-material";
-import {
-  SortCursos,
-  SortMaterias,
-  SortPeriodos,
-  SortRepos,
-  SortTPs,
-} from "../../data/interfaces";
 import GithubReposIcon from "./GithubReposIcon";
-import { Tooltip, useColorScheme } from "@mui/joy";
+import { IconButton, Tooltip, useColorScheme } from "@mui/joy";
+import { Sort } from "../../hooks/useSort";
 
 interface ISortIcon {
-  sort: SortMaterias | SortPeriodos | SortCursos | SortTPs | SortRepos;
+  sort: Sort;
 }
 const SortIcon = ({ sort }: ISortIcon) => {
   const { mode } = useColorScheme();
   switch (sort) {
-    case "a-z":
+    case "az":
       return (
         <Tooltip
           placement="left-end"
@@ -30,18 +23,6 @@ const SortIcon = ({ sort }: ISortIcon) => {
         >
           <div>
             <SortByAlpha />
-          </div>
-        </Tooltip>
-      );
-    case "id":
-      return (
-        <Tooltip
-          placement="left-end"
-          modifiers={[{ name: "offset", options: { offset: [0, 16] } }]}
-          title="Ordenado por ID"
-        >
-          <div>
-            <FormatListNumbered />
           </div>
         </Tooltip>
       );
@@ -95,4 +76,27 @@ const SortIcon = ({ sort }: ISortIcon) => {
       );
   }
 };
-export default SortIcon;
+
+function SortIconButton({
+  onClick,
+  sort,
+}: {
+  onClick: React.MouseEventHandler;
+  sort: Sort;
+}) {
+  return (
+    <IconButton
+      sx={{
+        position: "absolute",
+        bottom: "1rem",
+        right: "1rem",
+      }}
+      color="neutral"
+      variant="soft"
+      onClick={onClick}
+    >
+      <SortIcon sort={sort} />
+    </IconButton>
+  );
+}
+export default SortIconButton;

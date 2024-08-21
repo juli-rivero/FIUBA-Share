@@ -30,10 +30,4 @@ type OutletContextType = {
   loading: boolean;
 };
 
-type SortMaterias = "a-z" | "reposCount";
-type SortPeriodos = "periodo" | "reposCount";
-type SortCursos = "a-z" | "reposCount";
-type SortTPs = "a-z" | "reposCount" | "id";
-type SortRepos = "a-z" | "points" | "recent";
-
-export type { Curso, Periodo, Materia, ItemBreadCrumb, OutletContextType, SortMaterias, SortPeriodos, SortCursos, SortTPs, SortRepos };
+export type { Curso, Periodo, Materia, ItemBreadCrumb, OutletContextType };

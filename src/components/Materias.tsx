@@ -1,51 +1,35 @@
-import { Card, CardContent, IconButton } from "@mui/joy";
+import { Card, CardContent } from "@mui/joy";
 import { Unstable_Grid } from "@mui/system";
 import { Link, useOutletContext } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { OutletContextType, SortMaterias } from "../data/interfaces";
+import { OutletContextType } from "../data/interfaces";
 import CardOverflowReposCount from "./utils/CardOverflowReposCount";
-import SortIcon from "./utils/SortIcon";
+import useSort, { Sort, SortMaterias } from "../hooks/useSort";
+import SortIconButton from "./utils/SortIconButton";
 
 function Materias() {
   const [hover, setHover] = useState<string | null>(null);
-  const [sort, setSort] = useState<SortMaterias>("reposCount");
+  const [sort, setSort, sortFunctions] = useSort<SortMaterias>(Sort.ReposCount);
   const { setBreadcrumb, materias } = useOutletContext<OutletContextType>();
   useEffect(() => {
     setBreadcrumb(["Materias"]);
   }, [setBreadcrumb]);
 
-  const sortAlfabetico = (
-    { nombre: a }: { nombre: string },
-    { nombre: b }: { nombre: string }
-  ) => a > b ? 1 : -1;
-  const sortReposCount = (
-    { reposCount: a }: { reposCount: number },
-    { reposCount: b }: { reposCount: number }
-  ) => b - a;
-
   return (
     <>
-      <IconButton
-        sx={{
-          position: "absolute",
-          bottom: "1rem",
-          right: "1rem",
-        }}
-        color="neutral"
-        variant="soft"
-        onClick={() => {          
+      <SortIconButton
+        onClick={() => {
           switch (sort) {
-            case "a-z":
-              setSort("reposCount");
+            case "az":
+              setSort(Sort.ReposCount);
               break;
             case "reposCount":
-              setSort("a-z");
+              setSort(Sort.Az);
               break;
           }
         }}
-      >
-        <SortIcon sort={sort} />
-      </IconButton>
+        sort={sort}
+      />
       <Unstable_Grid
         sx={{ height: "100%" }}
         container
@@ -56,10 +40,10 @@ function Materias() {
         justifyContent="center"
       >
         {materias
-          .toSorted(sort == "a-z" ? sortAlfabetico : sortReposCount)
+          .toSorted(sortFunctions[sort])
           .map(({ nombre, id, reposCount }) => (
             <Link
-              style={{ textDecoration: "none", flexGrow:1 }}
+              style={{ textDecoration: "none", flexGrow: 1 }}
               key={id}
               to={`periodos?materia=${id}`}
             >

@@ -1,16 +1,17 @@
 import { useOutletContext, useSearchParams } from "react-router-dom";
-import { Card, CardContent, IconButton } from "@mui/joy";
+import { Card, CardContent } from "@mui/joy";
 import { Link } from "react-router-dom";
 import { Unstable_Grid } from "@mui/system";
 import { useEffect, useState } from "react";
-import { OutletContextType, Periodo, SortPeriodos } from "../data/interfaces";
+import { OutletContextType, Periodo } from "../data/interfaces";
 import CardOverflowReposCount from "./utils/CardOverflowReposCount";
-import SortIcon from "./utils/SortIcon";
+import useSort, { Sort, SortPeriodos } from "../hooks/useSort";
+import SortIconButton from "./utils/SortIconButton";
 
 function Periodos() {
   const [searchParams] = useSearchParams();
   const [hover, setHover] = useState<string | null>(null);
-  const [sort, setSort] = useState<SortPeriodos>("periodo");
+  const [sort, setSort, sortFunctions] = useSort<SortPeriodos>(Sort.ReposCount);
 
   const [periodos, setPeriodos] = useState<Periodo[]>([]);
   const { materias, setBreadcrumb } = useOutletContext<OutletContextType>();
@@ -23,36 +24,21 @@ function Periodos() {
     setPeriodos(materia!.periodos);
   }, [setBreadcrumb, materias, searchParams]);
 
-  const sortPeriodo = ({ id: a }: { id: string }, { id: b }: { id: string }) =>
-    a < b ? 1 : -1;
-  const sortReposCount = (
-    { reposCount: a }: { reposCount: number },
-    { reposCount: b }: { reposCount: number }
-  ) => b - a;
-
   return (
     <>
-      <IconButton
-        sx={{
-          position: "absolute",
-          bottom: "1rem",
-          right: "1rem",
-        }}
-        color="neutral"
-        variant="soft"
+      <SortIconButton
         onClick={() => {
           switch (sort) {
             case "periodo":
-              setSort("reposCount");
+              setSort(Sort.ReposCount);
               break;
             case "reposCount":
-              setSort("periodo");
+              setSort(Sort.Periodo);
               break;
           }
         }}
-      >
-        <SortIcon sort={sort} />
-      </IconButton>
+        sort={sort}
+      />
       <Unstable_Grid
         sx={{ height: "100%" }}
         container
@@ -63,7 +49,7 @@ function Periodos() {
         justifyContent="center"
       >
         {periodos
-          .toSorted(sort == "periodo" ? sortPeriodo : sortReposCount)
+          .toSorted(sortFunctions[sort])
           .map(({ año, cuatrimestre, id, reposCount }) => (
             <Link
               style={{ textDecoration: "none" }}
