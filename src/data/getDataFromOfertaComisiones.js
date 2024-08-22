@@ -24,28 +24,35 @@ function getMateriaName(materia) {
   return materia.getAttribute("actividad").slice(0, indiceParentesis).trim();
 }
 
-function getComision(periodo, comisiones) {
-  return {
-    ...periodo,
-    cursos: comisiones
-      .map((comision) => ({
-        id: comision.getAttribute("comision"),
-        nombre: comision.querySelector("h5").textContent.slice(10),
-        docentes: comision.getAttribute("docentes"),
-      }))
-      .filter(({ nombre }) => nombre.toUpperCase() != "CONDICIONALES"),
-  };
+function getComisiones(periodo, comisiones) {
+  return comisiones
+    .map((comision) => ({
+      id: comision.getAttribute("comision"),
+      nombre: comision.querySelector("h5").textContent.slice(10),
+      docentes: comision.getAttribute("docentes"),
+      periodos: [periodo],
+    }))
+    .filter(({ nombre }) => nombre.toUpperCase() != "CONDICIONALES");
 }
-function pushMateria(materia, periodo, periodo2, periodo2Comision) {
+function pushMateria(materia, periodo, periodo2, periodo2Comisiones) {
+  const periodoComisiones = [...materia.querySelectorAll("table[comision]")];
   data.materias.push({
     id: getMateriaId(materia),
     nombre: getMateriaName(materia),
-    periodos: [
-      getComision(periodo, [...materia.querySelectorAll("table[comision]")]),
-    ],
+    cursos: getComisiones(periodo, periodoComisiones),
   });
-  if (periodo2 && periodo2Comision) {
-    data.materias.at(-1).periodos.push(getComision(periodo2, periodo2Comision));
+  if (periodo2 && periodo2Comisiones) {
+    const cursos2 = getComisiones(periodo2, periodo2Comisiones);
+    cursos2.forEach((curso2) => {
+      const indexCursoEncontrado = data.materias
+        .at(-1)
+        .cursos.findIndex((curso) => curso.nombre == curso2.nombre);
+      if (indexCursoEncontrado != -1)
+        data.materias
+          .at(-1)
+          .cursos[indexCursoEncontrado].periodos.push(periodo2);
+      else data.materias.at(-1).cursos.push(curso2);
+    });
   }
 }
 

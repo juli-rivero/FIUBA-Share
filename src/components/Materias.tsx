@@ -2,10 +2,10 @@ import { Card, CardContent } from "@mui/joy";
 import { Unstable_Grid } from "@mui/system";
 import { Link, useOutletContext } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { OutletContextType } from "../data/interfaces";
-import CardOverflowReposCount from "./utils/CardOverflowReposCount";
+import { OutletContextType } from "../typescript/interfaces";
+import CardOverflowReposCount from "./UI/CardOverflowReposCount";
 import useSort, { Sort, SortMaterias } from "../hooks/useSort";
-import SortIconButton from "./utils/SortIconButton";
+import SortIconButton from "./UI/SortIconButton";
 
 function Materias() {
   const [hover, setHover] = useState<string | null>(null);
@@ -45,7 +45,7 @@ function Materias() {
             <Link
               style={{ textDecoration: "none", flexGrow: 1 }}
               key={id}
-              to={`periodos?materia=${id}`}
+              to={`cursos?materia=${id}`}
             >
               <Card
                 orientation="horizontal"

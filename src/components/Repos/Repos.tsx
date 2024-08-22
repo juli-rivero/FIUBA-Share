@@ -1,44 +1,56 @@
 import { useOutletContext, useSearchParams } from "react-router-dom";
-import { Typography, Skeleton } from "@mui/joy";
+import { Typography, Skeleton, Stack } from "@mui/joy";
 import { Unstable_Grid } from "@mui/system";
 import { useEffect, useState } from "react";
 import CartaRepo from "./CartaRepo";
-import { OutletContextType } from "../data/interfaces";
-import { Repository } from "../data/githubInterfaces";
-import Topics from "./utils/Topics";
-import useSort, { Sort, SortRepos } from "../hooks/useSort";
-import SortIconButton from "./utils/SortIconButton";
+import { OutletContextType, Periodo, Tp } from "../../typescript/interfaces";
+import { Repository } from "../../typescript/githubInterfaces";
+import useSort, { Sort, SortRepos } from "../../hooks/useSort";
+import SortIconButton from "../UI/SortIconButton";
+import Topics from "./Topics";
+import Filtros from "./Filtros";
 
 function Repos() {
   const [searchParams] = useSearchParams();
   const { setBreadcrumb, materias, loading } =
     useOutletContext<OutletContextType>();
+  const [periodos, setPeriodos] = useState<Periodo[]>([]);
+  const [tps, setTps] = useState<Tp[]>([]);
   const [repos, setRepos] = useState<Repository[]>([]);
   const [sort, setSort, sortFunctions] = useSort<SortRepos>(Sort.Points);
 
   useEffect(() => {
     const materiaId = searchParams.get("materia"),
-      periodoId = searchParams.get("periodo"),
-      cursoId = searchParams.get("curso");
+      cursoId = searchParams.get("curso"),
+      tpId = searchParams.get("tp"),
+      periodoId = searchParams.get("periodo");
 
     const materia = materias.find((materia) => materia.id == materiaId);
-    const periodo = materia!.periodos.find(
-      (periodo) => periodo.id == periodoId
-    );
-    const curso = periodo!.cursos.find((curso) => curso.id == cursoId);
+    if (!materia) return;
+    const curso = materia.cursos.find((curso) => curso.id == cursoId);
+    if (!curso) return;
 
-    setBreadcrumb([
-      "Materias",
-      materia!.nombre,
-      `${periodo!.año} - ${periodo!.cuatrimestre}° Cuatrimestre`,
-      `${curso!.nombre}`,
-    ]);
-    setRepos(curso!.repos);
+    setBreadcrumb(["Materias", materia.nombre, `${curso.nombre}`]);
+    setPeriodos(curso.periodos);
+    setTps(curso.tps);
+    setRepos(() => {
+      const filtros = new Set<string>();
+      if (periodoId) filtros.add(periodoId);
+      if (tpId) filtros.add(tpId);
+      if (filtros.size)
+        return curso.repos.filter(
+          (repo) => repo.topics.intersection(filtros).size === filtros.size
+        );
+      return curso.repos;
+    });
   }, [setBreadcrumb, searchParams, materias]);
 
   return (
     <>
-      <Topics />
+      <Stack direction="row" flexWrap="wrap" justifyContent="space-around" margin="1rem" gap={4}>
+        <Topics />
+        <Filtros periodos={periodos} tps={tps} totalRepos={repos.length} />
+      </Stack>
       <SortIconButton
         onClick={() => {
           switch (sort) {

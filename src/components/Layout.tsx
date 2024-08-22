@@ -2,12 +2,11 @@ import Header from "./Header";
 import { Stack } from "@mui/joy";
 import { Outlet } from "react-router-dom";
 import { useMemo, useState } from "react";
-import { ItemBreadCrumb } from "../data/interfaces";
 import useFiubaRepos from "../hooks/useFiubaRepos";
 import json from "../data/data.json";
 
 function Layout() {
-  const [breadcrumb, setBreadcrumb] = useState<ItemBreadCrumb[]>([]);
+  const [breadcrumb, setBreadcrumb] = useState<string[]>([]);
   const [fiubaRepos, partialLoading] = useFiubaRepos();
   const [procesing, setProcesing] = useState(false);
   const materias = useMemo(() => {
@@ -15,23 +14,28 @@ function Layout() {
 
     const materias = json.materias.map((materia) => {
       let countReposEnMateria = 0;
-      const periodos = materia.periodos.map((periodo) => {
-        let countReposEnPeriodo = 0;
-        const cursos = periodo.cursos.map((curso) => {
-          const topicKeysSet = new Set([materia.id, periodo.id, curso.id]);
-          const repos = fiubaRepos.filter(
-            (fiubaRepo) =>
-              topicKeysSet.size ===
-              fiubaRepo.topics.filter((topic) => topicKeysSet.has(topic.toUpperCase())).length
-          );
-          countReposEnPeriodo += repos.length;
-          return { ...curso, repos };
-        });
-        countReposEnMateria += countReposEnPeriodo;
-        return { ...periodo, cursos, reposCount: countReposEnPeriodo };
+      const cursos = materia.cursos.map((curso) => {
+        const topicKeysSet = new Set(
+          [materia.id, curso.id].map((k) => k.toLowerCase())
+        );
+        const repos = fiubaRepos.filter(
+          (fiubaRepo) =>
+            topicKeysSet.size ===
+            fiubaRepo.topics.intersection(topicKeysSet).size
+        );
+        const periodos = curso.periodos.map((periodo) => ({
+          ...periodo,
+          reposCount: repos.filter((r) => r.topics.has(periodo.id)).length,
+        }));
+        const tps = [1,2,3,4].map((id) => ({
+          id,
+          reposCount: repos.filter((r) => r.topics.has(`tp-${id}`)).length,
+        }));
+        countReposEnMateria += repos.length;
+        return { ...curso, periodos, tps, repos };
       });
 
-      return { ...materia, periodos, reposCount: countReposEnMateria };
+      return { ...materia, cursos, reposCount: countReposEnMateria };
     });
     setProcesing(false);
     return materias;

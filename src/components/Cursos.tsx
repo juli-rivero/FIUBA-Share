@@ -3,10 +3,10 @@ import { Card, CardContent, List, ListItem, Typography } from "@mui/joy";
 import { Link } from "react-router-dom";
 import { Unstable_Grid } from "@mui/system";
 import { useEffect, useState } from "react";
-import { Curso, OutletContextType } from "../data/interfaces";
-import CardOverflowReposCount from "./utils/CardOverflowReposCount";
+import { Curso, OutletContextType } from "../typescript/interfaces";
+import CardOverflowReposCount from "./UI/CardOverflowReposCount";
 import useSort, { Sort, SortCursos } from "../hooks/useSort";
-import SortIconButton from "./utils/SortIconButton";
+import SortIconButton from "./UI/SortIconButton";
 
 function Cursos() {
   const [searchParams] = useSearchParams();
@@ -19,18 +19,10 @@ function Cursos() {
     const materia = materias.find(
       (materia) => materia.id == searchParams.get("materia")
     );
-    const periodo = materia!.periodos.find(
-      (periodo) => periodo.id == searchParams.get("periodo")
-    );
 
-    setBreadcrumb([
-      "Materias",
-      materia!.nombre,
-      `${periodo!.año} - ${periodo!.cuatrimestre}° Cuatrimestre`,
-    ]);
-    console.log(periodo?.cursos);
+    setBreadcrumb(["Materias", materia!.nombre]);
 
-    setCursos(periodo!.cursos);
+    setCursos(materia!.cursos);
   }, [searchParams, setBreadcrumb, materias]);
 
   return (
@@ -63,9 +55,7 @@ function Cursos() {
             <Link
               style={{ textDecoration: "none" }}
               key={id}
-              to={`./repos?materia=${searchParams.get(
-                "materia"
-              )}&periodo=${searchParams.get("periodo")}&curso=${id}`}
+              to={`./repos?materia=${searchParams.get("materia")}&curso=${id}`}
             >
               <Card
                 orientation="horizontal"

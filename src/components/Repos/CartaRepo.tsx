@@ -9,8 +9,8 @@ import {
   Typography,
 } from "@mui/joy";
 import { Link } from "react-router-dom";
-import { Repository } from "../data/githubInterfaces";
-import useContributors from "../hooks/useContributors";
+import { Repository } from "../../typescript/githubInterfaces";
+import useContributors from "../../hooks/useContributors";
 
 const CartaRepo = ({ repositorio }: { repositorio: Repository }) => {
   const {

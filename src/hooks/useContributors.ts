@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Contributor } from "../data/githubInterfaces";
+import { Contributor } from "../typescript/githubInterfaces";
 
 function useContributors(url_contributors?: string): [Contributor[], boolean] {
   const [data, setData] = useState<Contributor[]>([]);

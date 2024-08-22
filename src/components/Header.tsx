@@ -13,12 +13,11 @@ import { Link, resolvePath } from "react-router-dom";
 import icon from "../assets/icono.jpeg";
 import GitHubLogo from "../assets/github.svg";
 
-import ThemeToggle from "./utils/ThemeToggle";
+import ThemeToggle from "./UI/ThemeToggle";
 
 import { useState } from "react";
-import { ItemBreadCrumb } from "../data/interfaces";
 
-function Navegacion({ breadcrumb }: { breadcrumb: ItemBreadCrumb[] }) {
+function Navegacion({ breadcrumb }: { breadcrumb: string[] }) {
   const [hover, setHover] = useState<number | null>(null);
   const [hash, search] = location.hash.split("?");
   const path = hash.slice(1);
@@ -57,7 +56,7 @@ function Navegacion({ breadcrumb }: { breadcrumb: ItemBreadCrumb[] }) {
   );
 }
 
-function Header({ breadcrumb }: { breadcrumb: ItemBreadCrumb[] }) {
+function Header({ breadcrumb }: { breadcrumb: string[] }) {
   const [scaleLogo, setScaleLogo] = useState(1);
   const { mode } = useColorScheme();
   const theme = useTheme();

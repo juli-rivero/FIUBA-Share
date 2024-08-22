@@ -3,213 +3,381 @@
     {
       "id": "CB002",
       "nombre": "ÁLGEBRA LINEAL",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54285",
+          "nombre": "CURSO: 01A",
+          "docentes": "VARGAS GABRIELA, PALACIOS PATRICIA ELIZABE, SOSA MARINA",
+          "periodos": [
             {
-              "id": "54285",
-              "nombre": "CURSO: 01A",
-              "docentes": "VARGAS GABRIELA, PALACIOS PATRICIA ELIZABE, SOSA MARINA"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54286",
-              "nombre": "CURSO: 01B",
-              "docentes": "VARGAS GABRIELA, CABANA ADRIANA ELENA, BOHORQUEZ GUTIERREZ RUBEN ANDRES"
-            },
-            {
-              "id": "54287",
-              "nombre": "CURSO: 02A",
-              "docentes": "SARRIS CLAUDIA MONICA, PRESENZA JUAN FRANCISCO, ROZENWASSER LAURA"
-            },
-            {
-              "id": "54289",
-              "nombre": "CURSO: 02B",
-              "docentes": "SARRIS CLAUDIA MONICA, FAGES LUCIANO RODOLFO, VIBRENTIS FRANCISCO ANTONIO"
-            },
-            {
-              "id": "54293",
-              "nombre": "CURSO: 03",
-              "docentes": "GIRIBET JUAN IGNACIO, PERALTA NORA BEATRIZ, GOMEZ CIAPPONI LAUTARO"
-            },
-            {
-              "id": "54299",
-              "nombre": "CURSO: 04A",
-              "docentes": "LOPEZ CLAUDIA ANDREA, ORECCHIA MONICA INES, ALVAREZ PONTE LUCIA INES"
-            },
-            {
-              "id": "54301",
-              "nombre": "CURSO: 04B",
-              "docentes": "LOPEZ CLAUDIA ANDREA, ROZENWASSER LAURA, KLINGER MAGALI SILVINA"
-            },
-            {
-              "id": "54304",
-              "nombre": "CURSO: 05",
-              "docentes": "PALACIOS PATRICIA ELIZABE, VIBRENTIS FRANCISCO ANTONIO, NORES MANUEL ENRIQUE"
-            },
-            {
-              "id": "54308",
-              "nombre": "CURSO:06A",
-              "docentes": "BOGGI SILVINA, VENTURIELLO VERONICA LAURA"
-            },
-            {
-              "id": "54314",
-              "nombre": "CURSO:06B",
-              "docentes": "BOGGI SILVINA, GARCIA SERRANO SILVINA AIDA, ROHDENBURG ERICA ELISABET"
-            },
-            {
-              "id": "54317",
-              "nombre": "CURSO:07A",
-              "docentes": "MARTINS MARCELA, ALVAREZ PONTE LUCIA INES"
-            },
-            {
-              "id": "54318",
-              "nombre": "CURSO:07B",
-              "docentes": "MARTINS MARCELA, VALDETTARO MARCELO ALEJAN, ROZENWASSER LAURA"
-            },
-            {
-              "id": "54319",
-              "nombre": "CURSO: 13A",
-              "docentes": "CABANA ADRIANA ELENA, PERALTA NORA BEATRIZ, HERRMANN GUILLERMO WALTER"
-            },
-            {
-              "id": "54320",
-              "nombre": "CURSO:13B",
-              "docentes": "CABANA ADRIANA ELENA, RODRIGUEZ MARIA LAURA, PONCE DE LEON ROBLES FABIAN ARTURO"
-            },
-            {
-              "id": "54321",
-              "nombre": "CURSO:15",
-              "docentes": "ALVAREZ JULIA JORGE, GRÖER MARIA GABRIELA, CATUOGNO EZEQUIEL PATRICIO, AGUERRE JUAN FRANCISCO"
-            },
-            {
-              "id": "54322",
-              "nombre": "CURSO:17",
-              "docentes": "MARTINS MARCELA, ORECCHIA MONICA INES, MENDIETA JULIO ANTONIO, CENTENO HERNÁN DIEGO"
-            },
-            {
-              "id": "54323",
-              "nombre": "CURSO:19",
-              "docentes": "PRELAT DANIEL, GALVAN MONICA BEATRIZ, SILVESTRE DAMIAN ISMAEL"
-            },
-            {
-              "id": "54324",
-              "nombre": "CURSO:23A",
-              "docentes": "GRYNBERG SEBASTIAN PABLO, PALAU GABRIEL, CASSANI MARÍA VICTORIA"
-            },
-            {
-              "id": "54326",
-              "nombre": "CURSO:23B",
-              "docentes": "GRYNBERG SEBASTIAN PABLO, GIACOBBE MARA GEORGINA, PONCE DE LEON ROBLES FABIAN ARTURO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         },
         {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+          "id": "54286",
+          "nombre": "CURSO: 01B",
+          "docentes": "VARGAS GABRIELA, CABANA ADRIANA ELENA, BOHORQUEZ GUTIERREZ RUBEN ANDRES",
+          "periodos": [
             {
-              "id": "54852",
-              "nombre": "CURSO: 01A",
-              "docentes": "VARGAS GABRIELA, PALACIOS PATRICIA ELIZABE, SOSA MARINA"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54853",
-              "nombre": "CURSO: 01B",
-              "docentes": "VARGAS GABRIELA, CABANA ADRIANA ELENA, PONCE DE LEON ROBLES FABIAN ARTURO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54287",
+          "nombre": "CURSO: 02A",
+          "docentes": "SARRIS CLAUDIA MONICA, PRESENZA JUAN FRANCISCO, ROZENWASSER LAURA",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54854",
-              "nombre": "CURSO: 02A",
-              "docentes": "SARRIS CLAUDIA MONICA, FAGES LUCIANO RODOLFO, PRESENZA JUAN FRANCISCO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54289",
+          "nombre": "CURSO: 02B",
+          "docentes": "SARRIS CLAUDIA MONICA, FAGES LUCIANO RODOLFO, VIBRENTIS FRANCISCO ANTONIO",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54855",
-              "nombre": "CURSO: 02B",
-              "docentes": "SARRIS CLAUDIA MONICA, GOMEZ CIAPPONI LAUTARO, HERRMANN GUILLERMO WALTER"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54293",
+          "nombre": "CURSO: 03",
+          "docentes": "GIRIBET JUAN IGNACIO, PERALTA NORA BEATRIZ, GOMEZ CIAPPONI LAUTARO",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            }
+          ]
+        },
+        {
+          "id": "54299",
+          "nombre": "CURSO: 04A",
+          "docentes": "LOPEZ CLAUDIA ANDREA, ORECCHIA MONICA INES, ALVAREZ PONTE LUCIA INES",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54857",
-              "nombre": "CURSO: 04A",
-              "docentes": "LOPEZ CLAUDIA ANDREA, ALVAREZ PONTE LUCIA INES, OCELLO MATIAS"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54301",
+          "nombre": "CURSO: 04B",
+          "docentes": "LOPEZ CLAUDIA ANDREA, ROZENWASSER LAURA, KLINGER MAGALI SILVINA",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54858",
-              "nombre": "CURSO: 04B",
-              "docentes": "LOPEZ CLAUDIA ANDREA, ROZENWASSER LAURA, KLINGER MAGALI SILVINA"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54304",
+          "nombre": "CURSO: 05",
+          "docentes": "PALACIOS PATRICIA ELIZABE, VIBRENTIS FRANCISCO ANTONIO, NORES MANUEL ENRIQUE",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54859",
-              "nombre": "CURSO: 05",
-              "docentes": "PALACIOS PATRICIA ELIZABE, A DESIGNAR A DESIGNAR, VIBRENTIS FRANCISCO ANTONIO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54308",
+          "nombre": "CURSO:06A",
+          "docentes": "BOGGI SILVINA, VENTURIELLO VERONICA LAURA",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            }
+          ]
+        },
+        {
+          "id": "54314",
+          "nombre": "CURSO:06B",
+          "docentes": "BOGGI SILVINA, GARCIA SERRANO SILVINA AIDA, ROHDENBURG ERICA ELISABET",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            }
+          ]
+        },
+        {
+          "id": "54317",
+          "nombre": "CURSO:07A",
+          "docentes": "MARTINS MARCELA, ALVAREZ PONTE LUCIA INES",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            }
+          ]
+        },
+        {
+          "id": "54318",
+          "nombre": "CURSO:07B",
+          "docentes": "MARTINS MARCELA, VALDETTARO MARCELO ALEJAN, ROZENWASSER LAURA",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            }
+          ]
+        },
+        {
+          "id": "54319",
+          "nombre": "CURSO: 13A",
+          "docentes": "CABANA ADRIANA ELENA, PERALTA NORA BEATRIZ, HERRMANN GUILLERMO WALTER",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54860",
-              "nombre": "CURSO: 06A",
-              "docentes": "A DESIGNAR A DESIGNAR, BOGGI SILVINA, VENTURIELLO VERONICA LAURA"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54320",
+          "nombre": "CURSO:13B",
+          "docentes": "CABANA ADRIANA ELENA, RODRIGUEZ MARIA LAURA, PONCE DE LEON ROBLES FABIAN ARTURO",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            }
+          ]
+        },
+        {
+          "id": "54321",
+          "nombre": "CURSO:15",
+          "docentes": "ALVAREZ JULIA JORGE, GRÖER MARIA GABRIELA, CATUOGNO EZEQUIEL PATRICIO, AGUERRE JUAN FRANCISCO",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54861",
-              "nombre": "CURSO: 06B",
-              "docentes": "BOGGI SILVINA, GARCIA SERRANO SILVINA AIDA, ROHDENBURG ERICA ELISABET"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54322",
+          "nombre": "CURSO:17",
+          "docentes": "MARTINS MARCELA, ORECCHIA MONICA INES, MENDIETA JULIO ANTONIO, CENTENO HERNÁN DIEGO",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54862",
-              "nombre": "CURSO:07",
-              "docentes": "MARTINS MARCELA, A DESIGNAR A DESIGNAR, VALDETTARO MARCELO ALEJAN, ALVAREZ PONTE LUCIA INES"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54323",
+          "nombre": "CURSO:19",
+          "docentes": "PRELAT DANIEL, GALVAN MONICA BEATRIZ, SILVESTRE DAMIAN ISMAEL",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54864",
-              "nombre": "CURSO: 13A",
-              "docentes": "CABANA ADRIANA ELENA, PERALTA NORA BEATRIZ, PONCE DE LEON ROBLES FABIAN ARTURO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54324",
+          "nombre": "CURSO:23A",
+          "docentes": "GRYNBERG SEBASTIAN PABLO, PALAU GABRIEL, CASSANI MARÍA VICTORIA",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54865",
-              "nombre": "CURSO: 13B",
-              "docentes": "CABANA ADRIANA ELENA, RODRIGUEZ MARIA LAURA, VIBRENTIS FRANCISCO ANTONIO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54326",
+          "nombre": "CURSO:23B",
+          "docentes": "GRYNBERG SEBASTIAN PABLO, GIACOBBE MARA GEORGINA, PONCE DE LEON ROBLES FABIAN ARTURO",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54866",
-              "nombre": "CURSO:15",
-              "docentes": "ALVAREZ JULIA JORGE, GRÖER MARIA GABRIELA, CATUOGNO EZEQUIEL PATRICIO"
-            },
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54860",
+          "nombre": "CURSO: 06A",
+          "docentes": "A DESIGNAR A DESIGNAR, BOGGI SILVINA, VENTURIELLO VERONICA LAURA",
+          "periodos": [
             {
-              "id": "54867",
-              "nombre": "CURSO:17",
-              "docentes": "ORECCHIA MONICA INES, MENDIETA JULIO ANTONIO, CENTENO HERNÁN DIEGO"
-            },
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54861",
+          "nombre": "CURSO: 06B",
+          "docentes": "BOGGI SILVINA, GARCIA SERRANO SILVINA AIDA, ROHDENBURG ERICA ELISABET",
+          "periodos": [
             {
-              "id": "54868",
-              "nombre": "CURSO:19",
-              "docentes": "PRELAT DANIEL, NAWRATIL AIMÉ, SILVESTRE DAMIAN ISMAEL"
-            },
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54862",
+          "nombre": "CURSO:07",
+          "docentes": "MARTINS MARCELA, A DESIGNAR A DESIGNAR, VALDETTARO MARCELO ALEJAN, ALVAREZ PONTE LUCIA INES",
+          "periodos": [
             {
-              "id": "54869",
-              "nombre": "CURSO:23A",
-              "docentes": "GRYNBERG SEBASTIAN PABLO, PALAU GABRIEL, CASSANI MARÍA VICTORIA"
-            },
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54865",
+          "nombre": "CURSO: 13B",
+          "docentes": "CABANA ADRIANA ELENA, RODRIGUEZ MARIA LAURA, VIBRENTIS FRANCISCO ANTONIO",
+          "periodos": [
             {
-              "id": "54870",
-              "nombre": "CURSO:23B",
-              "docentes": "GRYNBERG SEBASTIAN PABLO, GIACOBBE MARA GEORGINA, A DESIGNAR A DESIGNAR"
-            },
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "57089",
+          "nombre": "CURSO: 10",
+          "docentes": "HANSEN ROBERTA, PERALTA NORA BEATRIZ, BOHORQUEZ GUTIERREZ RUBEN ANDRES",
+          "periodos": [
             {
-              "id": "57089",
-              "nombre": "CURSO: 10",
-              "docentes": "HANSEN ROBERTA, PERALTA NORA BEATRIZ, BOHORQUEZ GUTIERREZ RUBEN ANDRES"
-            },
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "57090",
+          "nombre": "CURSO: 25",
+          "docentes": "ORECCHIA MONICA INES, A DESIGNAR A DESIGNAR, AGUERRE JUAN FRANCISCO",
+          "periodos": [
             {
-              "id": "57090",
-              "nombre": "CURSO: 25",
-              "docentes": "ORECCHIA MONICA INES, A DESIGNAR A DESIGNAR, AGUERRE JUAN FRANCISCO"
-            },
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "57214",
+          "nombre": "CURSO: 24",
+          "docentes": "PERALTA NORA BEATRIZ, GALVAN MONICA BEATRIZ, FANCIOTTI TOMÁS",
+          "periodos": [
             {
-              "id": "57214",
-              "nombre": "CURSO: 24",
-              "docentes": "PERALTA NORA BEATRIZ, GALVAN MONICA BEATRIZ, FANCIOTTI TOMÁS"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -218,93 +386,177 @@
     {
       "id": "CB100",
       "nombre": "ALGORITMOS Y ESTRUCTURAS DE DATOS",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54411",
+          "nombre": "CURSO: 01-Schmidt A1",
+          "docentes": "SIROTINSKY SERGIO, SCHMIDT GUSTAVO ADOLFO",
+          "periodos": [
             {
-              "id": "54411",
-              "nombre": "CURSO: 01-Schmidt A1",
-              "docentes": "SIROTINSKY SERGIO, SCHMIDT GUSTAVO ADOLFO"
-            },
-            {
-              "id": "54412",
-              "nombre": "CURSO: 02-Buchwald A1",
-              "docentes": "BUCHWALD MARTÍN EZEQUIEL, GENENDER PEÑA EZEQUIEL DAVID, BRASBURG FEDERICO"
-            },
-            {
-              "id": "54413",
-              "nombre": "CURSO: 03-Juarez A1",
-              "docentes": "JUAREZ ANDRÉS ALBERTO, CIARALLO CRISTIAN ADRIAN, FARETTA YANINA BELEN, MARIANETTI NICOLAS GABRIEL"
-            },
-            {
-              "id": "54414",
-              "nombre": "CURSO: 04-Mendez/Pandolfo A1",
-              "docentes": "MENDEZ MARIANO, SIBIKOWSKI NICOLAS IVAN, CORREA VALENTINA LAURA, DIAZ MIGUEZ ABRIL, PANDOLFO LUCAS HERNAN"
-            },
-            {
-              "id": "54415",
-              "nombre": "CURSO: 05-Schmidt A1",
-              "docentes": "SIROTINSKY SERGIO, SCHMIDT GUSTAVO ADOLFO"
-            },
-            {
-              "id": "54536",
-              "nombre": "CURSO: 01-Schimidt",
-              "docentes": "SIROTINSKY SERGIO, SCHMIDT GUSTAVO ADOLFO"
-            },
-            {
-              "id": "54537",
-              "nombre": "CURSO: 02-Buchwald A2",
-              "docentes": "BUCHWALD MARTÍN EZEQUIEL, GENENDER PEÑA EZEQUIEL DAVID, BRASBURG FEDERICO"
-            },
-            {
-              "id": "54538",
-              "nombre": "CURSO: 03-Juarez A2",
-              "docentes": "JUAREZ ANDRÉS ALBERTO, CIARALLO CRISTIAN ADRIAN, FARETTA YANINA BELEN, MARIANETTI NICOLAS GABRIEL"
-            },
-            {
-              "id": "54539",
-              "nombre": "CURSO: 04-Mendez/Pandolfo A2",
-              "docentes": "MENDEZ MARIANO, SIBIKOWSKI NICOLAS IVAN, DIAZ MIGUEZ ABRIL, PANDOLFO LUCAS HERNAN"
-            },
-            {
-              "id": "54540",
-              "nombre": "CURSO: 05-Schmidt A2",
-              "docentes": "SIROTINSKY SERGIO, SCHMIDT GUSTAVO ADOLFO"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             }
           ]
         },
         {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+          "id": "54412",
+          "nombre": "CURSO: 02-Buchwald A1",
+          "docentes": "BUCHWALD MARTÍN EZEQUIEL, GENENDER PEÑA EZEQUIEL DAVID, BRASBURG FEDERICO",
+          "periodos": [
             {
-              "id": "54872",
-              "nombre": "CURSO: 01-Schimidt",
-              "docentes": "SCHMIDT GUSTAVO ADOLFO, SIROTINSKY SERGIO"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            }
+          ]
+        },
+        {
+          "id": "54413",
+          "nombre": "CURSO: 03-Juarez A1",
+          "docentes": "JUAREZ ANDRÉS ALBERTO, CIARALLO CRISTIAN ADRIAN, FARETTA YANINA BELEN, MARIANETTI NICOLAS GABRIEL",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            }
+          ]
+        },
+        {
+          "id": "54414",
+          "nombre": "CURSO: 04-Mendez/Pandolfo A1",
+          "docentes": "MENDEZ MARIANO, SIBIKOWSKI NICOLAS IVAN, CORREA VALENTINA LAURA, DIAZ MIGUEZ ABRIL, PANDOLFO LUCAS HERNAN",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            }
+          ]
+        },
+        {
+          "id": "54415",
+          "nombre": "CURSO: 05-Schmidt A1",
+          "docentes": "SIROTINSKY SERGIO, SCHMIDT GUSTAVO ADOLFO",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            }
+          ]
+        },
+        {
+          "id": "54536",
+          "nombre": "CURSO: 01-Schimidt",
+          "docentes": "SIROTINSKY SERGIO, SCHMIDT GUSTAVO ADOLFO",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54874",
-              "nombre": "CURSO: 02-Buchwald",
-              "docentes": "BUCHWALD MARTÍN EZEQUIEL, GENENDER PEÑA EZEQUIEL DAVID, GARCIA EZEQUIEL, AGUIRRE ARGERICH FACUNDO AGUSTÍN, BARTOCCI CAMILA"
-            },
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54537",
+          "nombre": "CURSO: 02-Buchwald A2",
+          "docentes": "BUCHWALD MARTÍN EZEQUIEL, GENENDER PEÑA EZEQUIEL DAVID, BRASBURG FEDERICO",
+          "periodos": [
             {
-              "id": "54876",
-              "nombre": "CURSO: 03-Juarez",
-              "docentes": "JUAREZ ANDRÉS ALBERTO, CIARALLO CRISTIAN ADRIAN, FARETTA YANINA BELEN, HARRIET ELIANA, MARIANETTI NICOLAS GABRIEL, RUIZ DIAZ JULIAN"
-            },
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            }
+          ]
+        },
+        {
+          "id": "54538",
+          "nombre": "CURSO: 03-Juarez A2",
+          "docentes": "JUAREZ ANDRÉS ALBERTO, CIARALLO CRISTIAN ADRIAN, FARETTA YANINA BELEN, MARIANETTI NICOLAS GABRIEL",
+          "periodos": [
             {
-              "id": "54880",
-              "nombre": "CURSO: 05-Schmidt",
-              "docentes": "SCHMIDT GUSTAVO ADOLFO, SIROTINSKY SERGIO"
-            },
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            }
+          ]
+        },
+        {
+          "id": "54539",
+          "nombre": "CURSO: 04-Mendez/Pandolfo A2",
+          "docentes": "MENDEZ MARIANO, SIBIKOWSKI NICOLAS IVAN, DIAZ MIGUEZ ABRIL, PANDOLFO LUCAS HERNAN",
+          "periodos": [
             {
-              "id": "57261",
-              "nombre": "CURSO: 04-Mendez/Pandolfo",
-              "docentes": "MENDEZ MARIANO, CORREA VALENTINA LAURA, DIAZ MIGUEZ ABRIL, PANDOLFO LUCAS HERNAN"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            }
+          ]
+        },
+        {
+          "id": "54540",
+          "nombre": "CURSO: 05-Schmidt A2",
+          "docentes": "SIROTINSKY SERGIO, SCHMIDT GUSTAVO ADOLFO",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            }
+          ]
+        },
+        {
+          "id": "54874",
+          "nombre": "CURSO: 02-Buchwald",
+          "docentes": "BUCHWALD MARTÍN EZEQUIEL, GENENDER PEÑA EZEQUIEL DAVID, GARCIA EZEQUIEL, AGUIRRE ARGERICH FACUNDO AGUSTÍN, BARTOCCI CAMILA",
+          "periodos": [
+            {
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54876",
+          "nombre": "CURSO: 03-Juarez",
+          "docentes": "JUAREZ ANDRÉS ALBERTO, CIARALLO CRISTIAN ADRIAN, FARETTA YANINA BELEN, HARRIET ELIANA, MARIANETTI NICOLAS GABRIEL, RUIZ DIAZ JULIAN",
+          "periodos": [
+            {
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54880",
+          "nombre": "CURSO: 05-Schmidt",
+          "docentes": "SCHMIDT GUSTAVO ADOLFO, SIROTINSKY SERGIO",
+          "periodos": [
+            {
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "57261",
+          "nombre": "CURSO: 04-Mendez/Pandolfo",
+          "docentes": "MENDEZ MARIANO, CORREA VALENTINA LAURA, DIAZ MIGUEZ ABRIL, PANDOLFO LUCAS HERNAN",
+          "periodos": [
+            {
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -313,258 +565,433 @@
     {
       "id": "CB001",
       "nombre": "ANÁLISIS MATEMÁTICO II",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54248",
+          "nombre": "CURSO: 01",
+          "docentes": "ACERO FERNANDO RODOLFO, PEÑA NELLY HAYDEE, SMILOVICH DAMIAN NICOLAS",
+          "periodos": [
             {
-              "id": "54248",
-              "nombre": "CURSO: 01",
-              "docentes": "ACERO FERNANDO RODOLFO, PEÑA NELLY HAYDEE, SMILOVICH DAMIAN NICOLAS"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54250",
-              "nombre": "CURSO: 02A",
-              "docentes": "ACERO FERNANDO RODOLFO, LOPEZ CLAUDIA ANDREA, ENDELLI JORGE RODOLFO"
-            },
-            {
-              "id": "54251",
-              "nombre": "CURSO: 02B",
-              "docentes": "ACERO FERNANDO RODOLFO, GARCIA ADRIANA EVA, PORTOCARRERO MIRANDA MICHAEL"
-            },
-            {
-              "id": "54253",
-              "nombre": "CURSO: 03",
-              "docentes": "GIGOLA SILVIA VIVIANA, DE ROSSI FERNANDO DANIEL, OLIVA CARLA MARIANA"
-            },
-            {
-              "id": "54255",
-              "nombre": "CURSO: 04A",
-              "docentes": "ZITTO MIGUEL EDUARDO, GOMEZ CIAPPONI LAUTARO, BIBILONI FERNANDO"
-            },
-            {
-              "id": "54258",
-              "nombre": "CURSO: 04B",
-              "docentes": "ZITTO MIGUEL EDUARDO, DURANTE FLAVIO ANIBAL, LA COLLA AUGUSTO"
-            },
-            {
-              "id": "54259",
-              "nombre": "CURSO: 05A",
-              "docentes": "MAULHARDT MARTIN ENRIQUE, PUEBLA MANUEL LEANDRO, Rizzo Elisabeth Amalia, BLAZQUEZ ROCIO AZUL"
-            },
-            {
-              "id": "54261",
-              "nombre": "CURSO: 05B",
-              "docentes": "MAULHARDT MARTIN ENRIQUE, MONZON NELSON, BIBILONI FERNANDO"
-            },
-            {
-              "id": "54264",
-              "nombre": "CURSO: 06A",
-              "docentes": "SOLA MARCOS OSCAR, PIÑERA EDUARDO ERNESTO"
-            },
-            {
-              "id": "54267",
-              "nombre": "CURSO: 06B",
-              "docentes": "SOLA MARCOS OSCAR, GUALTIERI SERGIO ALBERTO, OLIVA CARLA MARIANA"
-            },
-            {
-              "id": "54268",
-              "nombre": "CURSO: 07",
-              "docentes": "A DESIGNAR A DESIGNAR, ENDELLI JORGE RODOLFO, KLINGER MAGALI SILVINA, PUEBLA MANUEL LEANDRO"
-            },
-            {
-              "id": "54271",
-              "nombre": "CURSO:11A",
-              "docentes": "DE ROSSI FERNANDO DANIEL, MARTINS MARCELA, ZHANG FAN"
-            },
-            {
-              "id": "54277",
-              "nombre": "CURSO:11B",
-              "docentes": "DE ROSSI FERNANDO DANIEL, HERRMANN GUILLERMO WALTER"
-            },
-            {
-              "id": "54279",
-              "nombre": "CURSO:12A",
-              "docentes": "LOPEZ CLAUDIA ANDREA, SILVESTRE DAMIAN ISMAEL, VOROBIOFF NICOLAS"
-            },
-            {
-              "id": "54280",
-              "nombre": "CURSO:12B",
-              "docentes": "LOPEZ CLAUDIA ANDREA, VICEDO JUAN PABLO, ZHANG FAN"
-            },
-            {
-              "id": "54281",
-              "nombre": "CURSO:14",
-              "docentes": "COMAS JORGE MIGUEL, CANEPA VICTOR MANUEL, MEDINA MANUELA"
-            },
-            {
-              "id": "54284",
-              "nombre": "CURSO:10",
-              "docentes": "SASYK ROMAN, CHORNY FERNANDO, GUALTIERI SERGIO ALBERTO"
-            },
-            {
-              "id": "54288",
-              "nombre": "CURSO:20A",
-              "docentes": "SEMINARA SILVIA ALEJANDRA, OLIVA CECILIA MARIEL, LUCUY SUAREZ FRED ALBERTO"
-            },
-            {
-              "id": "54292",
-              "nombre": "CURSO:20B",
-              "docentes": "SEMINARA SILVIA ALEJANDRA, ESTRIN ANDRES ALEJANDRO, WILK BERNARDO"
-            },
-            {
-              "id": "54294",
-              "nombre": "CURSO:22",
-              "docentes": "MANCILLA AGUILAR JOSE LUIS, CENTENO HERNÁN DIEGO, A DESIGNAR A DESIGNAR"
-            },
-            {
-              "id": "54295",
-              "nombre": "CURSO:23",
-              "docentes": "AMOREO ANIBAL, GONZALEZ DANIEL ALEJANDRO, PETROVICH JOSE LUIS ALEJANDRO"
-            },
-            {
-              "id": "54297",
-              "nombre": "CURSO: 15",
-              "docentes": "SASSANO MIRYAM PATRICIA, RAMOS GALKER ELIANA MAITE, VENTURIELLO VERONICA LAURA"
-            },
-            {
-              "id": "54303",
-              "nombre": "CURSO: 09A",
-              "docentes": "PASTOR VERONICA ESTELA, ROHDENBURG ERICA ELISABET, VENTURIELLO VERONICA LAURA"
-            },
-            {
-              "id": "54306",
-              "nombre": "CURSO: 09B",
-              "docentes": "PASTOR VERONICA ESTELA, BUCELLO PABLO AUGUSTO, SOSA MARINA"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         },
         {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+          "id": "54250",
+          "nombre": "CURSO: 02A",
+          "docentes": "ACERO FERNANDO RODOLFO, LOPEZ CLAUDIA ANDREA, ENDELLI JORGE RODOLFO",
+          "periodos": [
             {
-              "id": "54948",
-              "nombre": "CURSO: 01",
-              "docentes": "ACERO FERNANDO RODOLFO, PEÑA NELLY HAYDEE, BOHORQUEZ GUTIERREZ RUBEN ANDRES"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54951",
-              "nombre": "CURSO: 02A",
-              "docentes": "ACERO FERNANDO RODOLFO, LOPEZ CLAUDIA ANDREA, ENDELLI JORGE RODOLFO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54251",
+          "nombre": "CURSO: 02B",
+          "docentes": "ACERO FERNANDO RODOLFO, GARCIA ADRIANA EVA, PORTOCARRERO MIRANDA MICHAEL",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54953",
-              "nombre": "CURSO: 02B",
-              "docentes": "ACERO FERNANDO RODOLFO, GARCIA ADRIANA EVA, PORTOCARRERO MIRANDA MICHAEL"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54253",
+          "nombre": "CURSO: 03",
+          "docentes": "GIGOLA SILVIA VIVIANA, DE ROSSI FERNANDO DANIEL, OLIVA CARLA MARIANA",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            }
+          ]
+        },
+        {
+          "id": "54255",
+          "nombre": "CURSO: 04A",
+          "docentes": "ZITTO MIGUEL EDUARDO, GOMEZ CIAPPONI LAUTARO, BIBILONI FERNANDO",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54955",
-              "nombre": "CURSO: 08A",
-              "docentes": "DI IORIO Y LUCERO MARIA EUGENIA, ROHDENBURG ERICA ELISABET, VENTURIELLO VERONICA LAURA"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54258",
+          "nombre": "CURSO: 04B",
+          "docentes": "ZITTO MIGUEL EDUARDO, DURANTE FLAVIO ANIBAL, LA COLLA AUGUSTO",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54956",
-              "nombre": "CURSO: 04A",
-              "docentes": "ZITTO MIGUEL EDUARDO, GOMEZ CIAPPONI LAUTARO, BIBILONI FERNANDO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54259",
+          "nombre": "CURSO: 05A",
+          "docentes": "MAULHARDT MARTIN ENRIQUE, PUEBLA MANUEL LEANDRO, Rizzo Elisabeth Amalia, BLAZQUEZ ROCIO AZUL",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54959",
-              "nombre": "CURSO: 04B",
-              "docentes": "ZITTO MIGUEL EDUARDO, DURANTE FLAVIO ANIBAL, A DESIGNAR A DESIGNAR"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54261",
+          "nombre": "CURSO: 05B",
+          "docentes": "MAULHARDT MARTIN ENRIQUE, MONZON NELSON, BIBILONI FERNANDO",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54961",
-              "nombre": "CURSO: 05A",
-              "docentes": "MAULHARDT MARTIN ENRIQUE, PUEBLA MANUEL LEANDRO, Rizzo Elisabeth Amalia, BLAZQUEZ ROCIO AZUL"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54264",
+          "nombre": "CURSO: 06A",
+          "docentes": "SOLA MARCOS OSCAR, PIÑERA EDUARDO ERNESTO",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54962",
-              "nombre": "CURSO: 05B",
-              "docentes": "MAULHARDT MARTIN ENRIQUE, MONZON NELSON, BIBILONI FERNANDO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54267",
+          "nombre": "CURSO: 06B",
+          "docentes": "SOLA MARCOS OSCAR, GUALTIERI SERGIO ALBERTO, OLIVA CARLA MARIANA",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54964",
-              "nombre": "CURSO: 06A",
-              "docentes": "SOLA MARCOS OSCAR, A DESIGNAR A DESIGNAR, PIÑERA EDUARDO ERNESTO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54268",
+          "nombre": "CURSO: 07",
+          "docentes": "A DESIGNAR A DESIGNAR, ENDELLI JORGE RODOLFO, KLINGER MAGALI SILVINA, PUEBLA MANUEL LEANDRO",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54966",
-              "nombre": "CURSO: 06B",
-              "docentes": "SOLA MARCOS OSCAR, GUALTIERI SERGIO ALBERTO, OLIVA CARLA MARIANA"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54271",
+          "nombre": "CURSO:11A",
+          "docentes": "DE ROSSI FERNANDO DANIEL, MARTINS MARCELA, ZHANG FAN",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54969",
-              "nombre": "CURSO: 07",
-              "docentes": "PUEBLA MANUEL LEANDRO, ENDELLI JORGE RODOLFO, KLINGER MAGALI SILVINA"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54277",
+          "nombre": "CURSO:11B",
+          "docentes": "DE ROSSI FERNANDO DANIEL, HERRMANN GUILLERMO WALTER",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54970",
-              "nombre": "CURSO: 09",
-              "docentes": "PASTOR VERONICA ESTELA, DE ROSSI FERNANDO DANIEL, OLIVA CARLA MARIANA"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54279",
+          "nombre": "CURSO:12A",
+          "docentes": "LOPEZ CLAUDIA ANDREA, SILVESTRE DAMIAN ISMAEL, VOROBIOFF NICOLAS",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54974",
-              "nombre": "CURSO:10",
-              "docentes": "SASYK ROMAN, CHORNY FERNANDO, GUALTIERI SERGIO ALBERTO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54280",
+          "nombre": "CURSO:12B",
+          "docentes": "LOPEZ CLAUDIA ANDREA, VICEDO JUAN PABLO, ZHANG FAN",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54976",
-              "nombre": "CURSO:11A",
-              "docentes": "DE ROSSI FERNANDO DANIEL, CENTENO HERNÁN DIEGO, ZHANG FAN"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54281",
+          "nombre": "CURSO:14",
+          "docentes": "COMAS JORGE MIGUEL, CANEPA VICTOR MANUEL, MEDINA MANUELA",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54978",
-              "nombre": "CURSO:11B",
-              "docentes": "DE ROSSI FERNANDO DANIEL, MARTINS MARCELA, A DESIGNAR A DESIGNAR"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54284",
+          "nombre": "CURSO:10",
+          "docentes": "SASYK ROMAN, CHORNY FERNANDO, GUALTIERI SERGIO ALBERTO",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54980",
-              "nombre": "CURSO:12A",
-              "docentes": "LOPEZ CLAUDIA ANDREA, SILVESTRE DAMIAN ISMAEL, VOROBIOFF NICOLAS"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54288",
+          "nombre": "CURSO:20A",
+          "docentes": "SEMINARA SILVIA ALEJANDRA, OLIVA CECILIA MARIEL, LUCUY SUAREZ FRED ALBERTO",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54982",
-              "nombre": "CURSO:12B",
-              "docentes": "LOPEZ CLAUDIA ANDREA, VICEDO JUAN PABLO, ZHANG FAN"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54292",
+          "nombre": "CURSO:20B",
+          "docentes": "SEMINARA SILVIA ALEJANDRA, ESTRIN ANDRES ALEJANDRO, WILK BERNARDO",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54984",
-              "nombre": "CURSO:14",
-              "docentes": "COMAS JORGE MIGUEL, CANEPA VICTOR MANUEL, MEDINA MANUELA"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54294",
+          "nombre": "CURSO:22",
+          "docentes": "MANCILLA AGUILAR JOSE LUIS, CENTENO HERNÁN DIEGO, A DESIGNAR A DESIGNAR",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54986",
-              "nombre": "CURSO: 15",
-              "docentes": "SASSANO MIRYAM PATRICIA, RAMOS GALKER ELIANA MAITE, VENTURIELLO VERONICA LAURA"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54295",
+          "nombre": "CURSO:23",
+          "docentes": "AMOREO ANIBAL, GONZALEZ DANIEL ALEJANDRO, PETROVICH JOSE LUIS ALEJANDRO",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54988",
-              "nombre": "CURSO:20A",
-              "docentes": "SEMINARA SILVIA ALEJANDRA, OLIVA CECILIA MARIEL, LUCUY SUAREZ FRED ALBERTO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54297",
+          "nombre": "CURSO: 15",
+          "docentes": "SASSANO MIRYAM PATRICIA, RAMOS GALKER ELIANA MAITE, VENTURIELLO VERONICA LAURA",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54990",
-              "nombre": "CURSO:20B",
-              "docentes": "SEMINARA SILVIA ALEJANDRA, WILK BERNARDO, LA COLLA AUGUSTO"
-            },
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54303",
+          "nombre": "CURSO: 09A",
+          "docentes": "PASTOR VERONICA ESTELA, ROHDENBURG ERICA ELISABET, VENTURIELLO VERONICA LAURA",
+          "periodos": [
             {
-              "id": "54992",
-              "nombre": "CURSO:22",
-              "docentes": "MANCILLA AGUILAR JOSE LUIS, MENDIETA JULIO ANTONIO, CENTENO HERNÁN DIEGO"
-            },
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            }
+          ]
+        },
+        {
+          "id": "54306",
+          "nombre": "CURSO: 09B",
+          "docentes": "PASTOR VERONICA ESTELA, BUCELLO PABLO AUGUSTO, SOSA MARINA",
+          "periodos": [
             {
-              "id": "54994",
-              "nombre": "CURSO:23",
-              "docentes": "GONZALEZ DANIEL ALEJANDRO, AMOREO ANIBAL, PETROVICH JOSE LUIS ALEJANDRO"
-            },
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            }
+          ]
+        },
+        {
+          "id": "54955",
+          "nombre": "CURSO: 08A",
+          "docentes": "DI IORIO Y LUCERO MARIA EUGENIA, ROHDENBURG ERICA ELISABET, VENTURIELLO VERONICA LAURA",
+          "periodos": [
             {
-              "id": "57185",
-              "nombre": "CURSO: 08B",
-              "docentes": "DI IORIO Y LUCERO MARIA EUGENIA, BUCELLO PABLO AUGUSTO, CATALDI PEDRO ANSELMO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54970",
+          "nombre": "CURSO: 09",
+          "docentes": "PASTOR VERONICA ESTELA, DE ROSSI FERNANDO DANIEL, OLIVA CARLA MARIANA",
+          "periodos": [
+            {
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "57185",
+          "nombre": "CURSO: 08B",
+          "docentes": "DI IORIO Y LUCERO MARIA EUGENIA, BUCELLO PABLO AUGUSTO, CATALDI PEDRO ANSELMO",
+          "periodos": [
+            {
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -573,48 +1000,62 @@
     {
       "id": "CB005",
       "nombre": "ANÁLISIS MATEMÁTICO III",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54336",
+          "nombre": "CURSO: 02",
+          "docentes": "PRELAT DANIEL, DE ROSSI FERNANDO DANIEL",
+          "periodos": [
             {
-              "id": "54336",
-              "nombre": "CURSO: 02",
-              "docentes": "PRELAT DANIEL, DE ROSSI FERNANDO DANIEL"
-            },
-            {
-              "id": "54337",
-              "nombre": "CURSO: 03",
-              "docentes": "MURMIS GUSTAVO MARCELO, BURMAN ARIEL, DEL RIO GARCIA FEDERICO MANUEL"
-            },
-            {
-              "id": "54338",
-              "nombre": "CURSO: 05",
-              "docentes": "CACHILE MARIO ANDRES, PEÑA NELLY HAYDEE, A DESIGNAR A DESIGNAR, GOMEZ CIAPPONI LAUTARO, MONZON NELSON"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             }
           ]
         },
         {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+          "id": "54337",
+          "nombre": "CURSO: 03",
+          "docentes": "MURMIS GUSTAVO MARCELO, BURMAN ARIEL, DEL RIO GARCIA FEDERICO MANUEL",
+          "periodos": [
             {
-              "id": "55022",
-              "nombre": "CURSO: 04",
-              "docentes": "GONZALEZ GRACIELA ADRIANA, PRELAT DANIEL, GOMEZ CIAPPONI LAUTARO"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "55023",
-              "nombre": "CURSO: 03",
-              "docentes": "MURMIS GUSTAVO MARCELO, BURMAN ARIEL, DEL RIO GARCIA FEDERICO MANUEL"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54338",
+          "nombre": "CURSO: 05",
+          "docentes": "CACHILE MARIO ANDRES, PEÑA NELLY HAYDEE, A DESIGNAR A DESIGNAR, GOMEZ CIAPPONI LAUTARO, MONZON NELSON",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "55024",
-              "nombre": "CURSO: 05",
-              "docentes": "CACHILE MARIO ANDRES, PEÑA NELLY HAYDEE, MONZON NELSON"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "55022",
+          "nombre": "CURSO: 04",
+          "docentes": "GONZALEZ GRACIELA ADRIANA, PRELAT DANIEL, GOMEZ CIAPPONI LAUTARO",
+          "periodos": [
+            {
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -623,28 +1064,21 @@
     {
       "id": "TA061",
       "nombre": "APRENDIZAJE AUTOMÁTICO",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54555",
+          "nombre": "CURSO: 01-Merlino",
+          "docentes": "IERACHE JORGE SALVADOR, MERLINO HERNAN DANIEL",
+          "periodos": [
             {
-              "id": "54555",
-              "nombre": "CURSO: 01-Merlino",
-              "docentes": "IERACHE JORGE SALVADOR, MERLINO HERNAN DANIEL"
-            }
-          ]
-        },
-        {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            },
             {
-              "id": "55062",
-              "nombre": "CURSO: 01-Merlino",
-              "docentes": "IERACHE JORGE SALVADOR, MERLINO HERNAN DANIEL"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -653,16 +1087,16 @@
     {
       "id": "TA062",
       "nombre": "APRENDIZAJE PROFUNDO",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+          "id": "57201",
+          "nombre": "CURSO: 1",
+          "docentes": "LEW SERGIO EDUARDO, VEIGA RICARDO ALFREDO, MININI CAMILO",
+          "periodos": [
             {
-              "id": "57201",
-              "nombre": "CURSO: 1",
-              "docentes": "LEW SERGIO EDUARDO, VEIGA RICARDO ALFREDO, MININI CAMILO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -671,28 +1105,21 @@
     {
       "id": "TB034",
       "nombre": "ARQUITECTURA DE SOFTWARE",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54573",
+          "nombre": "CURSO: 01-Calonico",
+          "docentes": "CALONICO CHRISTIAN MARIO, RUGILO GUILLERMO HERNÁN",
+          "periodos": [
             {
-              "id": "54573",
-              "nombre": "CURSO: 01-Calonico",
-              "docentes": "CALONICO CHRISTIAN MARIO, RUGILO GUILLERMO HERNÁN"
-            }
-          ]
-        },
-        {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            },
             {
-              "id": "55068",
-              "nombre": "CURSO: 01-Calonico",
-              "docentes": "CALONICO CHRISTIAN MARIO, RUGILO GUILLERMO HERNÁN"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -701,43 +1128,50 @@
     {
       "id": "TA044",
       "nombre": "BASE DE DATOS",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54399",
+          "nombre": "CURSO: 01-Román",
+          "docentes": "FASCE ALBERTO ARMANDO, ROMAN LUCAS ALEJANDRO",
+          "periodos": [
             {
-              "id": "54399",
-              "nombre": "CURSO: 01-Román",
-              "docentes": "FASCE ALBERTO ARMANDO, ROMAN LUCAS ALEJANDRO"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54400",
-              "nombre": "CURSO: 02-Merlino",
-              "docentes": "MERLINO HERNAN DANIEL"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         },
         {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+          "id": "54400",
+          "nombre": "CURSO: 02-Merlino",
+          "docentes": "MERLINO HERNAN DANIEL",
+          "periodos": [
             {
-              "id": "55090",
-              "nombre": "CURSO: 01-Román",
-              "docentes": "FASCE ALBERTO ARMANDO, ROMAN LUCAS ALEJANDRO, COLAVECCHIA TAIEL GENARO, DE ANGELIS RIVA LUKAS NAHUEL"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "55095",
-              "nombre": "CURSO: 02-Merlino",
-              "docentes": "MERLINO HERNAN DANIEL"
-            },
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "57258",
+          "nombre": "CURSO: 03-Cabrera",
+          "docentes": "CABRERA JOSE LUIS, BERNARDI ADRIÁN SERGIO",
+          "periodos": [
             {
-              "id": "57258",
-              "nombre": "CURSO: 03-Cabrera",
-              "docentes": "CABRERA JOSE LUIS, BERNARDI ADRIÁN SERGIO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -746,38 +1180,38 @@
     {
       "id": "TA047",
       "nombre": "CIENCIA DE DATOS",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54401",
+          "nombre": "CURSO: 01-Martinelli",
+          "docentes": "MARTINELLI DAMIAN ARIEL, GOLMAR NATALIA",
+          "periodos": [
             {
-              "id": "54401",
-              "nombre": "CURSO: 01-Martinelli",
-              "docentes": "MARTINELLI DAMIAN ARIEL, GOLMAR NATALIA"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54402",
-              "nombre": "CURSO: 02-Rodriguez",
-              "docentes": "RODRIGUEZ JUAN MANUEL, VILLANUEVA CECILIA AZUL"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         },
         {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+          "id": "54402",
+          "nombre": "CURSO: 02-Rodriguez",
+          "docentes": "RODRIGUEZ JUAN MANUEL, VILLANUEVA CECILIA AZUL",
+          "periodos": [
             {
-              "id": "55121",
-              "nombre": "CURSO: 01-Martinelli",
-              "docentes": "MARTINELLI DAMIAN ARIEL, GOLMAR NATALIA, ARGEL IGNACIO, BRUSATI IGNACIO, MARTINEZ GASTON ALBERTO, PONTI JULIETA"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "55122",
-              "nombre": "CURSO: 02-Rodriguez",
-              "docentes": "RODRIGUEZ JUAN MANUEL, VILLANUEVA CECILIA AZUL"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -786,28 +1220,21 @@
     {
       "id": "TB032",
       "nombre": "COMPUTACIÓN CUÁNTICA",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54440",
+          "nombre": "CURSO: Caram",
+          "docentes": "CARAM LEONIDAS FACUNDO, SARRIS CLAUDIA MONICA",
+          "periodos": [
             {
-              "id": "54440",
-              "nombre": "CURSO: Caram",
-              "docentes": "CARAM LEONIDAS FACUNDO, SARRIS CLAUDIA MONICA"
-            }
-          ]
-        },
-        {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            },
             {
-              "id": "55151",
-              "nombre": "CURSO: Caram",
-              "docentes": "CARAM LEONIDAS FACUNDO, SARRIS CLAUDIA MONICA"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -816,28 +1243,28 @@
     {
       "id": "TC018",
       "nombre": "EMPRESAS DE BASE TECNOLÓGICA I",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54477",
+          "nombre": "CURSO: 01-Di Mauro",
+          "docentes": "DI MAURO FRANCO, GODOY ANDRES ALEJANDRO",
+          "periodos": [
             {
-              "id": "54477",
-              "nombre": "CURSO: 01-Di Mauro",
-              "docentes": "DI MAURO FRANCO, GODOY ANDRES ALEJANDRO"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             }
           ]
         },
         {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+          "id": "55284",
+          "nombre": "CURSO: 01-Godoy",
+          "docentes": "DI MAURO FRANCO, GODOY ANDRES ALEJANDRO, RODRIGUEZ CHABELI",
+          "periodos": [
             {
-              "id": "55284",
-              "nombre": "CURSO: 01-Godoy",
-              "docentes": "DI MAURO FRANCO, GODOY ANDRES ALEJANDRO, RODRIGUEZ CHABELI"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -846,28 +1273,21 @@
     {
       "id": "TC019",
       "nombre": "EMPRESAS DE BASE TECNOLÓGICA II",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54572",
+          "nombre": "CURSO: 01-Di Mauro",
+          "docentes": "DI MAURO FRANCO",
+          "periodos": [
             {
-              "id": "54572",
-              "nombre": "CURSO: 01-Di Mauro",
-              "docentes": "DI MAURO FRANCO"
-            }
-          ]
-        },
-        {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            },
             {
-              "id": "55286",
-              "nombre": "CURSO: 01-Di Mauro",
-              "docentes": "DI MAURO FRANCO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -876,28 +1296,28 @@
     {
       "id": "CB024",
       "nombre": "FÍSICA PARA INFORMÁTICA",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "53224",
+          "nombre": "Curso 01",
+          "docentes": "MATTEO CLAUDIA LEDA",
+          "periodos": [
             {
-              "id": "53224",
-              "nombre": "Curso 01",
-              "docentes": "MATTEO CLAUDIA LEDA"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             }
           ]
         },
         {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+          "id": "55427",
+          "nombre": "CURSO: 01",
+          "docentes": "MATTEO CLAUDIA LEDA, DRESZMAN ALAN",
+          "periodos": [
             {
-              "id": "55427",
-              "nombre": "CURSO: 01",
-              "docentes": "MATTEO CLAUDIA LEDA, DRESZMAN ALAN"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -906,63 +1326,84 @@
     {
       "id": "TB021",
       "nombre": "FUNDAMENTOS DE PROGRAMACIÓN",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54405",
+          "nombre": "CURSO: 03-Essaya",
+          "docentes": "ESSAYA DIEGO NICOLAS, BRASBURG FEDERICO, ESTEBAN FEDERICO MARTÍN, DI SANTO JAVIER MARIANO, KRISTAL JUAN IGNACIO, SANTONI MAURO JAVIER, SPORTELLI CASTRO LUCIANO",
+          "periodos": [
             {
-              "id": "54405",
-              "nombre": "CURSO: 03-Essaya",
-              "docentes": "ESSAYA DIEGO NICOLAS, BRASBURG FEDERICO, ESTEBAN FEDERICO MARTÍN, DI SANTO JAVIER MARIANO, KRISTAL JUAN IGNACIO, SANTONI MAURO JAVIER, SPORTELLI CASTRO LUCIANO"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54456",
-              "nombre": "CURSO: 04-Mendez",
-              "docentes": "MENDEZ MARIANO, FRACCARO AGUSTINA, RODRIGUEZ DALA TOMAS"
-            },
-            {
-              "id": "54474",
-              "nombre": "CURSO: 01-Guarna",
-              "docentes": "GUARNA PABLO FRANCISCO"
-            },
-            {
-              "id": "54475",
-              "nombre": "CURSO: 02-Azcurra",
-              "docentes": "AZCURRA DIEGO ANDRES, SALVIA MARTIN MIGUEL, BIANCHI GUSTAVO OSCAR, OTERO MARCOS JULIAN"
-            },
-            {
-              "id": "54563",
-              "nombre": "CURSO: 05-Mendez",
-              "docentes": "MENDEZ MARIANO, LOPEZ JUAN JOSE, MARTOS PEDRO IGNACIO DOMINGO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         },
         {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+          "id": "54456",
+          "nombre": "CURSO: 04-Mendez",
+          "docentes": "MENDEZ MARIANO, FRACCARO AGUSTINA, RODRIGUEZ DALA TOMAS",
+          "periodos": [
             {
-              "id": "55439",
-              "nombre": "CURSO: 01-Guarna",
-              "docentes": "GUARNA PABLO FRANCISCO, BIANCHI GUSTAVO OSCAR, JUAREZ ANDRÉS ALBERTO, GARCIA JAIME DIEGO, MARIANETTI NICOLAS GABRIEL, SERRA DIEGO ADRIAN"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "55440",
-              "nombre": "CURSO: 02-Azcurra",
-              "docentes": "AZCURRA DIEGO ANDRES, SALVIA MARTIN MIGUEL, BIANCHI GUSTAVO OSCAR, OTERO MARCOS JULIAN"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54474",
+          "nombre": "CURSO: 01-Guarna",
+          "docentes": "GUARNA PABLO FRANCISCO",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "55441",
-              "nombre": "CURSO: 03-Essaya",
-              "docentes": "ESSAYA DIEGO NICOLAS, BRASBURG AGUSTIN, DI SANTO JAVIER MARIANO, KRISTAL JUAN IGNACIO, SANTONI MAURO JAVIER, SCAKOSKY MATIAS EZEQUIEL, SPORTELLI CASTRO LUCIANO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54475",
+          "nombre": "CURSO: 02-Azcurra",
+          "docentes": "AZCURRA DIEGO ANDRES, SALVIA MARTIN MIGUEL, BIANCHI GUSTAVO OSCAR, OTERO MARCOS JULIAN",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "55442",
-              "nombre": "CURSO: 04-Mendez",
-              "docentes": "MENDEZ MARIANO, FRACCARO AGUSTINA, RODRIGUEZ DALA TOMAS"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54563",
+          "nombre": "CURSO: 05-Mendez",
+          "docentes": "MENDEZ MARIANO, LOPEZ JUAN JOSE, MARTOS PEDRO IGNACIO DOMINGO",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             }
           ]
         }
@@ -971,38 +1412,45 @@
     {
       "id": "TC017",
       "nombre": "GESTIÓN DEL DESARROLLO DE SISTEMAS INFORMÁTICOS",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54403",
+          "nombre": "CURSO: 01-Fontela",
+          "docentes": "FONTELA MOISES CARLOS",
+          "periodos": [
             {
-              "id": "54403",
-              "nombre": "CURSO: 01-Fontela",
-              "docentes": "FONTELA MOISES CARLOS"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            },
+            {
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         },
         {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+          "id": "57280",
+          "nombre": "CURSO: 02-Turri",
+          "docentes": "TURRI ALEJANDRO, ZAPATA LAURA ANALIA",
+          "periodos": [
             {
-              "id": "55485",
-              "nombre": "CURSO: 01-Fontela",
-              "docentes": "FONTELA MOISES CARLOS, SCHENONE MARCELO HERNAN, CHELALA JUAN CRUZ, NAON MARCELO CARLOS, SMOCOVICH ELIZABETH KARIN"
-            },
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "57405",
+          "nombre": "03-Fontdevila",
+          "docentes": "FONTDEVILA DIEGO, GABARDINI JUAN ALBERTO",
+          "periodos": [
             {
-              "id": "57280",
-              "nombre": "CURSO: 02-Turri",
-              "docentes": "TURRI ALEJANDRO, ZAPATA LAURA ANALIA"
-            },
-            {
-              "id": "57405",
-              "nombre": "03-Fontdevila",
-              "docentes": "FONTDEVILA DIEGO, GABARDINI JUAN ALBERTO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -1011,48 +1459,76 @@
     {
       "id": "TA046",
       "nombre": "INGENIERÍA DE SOFTWARE I",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54478",
+          "nombre": "CURSO:01- Leveroni",
+          "docentes": "LEVERONI LUCIANO, BURELLA JUAN MATIAS, GUTSON ANA GABRIELA",
+          "periodos": [
             {
-              "id": "54478",
-              "nombre": "CURSO:01- Leveroni",
-              "docentes": "LEVERONI LUCIANO, BURELLA JUAN MATIAS, GUTSON ANA GABRIELA"
-            },
-            {
-              "id": "54609",
-              "nombre": "CURSO: 02-Villagra",
-              "docentes": "VILLAGRA SERGIO GUSTAVO"
-            },
-            {
-              "id": "54610",
-              "nombre": "CURSO: 03-Gonzalez",
-              "docentes": "GONZALEZ NORBERTO DANIEL, TURRI ALEJANDRO"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             }
           ]
         },
         {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+          "id": "54609",
+          "nombre": "CURSO: 02-Villagra",
+          "docentes": "VILLAGRA SERGIO GUSTAVO",
+          "periodos": [
             {
-              "id": "55606",
-              "nombre": "CURSO:03- Leveroni",
-              "docentes": "LEVERONI LUCIANO, BURELLA JUAN MATIAS, GUTSON ANA GABRIELA, TARAS JULIETA BELÉN, CONTINANZA NICOLAS, LOYARTE IVAN, SINGER JOAQUÍN"
-            },
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            }
+          ]
+        },
+        {
+          "id": "54610",
+          "nombre": "CURSO: 03-Gonzalez",
+          "docentes": "GONZALEZ NORBERTO DANIEL, TURRI ALEJANDRO",
+          "periodos": [
             {
-              "id": "55607",
-              "nombre": "CURSO:01- Villagra",
-              "docentes": "VILLAGRA SERGIO GUSTAVO, BRUNO TOMAS, DE BENEDETTI GUIDO RUBEN, FERNANDEZ LEONARDO DANIEL"
-            },
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            }
+          ]
+        },
+        {
+          "id": "55606",
+          "nombre": "CURSO:03- Leveroni",
+          "docentes": "LEVERONI LUCIANO, BURELLA JUAN MATIAS, GUTSON ANA GABRIELA, TARAS JULIETA BELÉN, CONTINANZA NICOLAS, LOYARTE IVAN, SINGER JOAQUÍN",
+          "periodos": [
             {
-              "id": "57286",
-              "nombre": "CURSO:02-Montaldo",
-              "docentes": "MONTALDO DIEGO FERNANDO, CUROTTO CARLOS EZEQUIEL, CARAMÉS AGUSTÍN EDUARDO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "55607",
+          "nombre": "CURSO:01- Villagra",
+          "docentes": "VILLAGRA SERGIO GUSTAVO, BRUNO TOMAS, DE BENEDETTI GUIDO RUBEN, FERNANDEZ LEONARDO DANIEL",
+          "periodos": [
+            {
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "57286",
+          "nombre": "CURSO:02-Montaldo",
+          "docentes": "MONTALDO DIEGO FERNANDO, CUROTTO CARLOS EZEQUIEL, CARAMÉS AGUSTÍN EDUARDO",
+          "periodos": [
+            {
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -1061,38 +1537,45 @@
     {
       "id": "TA049",
       "nombre": "INGENIERÍA DE SOFTWARE II",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54552",
+          "nombre": "CURSO: 01-Montaldo",
+          "docentes": "MONTALDO DIEGO FERNANDO, CUROTTO CARLOS EZEQUIEL, CARAMÉS AGUSTÍN EDUARDO",
+          "periodos": [
             {
-              "id": "54552",
-              "nombre": "CURSO: 01-Montaldo",
-              "docentes": "MONTALDO DIEGO FERNANDO, CUROTTO CARLOS EZEQUIEL, CARAMÉS AGUSTÍN EDUARDO"
-            },
-            {
-              "id": "54553",
-              "nombre": "CURSO: 02-Paez",
-              "docentes": "PAEZ NICOLAS MARTIN, de la FUENTE HERNAN"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             }
           ]
         },
         {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+          "id": "54553",
+          "nombre": "CURSO: 02-Paez",
+          "docentes": "PAEZ NICOLAS MARTIN, de la FUENTE HERNAN",
+          "periodos": [
             {
-              "id": "55611",
-              "nombre": "CURSO: 02-Paez",
-              "docentes": "PAEZ NICOLAS MARTIN, de la FUENTE HERNAN"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "57206",
-              "nombre": "CURSO: 03-Rojas",
-              "docentes": "ROJAS AGUSTIN, FERNÁNDEZ THEILLET NICOLÁS PABLO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "57206",
+          "nombre": "CURSO: 03-Rojas",
+          "docentes": "ROJAS AGUSTIN, FERNÁNDEZ THEILLET NICOLÁS PABLO",
+          "periodos": [
+            {
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -1101,43 +1584,57 @@
     {
       "id": "TB022",
       "nombre": "INTRODUCCIÓN AL DESARROLLO DE SOFTWARE",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54408",
+          "nombre": "CURSO: 03-Camejo",
+          "docentes": "CAMEJO MANUEL, BILBAO MANUEL IÑAKI, DIAZ REAL MARIA SOL, RIEDEL NICOLAS AGUSTIN",
+          "periodos": [
             {
-              "id": "54408",
-              "nombre": "CURSO: 03-Camejo",
-              "docentes": "CAMEJO MANUEL, BILBAO MANUEL IÑAKI, DIAZ REAL MARIA SOL, RIEDEL NICOLAS AGUSTIN"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54410",
-              "nombre": "CURSO: 05-Lanzillotta",
-              "docentes": "LANZILLOTTA BRUNO, CAPRA FRANCO DANIEL, SOSA CRISTIAN MARTIN"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         },
         {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+          "id": "54410",
+          "nombre": "CURSO: 05-Lanzillotta",
+          "docentes": "LANZILLOTTA BRUNO, CAPRA FRANCO DANIEL, SOSA CRISTIAN MARTIN",
+          "periodos": [
             {
-              "id": "55678",
-              "nombre": "CURSO: 01-Camejo",
-              "docentes": "CAMEJO MANUEL, BILBAO MANUEL IÑAKI, DIAZ REAL MARIA SOL, RIEDEL NICOLAS AGUSTIN"
-            },
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            }
+          ]
+        },
+        {
+          "id": "55678",
+          "nombre": "CURSO: 01-Camejo",
+          "docentes": "CAMEJO MANUEL, BILBAO MANUEL IÑAKI, DIAZ REAL MARIA SOL, RIEDEL NICOLAS AGUSTIN",
+          "periodos": [
             {
-              "id": "55679",
-              "nombre": "CURSO: 02-Lanzillotta",
-              "docentes": "LANZILLOTTA BRUNO, CAPRA FRANCO DANIEL, CHAVES LEONEL ABEL, DI MATTEO CAROLINA, SOSA CRISTIAN MARTIN, VILLEGAS CABRAL TOMAS ARIEL, CATTANEO ARIADNA ANTONELLA, D'ABBRACCIO LAUTARO, ESPERON RAMIRO, LUCCHESI FRANCO DANTE, REYNOSO AYLEN ROCIO"
-            },
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "55679",
+          "nombre": "CURSO: 02-Lanzillotta",
+          "docentes": "LANZILLOTTA BRUNO, CAPRA FRANCO DANIEL, CHAVES LEONEL ABEL, DI MATTEO CAROLINA, SOSA CRISTIAN MARTIN, VILLEGAS CABRAL TOMAS ARIEL, CATTANEO ARIADNA ANTONELLA, D'ABBRACCIO LAUTARO, ESPERON RAMIRO, LUCCHESI FRANCO DANTE, REYNOSO AYLEN ROCIO",
+          "periodos": [
             {
-              "id": "57285",
-              "nombre": "CURSO: 03-Camejo",
-              "docentes": "CAMEJO MANUEL, ESTEBAN FEDERICO MARTÍN, KRISTAL JUAN IGNACIO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -1146,98 +1643,140 @@
     {
       "id": "CB051",
       "nombre": "MODELACIÓN NUMÉRICA",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54449",
+          "nombre": "CURSO: 01-Re",
+          "docentes": "RE MARIANO, GARCIA PABLO EZEQUIEL, SARTI MARINA",
+          "periodos": [
             {
-              "id": "54449",
-              "nombre": "CURSO: 01-Re",
-              "docentes": "RE MARIANO, GARCIA PABLO EZEQUIEL, SARTI MARINA"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54450",
-              "nombre": "CURSO: 02-Tarela",
-              "docentes": "TARELA PABLO ADRIAN, EZCURRA DIEGO MARTIN, POLTARAK GUILLERMO RAUL CARLOS, DIAZ MARIA BELEN"
-            },
-            {
-              "id": "54451",
-              "nombre": "CURSO: 03-Griggio",
-              "docentes": "GRIGGIO DANIEL ADALBERTO, NAVARRO FABIAN, CERRUTTI SILVANA VALERIA"
-            },
-            {
-              "id": "54452",
-              "nombre": "CURSO: 04-Schwarz",
-              "docentes": "SCHWARZ RODOLFO ALEJANDRO, SOSA GERMAN EZEQUIEL, CASTAÑO ENRIQUETA"
-            },
-            {
-              "id": "54453",
-              "nombre": "CURSO: 05-Sassano",
-              "docentes": "SASSANO MIRYAM PATRICIA, GARCIA EZEQUIEL, HUSAIN CERRUTI IGNACIO SANTIAGO, TURANO MARIA AGUSTINA"
-            },
-            {
-              "id": "54454",
-              "nombre": "CURSO: 06-Rodriguez",
-              "docentes": "RODRIGUEZ DANIEL FABIAN, MACHIUNAS VALERIA"
-            },
-            {
-              "id": "54455",
-              "nombre": "CURSO: 07-Cavaliere Practica Martes 19 hs",
-              "docentes": "CAVALIERE MIGUEL ANGEL, MASTROPIETRO GABRIEL MARCELO, EZCURRA DIEGO MARTIN, KOWAL ADRIAN MARCELO"
-            },
-            {
-              "id": "54501",
-              "nombre": "CURSO: 08-Cavaliere Práctica Martes 16 hs",
-              "docentes": "CAVALIERE MIGUEL ANGEL, BALZAROTTI FEDERICO, GARCIA PABLO EZEQUIEL, PORTOCARRERO MIRANDA MICHAEL"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         },
         {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+          "id": "54450",
+          "nombre": "CURSO: 02-Tarela",
+          "docentes": "TARELA PABLO ADRIAN, EZCURRA DIEGO MARTIN, POLTARAK GUILLERMO RAUL CARLOS, DIAZ MARIA BELEN",
+          "periodos": [
             {
-              "id": "55831",
-              "nombre": "CURSO: 01-Re",
-              "docentes": "RE MARIANO, GARCIA PABLO EZEQUIEL, SARTI MARINA"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "55834",
-              "nombre": "CURSO: 02-Tarela",
-              "docentes": "TARELA PABLO ADRIAN, EZCURRA DIEGO MARTIN, POLTARAK GUILLERMO RAUL CARLOS, DIAZ MARIA BELEN"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54451",
+          "nombre": "CURSO: 03-Griggio",
+          "docentes": "GRIGGIO DANIEL ADALBERTO, NAVARRO FABIAN, CERRUTTI SILVANA VALERIA",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "55835",
-              "nombre": "CURSO: 03-Griggio",
-              "docentes": "GRIGGIO DANIEL ADALBERTO, NAVARRO FABIAN, CERRUTTI SILVANA VALERIA"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54452",
+          "nombre": "CURSO: 04-Schwarz",
+          "docentes": "SCHWARZ RODOLFO ALEJANDRO, SOSA GERMAN EZEQUIEL, CASTAÑO ENRIQUETA",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "55836",
-              "nombre": "CURSO: 04-Schwarz",
-              "docentes": "SCHWARZ RODOLFO ALEJANDRO, SOSA GERMAN EZEQUIEL, CASTAÑO ENRIQUETA"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54453",
+          "nombre": "CURSO: 05-Sassano",
+          "docentes": "SASSANO MIRYAM PATRICIA, GARCIA EZEQUIEL, HUSAIN CERRUTI IGNACIO SANTIAGO, TURANO MARIA AGUSTINA",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "55837",
-              "nombre": "CURSO: 05-Sassano",
-              "docentes": "SASSANO MIRYAM PATRICIA, GARCIA EZEQUIEL, HUSAIN CERRUTI IGNACIO SANTIAGO, TURANO MARIA AGUSTINA"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54454",
+          "nombre": "CURSO: 06-Rodriguez",
+          "docentes": "RODRIGUEZ DANIEL FABIAN, MACHIUNAS VALERIA",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "55838",
-              "nombre": "CURSO: 06-Rodriguez",
-              "docentes": "RODRIGUEZ DANIEL FABIAN, MACHIUNAS VALERIA"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54455",
+          "nombre": "CURSO: 07-Cavaliere Practica Martes 19 hs",
+          "docentes": "CAVALIERE MIGUEL ANGEL, MASTROPIETRO GABRIEL MARCELO, EZCURRA DIEGO MARTIN, KOWAL ADRIAN MARCELO",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "55839",
-              "nombre": "CURSO: 07-Cavaliere Practica Martes 19 hs",
-              "docentes": "CAVALIERE MIGUEL ANGEL, MASTROPIETRO GABRIEL MARCELO, EZCURRA DIEGO MARTIN, KOWAL ADRIAN MARCELO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54501",
+          "nombre": "CURSO: 08-Cavaliere Práctica Martes 16 hs",
+          "docentes": "CAVALIERE MIGUEL ANGEL, BALZAROTTI FEDERICO, GARCIA PABLO EZEQUIEL, PORTOCARRERO MIRANDA MICHAEL",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "55840",
-              "nombre": "CURSO: 08-Cavaliere Práctica Martes 16 hs",
-              "docentes": "CAVALIERE MIGUEL ANGEL, BALZAROTTI FEDERICO, GARCIA PABLO EZEQUIEL, PORTOCARRERO MIRANDA MICHAEL"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -1246,63 +1785,91 @@
     {
       "id": "TB023",
       "nombre": "ORGANIZACIÓN DEL COMPUTADOR",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54392",
+          "nombre": "CURSO: 01-Benitez",
+          "docentes": "BENITEZ CARLOS EDUARDO, MANSILLA MARIANO CLAUDIO, BERRUEZO RAMIRO NICOLÁS, MARTOS PEDRO IGNACIO DOMINGO, RADUCCI DARIO MARTIN",
+          "periodos": [
             {
-              "id": "54392",
-              "nombre": "CURSO: 01-Benitez",
-              "docentes": "BENITEZ CARLOS EDUARDO, MANSILLA MARIANO CLAUDIO, BERRUEZO RAMIRO NICOLÁS, MARTOS PEDRO IGNACIO DOMINGO, RADUCCI DARIO MARTIN"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54393",
-              "nombre": "CURSO: 02-Marchi",
-              "docentes": "MARCHI EDGARDO JOSE, CERVETTO MARCOS ADRIAN"
-            },
-            {
-              "id": "54394",
-              "nombre": "CURSO: 03-Burin",
-              "docentes": "BURIN ABRAHAM ALBERTO DA, GUTIERREZ NESTOR SERGIO, NOVODVORETZ OSCAR DARIO"
-            },
-            {
-              "id": "54690",
-              "nombre": "CURSO: 04-Stola",
-              "docentes": "STOLA GERARDO LUIS, MORA TOMÁS ANDRÉS"
-            },
-            {
-              "id": "57218",
-              "nombre": "CURSO: 05-Mazzeo",
-              "docentes": "MAZZEO JORGE RAUL"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         },
         {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+          "id": "54393",
+          "nombre": "CURSO: 02-Marchi",
+          "docentes": "MARCHI EDGARDO JOSE, CERVETTO MARCOS ADRIAN",
+          "periodos": [
             {
-              "id": "55867",
-              "nombre": "CURSO: 01-Benitez",
-              "docentes": "BENITEZ CARLOS EDUARDO, MANSILLA MARIANO CLAUDIO, BERRUEZO RAMIRO NICOLÁS, MARTOS PEDRO IGNACIO DOMINGO, RADUCCI DARIO MARTIN"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "55869",
-              "nombre": "CURSO: 02-Marchi",
-              "docentes": "MARCHI EDGARDO JOSE, CERVETTO MARCOS ADRIAN"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54394",
+          "nombre": "CURSO: 03-Burin",
+          "docentes": "BURIN ABRAHAM ALBERTO DA, GUTIERREZ NESTOR SERGIO, NOVODVORETZ OSCAR DARIO",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "55871",
-              "nombre": "CURSO: 03-Burin",
-              "docentes": "BURIN ABRAHAM ALBERTO DA, GUTIERREZ NESTOR SERGIO, NOVODVORETZ OSCAR DARIO"
-            },
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54690",
+          "nombre": "CURSO: 04-Stola",
+          "docentes": "STOLA GERARDO LUIS, MORA TOMÁS ANDRÉS",
+          "periodos": [
             {
-              "id": "57332",
-              "nombre": "CURSO: 04-Volpi",
-              "docentes": "VOLPI MARCELO EDUARDO"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            }
+          ]
+        },
+        {
+          "id": "57218",
+          "nombre": "CURSO: 05-Mazzeo",
+          "docentes": "MAZZEO JORGE RAUL",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            }
+          ]
+        },
+        {
+          "id": "57332",
+          "nombre": "CURSO: 04-Volpi",
+          "docentes": "VOLPI MARCELO EDUARDO",
+          "periodos": [
+            {
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -1311,48 +1878,62 @@
     {
       "id": "TB025",
       "nombre": "PARADIGMAS DE PROGRAMACIÓN",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54396",
+          "nombre": "CURSO: 01-Suarez",
+          "docentes": "SANCHEZ DIEGO, SUAREZ JOSE PABLO, NAFTALI MAIA RAQUEL, RODRIGUEZ MASSUH PABLO MATIAS",
+          "periodos": [
             {
-              "id": "54396",
-              "nombre": "CURSO: 01-Suarez",
-              "docentes": "SANCHEZ DIEGO, SUAREZ JOSE PABLO, NAFTALI MAIA RAQUEL, RODRIGUEZ MASSUH PABLO MATIAS"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54397",
-              "nombre": "CURSO: 02-Cano",
-              "docentes": "BRASBURG FEDERICO, CANO MATÍAS JOSÉ, RAIK IGNACIO MARTIN"
-            },
-            {
-              "id": "54398",
-              "nombre": "CURSO: 03-Corsi",
-              "docentes": "CORSI DIEGO PABLO, ESSAYA DIEGO NICOLAS"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         },
         {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+          "id": "54397",
+          "nombre": "CURSO: 02-Cano",
+          "docentes": "BRASBURG FEDERICO, CANO MATÍAS JOSÉ, RAIK IGNACIO MARTIN",
+          "periodos": [
             {
-              "id": "55881",
-              "nombre": "CURSO: 01-Suarez",
-              "docentes": "SANCHEZ DIEGO, SUAREZ JOSE PABLO, NAFTALI MAIA RAQUEL, RODRIGUEZ MASSUH PABLO MATIAS"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            }
+          ]
+        },
+        {
+          "id": "54398",
+          "nombre": "CURSO: 03-Corsi",
+          "docentes": "CORSI DIEGO PABLO, ESSAYA DIEGO NICOLAS",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "55882",
-              "nombre": "CURSO: 02-Brasburg",
-              "docentes": "BRASBURG FEDERICO, CANO MATÍAS JOSÉ, RAIK IGNACIO MARTIN"
-            },
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "55882",
+          "nombre": "CURSO: 02-Brasburg",
+          "docentes": "BRASBURG FEDERICO, CANO MATÍAS JOSÉ, RAIK IGNACIO MARTIN",
+          "periodos": [
             {
-              "id": "55883",
-              "nombre": "CURSO: 03-Corsi",
-              "docentes": "CORSI DIEGO PABLO, ESSAYA DIEGO NICOLAS, CIARALLO CRISTIAN ADRIAN"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -1361,73 +1942,101 @@
     {
       "id": "CB003",
       "nombre": "PROBABILIDAD Y ESTADÍSTICA",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54330",
+          "nombre": "CURSO: 21",
+          "docentes": "VERA MATÍAS ALEJANDRO, PUEBLA MANUEL LEANDRO, MENDAÑA JOAQUÍN",
+          "periodos": [
             {
-              "id": "54330",
-              "nombre": "CURSO: 21",
-              "docentes": "VERA MATÍAS ALEJANDRO, PUEBLA MANUEL LEANDRO, MENDAÑA JOAQUÍN"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54331",
-              "nombre": "CURSO: 22",
-              "docentes": "BELLO IGNACIO ALBERTO, LEVITÁN DAVID ADRIÁN, BERTALOT FEDERICO MATIAS"
-            },
-            {
-              "id": "54332",
-              "nombre": "CURSO: 25",
-              "docentes": "COSATTO AMMANN PEDRO CAMILO, SOSA MARINA, EDWARDS MOLINA DIEGO JULIO"
-            },
-            {
-              "id": "54333",
-              "nombre": "CURSO: 27",
-              "docentes": "PÉREZ SILVIA NOEMÍ, ALVAREZ PONTE LUCIA INES, DE ANGELIS RIVA LUKAS NAHUEL"
-            },
-            {
-              "id": "54334",
-              "nombre": "CURSO: 28",
-              "docentes": "KORNBLIT FERNANDO, MENDIBURU MARIANA, ROBLES EZEQUIEL MILAGROS DE JESUS"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         },
         {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+          "id": "54331",
+          "nombre": "CURSO: 22",
+          "docentes": "BELLO IGNACIO ALBERTO, LEVITÁN DAVID ADRIÁN, BERTALOT FEDERICO MATIAS",
+          "periodos": [
             {
-              "id": "55926",
-              "nombre": "CURSO: 21",
-              "docentes": "VERA MATÍAS ALEJANDRO, PUEBLA MANUEL LEANDRO, MENDAÑA JOAQUÍN"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "55927",
-              "nombre": "CURSO: 22",
-              "docentes": "BELLO IGNACIO ALBERTO, LEVITÁN DAVID ADRIÁN, BERTALOT FEDERICO MATIAS"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54332",
+          "nombre": "CURSO: 25",
+          "docentes": "COSATTO AMMANN PEDRO CAMILO, SOSA MARINA, EDWARDS MOLINA DIEGO JULIO",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "55928",
-              "nombre": "CURSO: 25",
-              "docentes": "SOSA MARINA, EDWARDS MOLINA DIEGO JULIO, ZACCARIA CLARA INÉS"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54333",
+          "nombre": "CURSO: 27",
+          "docentes": "PÉREZ SILVIA NOEMÍ, ALVAREZ PONTE LUCIA INES, DE ANGELIS RIVA LUKAS NAHUEL",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "55929",
-              "nombre": "CURSO: 27",
-              "docentes": "PÉREZ SILVIA NOEMÍ, ALVAREZ PONTE LUCIA INES, DE ANGELIS RIVA LUKAS NAHUEL"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54334",
+          "nombre": "CURSO: 28",
+          "docentes": "KORNBLIT FERNANDO, MENDIBURU MARIANA, ROBLES EZEQUIEL MILAGROS DE JESUS",
+          "periodos": [
+            {
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "55930",
-              "nombre": "CURSO: 28",
-              "docentes": "KORNBLIT FERNANDO, MENDIBURU MARIANA, ROBLES EZEQUIEL MILAGROS DE JESUS"
-            },
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "57060",
+          "nombre": "CURSO: 23",
+          "docentes": "BELLO IGNACIO ALBERTO, FARIÑA JULIAN, WILK BERNARDO",
+          "periodos": [
             {
-              "id": "57060",
-              "nombre": "CURSO: 23",
-              "docentes": "BELLO IGNACIO ALBERTO, FARIÑA JULIAN, WILK BERNARDO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -1436,28 +2045,21 @@
     {
       "id": "TB026",
       "nombre": "PROGRAMACIÓN CONCURRENTE",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54404",
+          "nombre": "CURSO: 01-Deymonnaz",
+          "docentes": "DEYMONNAZ PABLO ANDRES, SCARPINELLI ARIEL ALEJANDRO",
+          "periodos": [
             {
-              "id": "54404",
-              "nombre": "CURSO: 01-Deymonnaz",
-              "docentes": "DEYMONNAZ PABLO ANDRES, SCARPINELLI ARIEL ALEJANDRO"
-            }
-          ]
-        },
-        {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            },
             {
-              "id": "55968",
-              "nombre": "CURSO: 01-Deymonnaz",
-              "docentes": "DEYMONNAZ PABLO ANDRES, SCARPINELLI ARIEL ALEJANDRO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -1466,38 +2068,38 @@
     {
       "id": "TA048",
       "nombre": "REDES",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54419",
+          "nombre": "CURSO:01-ALVAREZ HAMELIN",
+          "docentes": "ALVAREZ HAMELIN JOSE IGNACIO",
+          "periodos": [
             {
-              "id": "54419",
-              "nombre": "CURSO:01-ALVAREZ HAMELIN",
-              "docentes": "ALVAREZ HAMELIN JOSE IGNACIO"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54420",
-              "nombre": "CURSO: 02-Alvarez Hamelin",
-              "docentes": "ALVAREZ HAMELIN JOSE IGNACIO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         },
         {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+          "id": "54420",
+          "nombre": "CURSO: 02-Alvarez Hamelin",
+          "docentes": "ALVAREZ HAMELIN JOSE IGNACIO",
+          "periodos": [
             {
-              "id": "56089",
-              "nombre": "CURSO:01-ALVAREZ HAMELIN",
-              "docentes": "ALVAREZ HAMELIN JOSE IGNACIO, LOPEZ PECORA JUAN IGNACIO, HORN MIGUEL AGUSTIN"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "56090",
-              "nombre": "CURSO: 02-Alvarez Hamelin",
-              "docentes": "ALVAREZ HAMELIN JOSE IGNACIO, BALBIANO JOSE LUIS"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -1506,28 +2108,21 @@
     {
       "id": "TB028",
       "nombre": "SIMULACIÓN",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54500",
+          "nombre": "CURSO: 01-Caiafa",
+          "docentes": "CAIAFA CESAR FEDERICO, BENITEZ CARLOS MARCELO, VILLANUEVA CECILIA AZUL",
+          "periodos": [
             {
-              "id": "54500",
-              "nombre": "CURSO: 01-Caiafa",
-              "docentes": "CAIAFA CESAR FEDERICO, BENITEZ CARLOS MARCELO, VILLANUEVA CECILIA AZUL"
-            }
-          ]
-        },
-        {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            },
             {
-              "id": "56140",
-              "nombre": "CURSO: 01-Caiafa",
-              "docentes": "CAIAFA CESAR FEDERICO, BENITEZ CARLOS MARCELO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -1536,28 +2131,21 @@
     {
       "id": "TA050",
       "nombre": "SISTEMAS DISTRIBUIDOS I",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54503",
+          "nombre": "CURSO: 01-Roca",
+          "docentes": "ROCA PABLO DANIEL",
+          "periodos": [
             {
-              "id": "54503",
-              "nombre": "CURSO: 01-Roca",
-              "docentes": "ROCA PABLO DANIEL"
-            }
-          ]
-        },
-        {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            },
             {
-              "id": "56167",
-              "nombre": "CURSO: 01-Roca",
-              "docentes": "ROCA PABLO DANIEL"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -1566,33 +2154,33 @@
     {
       "id": "TA043",
       "nombre": "SISTEMAS OPERATIVOS",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54395",
+          "nombre": "CURSO: 01-Mendez",
+          "docentes": "MENDEZ MARIANO, MUCCIO ADRIAN, ESPINA EMMANUEL EDUARDO, IRIBARNE CATELLA PATRICIO",
+          "periodos": [
             {
-              "id": "54395",
-              "nombre": "CURSO: 01-Mendez",
-              "docentes": "MENDEZ MARIANO, MUCCIO ADRIAN, ESPINA EMMANUEL EDUARDO, IRIBARNE CATELLA PATRICIO"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            },
+            {
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         },
         {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+          "id": "57338",
+          "nombre": "CURSO: 02-Mendez",
+          "docentes": "MENDEZ MARIANO",
+          "periodos": [
             {
-              "id": "56182",
-              "nombre": "CURSO: 01-Mendez",
-              "docentes": "MENDEZ MARIANO, MUCCIO ADRIAN, ESPINA EMMANUEL EDUARDO, IRIBARNE CATELLA PATRICIO"
-            },
-            {
-              "id": "57338",
-              "nombre": "CURSO: 02-Mendez",
-              "docentes": "MENDEZ MARIANO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -1601,38 +2189,38 @@
     {
       "id": "TA045",
       "nombre": "TALLER DE PROGRAMACIÓN",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54548",
+          "nombre": "CURSO: 01-Veiga",
+          "docentes": "VEIGA ANDRES ARTURO, DI PAOLA MARTIN PABLO, GOMEZ PETER FEDERICO MANUEL, WERNER EZEQUIEL MAXIMILIANO",
+          "periodos": [
             {
-              "id": "54548",
-              "nombre": "CURSO: 01-Veiga",
-              "docentes": "VEIGA ANDRES ARTURO, DI PAOLA MARTIN PABLO, GOMEZ PETER FEDERICO MANUEL, WERNER EZEQUIEL MAXIMILIANO"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54549",
-              "nombre": "CURSO: 02-Deymonnaz",
-              "docentes": "DEYMONNAZ PABLO ANDRES, MILETTA CARLOS MARTIN, TOSCANO GONNELLA MAURO FABRICIO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         },
         {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+          "id": "54549",
+          "nombre": "CURSO: 02-Deymonnaz",
+          "docentes": "DEYMONNAZ PABLO ANDRES, MILETTA CARLOS MARTIN, TOSCANO GONNELLA MAURO FABRICIO",
+          "periodos": [
             {
-              "id": "56222",
-              "nombre": "CURSO: 01-Veiga",
-              "docentes": "VEIGA ANDRES ARTURO, DI PAOLA MARTIN PABLO, BELLAERA LEONARDO ALEJANDRO, GAMARRA ELIANA ANABELLE, GIAMPIERI MUTTI LEONARDO EMMANUEL, VAZQUEZ FERNANDEZ FRANCISCO MANUEL"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "56225",
-              "nombre": "CURSO: 02-Deymonnaz",
-              "docentes": "DEYMONNAZ PABLO ANDRES, BONO JUAN GABRIEL, MILETTA CARLOS MARTIN, LONGO NICOLAS, TOSCANO GONNELLA MAURO FABRICIO"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -1641,48 +2229,62 @@
     {
       "id": "TB024",
       "nombre": "TEORÍA DE ALGORITMOS",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54443",
+          "nombre": "CURSO: 01-Podberezski",
+          "docentes": "PODBEREZSKI VICTOR DANIEL",
+          "periodos": [
             {
-              "id": "54443",
-              "nombre": "CURSO: 01-Podberezski",
-              "docentes": "PODBEREZSKI VICTOR DANIEL"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "54513",
-              "nombre": "CURSO: 02-Buchwald",
-              "docentes": "BUCHWALD MARTÍN EZEQUIEL, GENENDER PEÑA EZEQUIEL DAVID"
-            },
-            {
-              "id": "54657",
-              "nombre": "CURSO: 03-adicional",
-              "docentes": "BUCHWALD MARTÍN EZEQUIEL, PODBEREZSKI VICTOR DANIEL, GENENDER PEÑA EZEQUIEL DAVID"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         },
         {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+          "id": "54513",
+          "nombre": "CURSO: 02-Buchwald",
+          "docentes": "BUCHWALD MARTÍN EZEQUIEL, GENENDER PEÑA EZEQUIEL DAVID",
+          "periodos": [
             {
-              "id": "56271",
-              "nombre": "CURSO: 01-Podberezski",
-              "docentes": "PODBEREZSKI VICTOR DANIEL, LUDUEÑO LUCAS EZEQUIEL"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
             },
             {
-              "id": "56272",
-              "nombre": "CURSO: 02-Buchwald",
-              "docentes": "BUCHWALD MARTÍN EZEQUIEL, GENENDER PEÑA EZEQUIEL DAVID"
-            },
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
+            }
+          ]
+        },
+        {
+          "id": "54657",
+          "nombre": "CURSO: 03-adicional",
+          "docentes": "BUCHWALD MARTÍN EZEQUIEL, PODBEREZSKI VICTOR DANIEL, GENENDER PEÑA EZEQUIEL DAVID",
+          "periodos": [
             {
-              "id": "57330",
-              "nombre": "CURSO: 03-Echevarria",
-              "docentes": "ECHEVARRIA PABLO"
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            }
+          ]
+        },
+        {
+          "id": "57330",
+          "nombre": "CURSO: 03-Echevarria",
+          "docentes": "ECHEVARRIA PABLO",
+          "periodos": [
+            {
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }
@@ -1691,28 +2293,21 @@
     {
       "id": "TA053",
       "nombre": "TRABAJO PROFESIONAL DE INGENIERÍA INFORMÁTICA",
-      "periodos": [
+      "cursos": [
         {
-          "id": "2024-59",
-          "año": 2024,
-          "cuatrimestre": 1,
-          "cursos": [
+          "id": "54631",
+          "nombre": "01-Fontela",
+          "docentes": "FONTELA MOISES CARLOS, IERACHE JORGE SALVADOR, COSSO PABLO GUSTAVO, MENDEZ MARIANO, MERLINO HERNAN DANIEL, LANZILLOTTA BRUNO",
+          "periodos": [
             {
-              "id": "54631",
-              "nombre": "01-Fontela",
-              "docentes": "FONTELA MOISES CARLOS, IERACHE JORGE SALVADOR, COSSO PABLO GUSTAVO, MENDEZ MARIANO, MERLINO HERNAN DANIEL, LANZILLOTTA BRUNO"
-            }
-          ]
-        },
-        {
-          "id": "2024-61",
-          "año": 2024,
-          "cuatrimestre": 2,
-          "cursos": [
+              "id": "2024-59",
+              "año": 2024,
+              "cuatrimestre": 1
+            },
             {
-              "id": "57210",
-              "nombre": "01-Fontela",
-              "docentes": "FONTELA MOISES CARLOS"
+              "id": "2024-61",
+              "año": 2024,
+              "cuatrimestre": 2
             }
           ]
         }

@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction, useState } from "react";
-import { Curso, Materia, Periodo } from "../data/interfaces";
-import { Repository } from "../data/githubInterfaces";
+import { Curso, Materia, Periodo } from "../typescript/interfaces";
+import { Repository } from "../typescript/githubInterfaces";
 
 export enum Sort {
   Az = "az",

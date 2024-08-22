@@ -2,7 +2,7 @@
 // https://github.com/FdelMazo/FIUBA-Repos/blob/master/src/useData.js
 
 import { useEffect, useState } from "react";
-import { Repository, ResponseData } from "../data/githubInterfaces";
+import { Repository, ResponseData } from "../typescript/githubInterfaces";
 
 function useFiubaRepos(): [Repository[], boolean] {
   const [fiubaRepos, setFiubaRepos] = useState<Repository[]>([]);
@@ -35,8 +35,12 @@ function useFiubaRepos(): [Repository[], boolean] {
         if (!json.items || !json.items.length) {
           break;
         }
+        const repos = json.items.map((item) => {
+          const repo: Repository = {...item, topics: new Set(item.topics)};
+          return repo;
+        });
         totalCount = json.total_count;
-        items.push(...json.items);
+        items.push(...repos);
         setFiubaRepos(() => [...items]);
         i++;
       }

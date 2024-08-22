@@ -22,7 +22,7 @@ import {
 import { ArrowForward, InfoOutlined } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
-import ThemeToggle from "./utils/ThemeToggle";
+import ThemeToggle from "./UI/ThemeToggle";
 import { useColorScheme } from "@mui/joy/styles";
 
 function Home() {
