@@ -35,7 +35,7 @@ function Filtro({
       defaultValue={options[0].value}
       slotProps={{listbox:{sx:{padding:0}}}}
       onChange={(_e, newValue) => {
-        newValue == ""
+        newValue && newValue != ""
           ? searchParams.set(clave, newValue)
           : searchParams.delete(clave);
         setSearchParams(searchParams);
