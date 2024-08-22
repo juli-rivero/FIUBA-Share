@@ -1,10 +1,10 @@
 import {
-  EventNote,
-  Schedule,
-  SortByAlpha,
-  StarBorder,
-} from "@mui/icons-material";
-import GithubReposIcon from "./GithubReposIcon";
+  RiGitRepositoryLine,
+  RiCalendarEventLine,
+  RiSortAlphabetAsc,
+  RiStarLine,
+  RiCalendarScheduleLine,
+} from "react-icons/ri";
 import { IconButton, Tooltip, useColorScheme } from "@mui/joy";
 import { Sort } from "../../hooks/useSort";
 
@@ -22,7 +22,7 @@ const SortIcon = ({ sort }: ISortIcon) => {
           title="Ordenado por orden alfabético"
         >
           <div>
-            <SortByAlpha />
+            <RiSortAlphabetAsc />
           </div>
         </Tooltip>
       );
@@ -34,7 +34,7 @@ const SortIcon = ({ sort }: ISortIcon) => {
           title="Ordenado por actualidad"
         >
           <div>
-            <EventNote />
+            <RiCalendarEventLine />
           </div>
         </Tooltip>
       );
@@ -46,7 +46,7 @@ const SortIcon = ({ sort }: ISortIcon) => {
           title="Ordenado por puntos"
         >
           <div>
-            <StarBorder />
+            <RiStarLine />
           </div>
         </Tooltip>
       );
@@ -58,7 +58,7 @@ const SortIcon = ({ sort }: ISortIcon) => {
           title="Ordenado por más reciente"
         >
           <div>
-            <Schedule />
+            <RiCalendarScheduleLine />
           </div>
         </Tooltip>
       );
@@ -70,7 +70,7 @@ const SortIcon = ({ sort }: ISortIcon) => {
           title="Ordenado por cantidad de repositorios"
         >
           <div>
-            <GithubReposIcon fill={mode == "dark" ? "white" : "black"} />
+            <RiGitRepositoryLine fill={mode == "dark" ? "white" : "black"} />
           </div>
         </Tooltip>
       );

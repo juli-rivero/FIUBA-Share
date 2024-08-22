@@ -1,6 +1,5 @@
 import { useOutletContext, useSearchParams } from "react-router-dom";
-import { Typography, Skeleton, Stack } from "@mui/joy";
-import { Unstable_Grid } from "@mui/system";
+import { Typography, Skeleton, Stack, Grid } from "@mui/joy";
 import { useEffect, useState } from "react";
 import CartaRepo from "./CartaRepo";
 import { OutletContextType, Periodo, Tp } from "../../typescript/interfaces";
@@ -47,7 +46,13 @@ function Repos() {
 
   return (
     <>
-      <Stack direction="row" flexWrap="wrap" justifyContent="space-around" margin="1rem" gap={4}>
+      <Stack
+        direction="row"
+        flexWrap="wrap"
+        justifyContent="space-around"
+        margin="1rem"
+        gap={4}
+      >
         <Topics />
         <Filtros periodos={periodos} tps={tps} totalRepos={repos.length} />
       </Stack>
@@ -67,7 +72,7 @@ function Repos() {
         }}
         sort={sort}
       />
-      <Unstable_Grid
+      <Grid
         sx={{ height: "100%" }}
         container
         gap={4}
@@ -95,7 +100,7 @@ function Repos() {
             height={200}
           />
         )}
-      </Unstable_Grid>
+      </Grid>
     </>
   );
 }

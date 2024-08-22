@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
 
 import { useColorScheme, IconButton } from "@mui/joy";
-import { SxProps } from "@mui/material";
-
-import DarkModeRoundedIcon from "@mui/icons-material/DarkModeRounded";
-import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
+import { SxProps } from "@mui/joy/styles/types";
+import { RiMoonClearLine, RiSunLine } from "react-icons/ri";
 
 function ThemeToggle({ sx }: { sx: SxProps }) {
   const { mode, setMode } = useColorScheme();
@@ -30,7 +28,7 @@ function ThemeToggle({ sx }: { sx: SxProps }) {
       }}
       sx={sx}
     >
-      {mode === "light" ? <DarkModeRoundedIcon /> : <LightModeRoundedIcon />}
+      {mode === "light" ? <RiMoonClearLine /> : <RiSunLine />}
     </IconButton>
   );
 }

@@ -1,7 +1,14 @@
 import { useOutletContext, useSearchParams } from "react-router-dom";
-import { Box, Card, CardContent, Grid, List, ListItem, Typography } from "@mui/joy";
+import {
+  Box,
+  Card,
+  CardContent,
+  Grid,
+  List,
+  ListItem,
+  Typography,
+} from "@mui/joy";
 import { Link } from "react-router-dom";
-import { Unstable_Grid } from "@mui/system";
 import { useEffect, useState } from "react";
 import { Curso, OutletContextType } from "../typescript/interfaces";
 import CardOverflowReposCount from "./UI/CardOverflowReposCount";
@@ -40,49 +47,55 @@ function Cursos() {
         }}
         sort={sort}
       />
-      <Box display="flex" alignContent="center" alignItems="center" height="100%">
-
-      <Grid
-        sx={{ height: "fit-content", maxHeight:"100%" }}
-        container
-        gap={4}
-        padding={8}
-        overflow="auto"
-        alignItems="stretch"
+      <Box
+        display="flex"
         justifyContent="center"
+        alignItems="center"
+        height="100%"
+      >
+        <Grid
+          sx={{ height: "fit-content", maxHeight: "100%" }}
+          container
+          gap={4}
+          padding={8}
+          overflow="auto"
+          alignItems="stretch"
+          justifyContent="center"
         >
-        {cursos
-          .toSorted(sortFunctions[sort])
-          .map(({ id, nombre, docentes, repos }) => (
-            <Link
-            style={{ textDecoration: "none", flexGrow:1 }}
-            key={id}
-            to={`./repos?materia=${searchParams.get("materia")}&curso=${id}`}
-            >
-              <Card
-                sx={{height:"100%"}}
-                orientation="horizontal"
-                onMouseOver={() => setHover(id)}
-                onMouseLeave={() => setHover(null)}
-                color="neutral"
-                variant={hover === id ? "solid" : "soft"}
+          {cursos
+            .toSorted(sortFunctions[sort])
+            .map(({ id, nombre, docentes, repos }) => (
+              <Link
+                style={{ textDecoration: "none", flexGrow: 1 }}
+                key={id}
+                to={`./repos?materia=${searchParams.get(
+                  "materia"
+                )}&curso=${id}`}
+              >
+                <Card
+                  sx={{ height: "100%" }}
+                  orientation="horizontal"
+                  onMouseOver={() => setHover(id)}
+                  onMouseLeave={() => setHover(null)}
+                  color="neutral"
+                  variant={hover === id ? "solid" : "soft"}
                 >
-                <CardContent>
-                  <Typography level="title-lg">{nombre}</Typography>
-                  <List>
-                    {docentes.split(",").map((docente) => (
-                      <ListItem sx={{ fontSize: ".85rem" }} key={docente}>
-                        {docente}
-                      </ListItem>
-                    ))}
-                  </List>
-                </CardContent>
-                <CardOverflowReposCount reposCount={repos.length} />
-              </Card>
-            </Link>
-          ))}
-      </Grid>
-          </Box>
+                  <CardContent>
+                    <Typography level="title-lg">{nombre}</Typography>
+                    <List>
+                      {docentes.split(",").map((docente) => (
+                        <ListItem sx={{ fontSize: ".85rem" }} key={docente}>
+                          {docente}
+                        </ListItem>
+                      ))}
+                    </List>
+                  </CardContent>
+                  <CardOverflowReposCount reposCount={repos.length} />
+                </Card>
+              </Link>
+            ))}
+        </Grid>
+      </Box>
     </>
   );
 }

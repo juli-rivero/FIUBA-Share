@@ -19,7 +19,7 @@ import {
   MenuButton,
   Menu,
 } from "@mui/joy";
-import { ArrowForward, InfoOutlined } from "@mui/icons-material";
+import { RiArrowRightSLine, RiInformationLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
 import ThemeToggle from "./UI/ThemeToggle";
@@ -44,7 +44,7 @@ function Home() {
             variant="soft"
             color="neutral"
           >
-            <InfoOutlined />
+            <RiInformationLine />
           </MenuButton>
           <Menu
             sx={{
@@ -70,7 +70,10 @@ function Home() {
             boxShadow: "sm",
           }}
         >
-          <Button size="lg" endDecorator={<ArrowForward fontSize="large" />}>
+          <Button
+            size="lg"
+            endDecorator={<RiArrowRightSLine fontSize="large" />}
+          >
             Explorar
           </Button>
         </Link>

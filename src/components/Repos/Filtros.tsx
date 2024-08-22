@@ -13,7 +13,7 @@ const Label = ({
   <Card
     size="sm"
     variant="plain"
-    sx={{ background: "inherit", width: "100%", fontSize:"md" }}
+    sx={{ background: "inherit", width: "100%", fontSize: "md" }}
     orientation="horizontal"
   >
     <CardContent>{label}</CardContent>
@@ -33,7 +33,7 @@ function Filtro({
   return (
     <Select
       defaultValue={options[0].value}
-      slotProps={{listbox:{sx:{padding:0}}}}
+      slotProps={{ listbox: { sx: { padding: 0 } } }}
       onChange={(_e, newValue) => {
         newValue && newValue != ""
           ? searchParams.set(clave, newValue)
@@ -42,8 +42,7 @@ function Filtro({
       }}
       sx={{ minWidth: 160 }}
       renderValue={(option) =>
-        option?.ref.current?.firstElementChild?.firstElementChild
-              ?.textContent
+        option?.ref.current?.firstElementChild?.firstElementChild?.textContent
       }
     >
       {" "}
@@ -66,7 +65,12 @@ function Filtros({
   totalRepos: number;
 }) {
   return (
-    <Stack direction="row" flexGrow={2} justifyContent="center" gap="min(2rem,3vw)" >
+    <Stack
+      direction="row"
+      flexGrow={2}
+      justifyContent="center"
+      gap="min(2rem,3vw)"
+    >
       <Filtro
         clave="periodo"
         options={[

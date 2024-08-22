@@ -1,5 +1,4 @@
-import { Card, CardContent } from "@mui/joy";
-import { Unstable_Grid } from "@mui/system";
+import { Card, CardContent, Grid } from "@mui/joy";
 import { Link, useOutletContext } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { OutletContextType } from "../typescript/interfaces";
@@ -30,7 +29,7 @@ function Materias() {
         }}
         sort={sort}
       />
-      <Unstable_Grid
+      <Grid
         sx={{ height: "100%" }}
         container
         gap={4}
@@ -59,7 +58,7 @@ function Materias() {
               </Card>
             </Link>
           ))}
-      </Unstable_Grid>
+      </Grid>
     </>
   );
 }

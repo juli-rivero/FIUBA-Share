@@ -27,7 +27,7 @@ function Layout() {
           ...periodo,
           reposCount: repos.filter((r) => r.topics.has(periodo.id)).length,
         }));
-        const tps = [1,2,3,4].map((id) => ({
+        const tps = [1, 2, 3, 4].map((id) => ({
           id,
           reposCount: repos.filter((r) => r.topics.has(`tp-${id}`)).length,
         }));

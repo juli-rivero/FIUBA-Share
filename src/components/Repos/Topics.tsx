@@ -1,4 +1,4 @@
-import { CopyAllOutlined } from "@mui/icons-material";
+import { RiPencilLine } from "react-icons/ri";
 import { Chip, Stack, Typography } from "@mui/joy";
 import { useSearchParams } from "react-router-dom";
 
@@ -11,7 +11,7 @@ const Topic = ({ value }: { value?: string | null }) => (
         sx={{ borderRadius: 2, bgcolor: "inherit" }}
       >
         {value}
-        <CopyAllOutlined sx={{ cursor: "pointer", marginLeft: 1 }} />
+        <RiPencilLine style={{ marginLeft: ".5rem" }} />
       </Chip>
     )}
   </>
@@ -21,7 +21,13 @@ function Topics() {
   const [searchParams] = useSearchParams();
 
   return (
-    <Stack direction="row" flexGrow={1} justifyContent="flex-end" alignItems="center" gap={0.5}>
+    <Stack
+      direction="row"
+      flexGrow={1}
+      justifyContent="flex-end"
+      alignItems="center"
+      gap={0.5}
+    >
       <Typography marginRight={1}>Topics:</Typography>
       <Topic value="fiuba" />
       <Topic value={searchParams.get("materia")} />
@@ -30,7 +36,7 @@ function Topics() {
         <Topic value={searchParams.get("periodo")} />
       )}
       {searchParams.has("tp") && (
-        <Topic value={"tp-"+searchParams.get("tp")} />
+        <Topic value={"tp-" + searchParams.get("tp")} />
       )}
     </Stack>
   );

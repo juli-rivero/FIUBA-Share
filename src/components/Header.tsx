@@ -6,8 +6,8 @@ import {
   Divider,
   Button,
 } from "@mui/joy";
-import { useMediaQuery, useTheme } from "@mui/material";
-import { KeyboardArrowRightRounded } from "@mui/icons-material";
+import { isMobile } from "react-device-detect";
+import { RiArrowRightSLine } from "react-icons/ri";
 import { Link, resolvePath } from "react-router-dom";
 
 import icon from "../assets/icono.jpeg";
@@ -25,7 +25,7 @@ function Navegacion({ breadcrumb }: { breadcrumb: string[] }) {
   return (
     <Breadcrumbs
       size="md"
-      separator={<KeyboardArrowRightRounded />}
+      separator={<RiArrowRightSLine />}
       aria-label="breadcrumbs"
     >
       {breadcrumb.map((nombre, index) => (
@@ -59,8 +59,6 @@ function Navegacion({ breadcrumb }: { breadcrumb: string[] }) {
 function Header({ breadcrumb }: { breadcrumb: string[] }) {
   const [scaleLogo, setScaleLogo] = useState(1);
   const { mode } = useColorScheme();
-  const theme = useTheme();
-  const esCelular = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <>
@@ -94,7 +92,7 @@ function Header({ breadcrumb }: { breadcrumb: string[] }) {
         </Link>
         <Divider orientation="vertical" />
 
-        {!esCelular && <Navegacion breadcrumb={breadcrumb} />}
+        {!isMobile && <Navegacion breadcrumb={breadcrumb} />}
 
         <Button
           sx={{
@@ -128,7 +126,7 @@ function Header({ breadcrumb }: { breadcrumb: string[] }) {
           }}
         />
       </header>
-      {esCelular && <Navegacion breadcrumb={breadcrumb} />}
+      {isMobile && <Navegacion breadcrumb={breadcrumb} />}
     </>
   );
 }
