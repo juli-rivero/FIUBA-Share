@@ -1,5 +1,5 @@
 import { useOutletContext, useSearchParams } from "react-router-dom";
-import { Card, CardContent, List, ListItem, Typography } from "@mui/joy";
+import { Box, Card, CardContent, Grid, List, ListItem, Typography } from "@mui/joy";
 import { Link } from "react-router-dom";
 import { Unstable_Grid } from "@mui/system";
 import { useEffect, useState } from "react";
@@ -40,30 +40,33 @@ function Cursos() {
         }}
         sort={sort}
       />
-      <Unstable_Grid
-        sx={{ height: "100%" }}
+      <Box display="flex" alignContent="center" alignItems="center" height="100%">
+
+      <Grid
+        sx={{ height: "fit-content", maxHeight:"100%" }}
         container
         gap={4}
         padding={8}
         overflow="auto"
-        alignItems="center"
+        alignItems="stretch"
         justifyContent="center"
-      >
+        >
         {cursos
           .toSorted(sortFunctions[sort])
           .map(({ id, nombre, docentes, repos }) => (
             <Link
-              style={{ textDecoration: "none" }}
-              key={id}
-              to={`./repos?materia=${searchParams.get("materia")}&curso=${id}`}
+            style={{ textDecoration: "none", flexGrow:1 }}
+            key={id}
+            to={`./repos?materia=${searchParams.get("materia")}&curso=${id}`}
             >
               <Card
+                sx={{height:"100%"}}
                 orientation="horizontal"
                 onMouseOver={() => setHover(id)}
                 onMouseLeave={() => setHover(null)}
                 color="neutral"
                 variant={hover === id ? "solid" : "soft"}
-              >
+                >
                 <CardContent>
                   <Typography level="title-lg">{nombre}</Typography>
                   <List>
@@ -78,7 +81,8 @@ function Cursos() {
               </Card>
             </Link>
           ))}
-      </Unstable_Grid>
+      </Grid>
+          </Box>
     </>
   );
 }
