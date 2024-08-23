@@ -8,7 +8,7 @@ import theme from "./theme.tsx";
 //usando HashRouter para que el reload en gh-pages funcione
 const router = createHashRouter([
   {
-    path: "/materias/",
+    path: "/",
     Component: lazy(() => import("./components/Layout.tsx")),
     children: [
       {
@@ -16,20 +16,15 @@ const router = createHashRouter([
         Component: lazy(() => import("./components/Materias.tsx")),
       },
       {
-        path: "cursos/",
+        path: ":materiaName",
         children: [
           {
             index: true,
             Component: lazy(() => import("./components/Cursos.tsx")),
           },
           {
-            path: "repos/",
-            children: [
-              {
-                index: true,
-                Component: lazy(() => import("./components/Repos/Repos.tsx")),
-              },
-            ],
+            path: ":cursoName",
+            Component: lazy(() => import("./components/Repos/Repos.tsx")),
           },
         ],
       },

@@ -1,4 +1,4 @@
-import { useOutletContext, useSearchParams } from "react-router-dom";
+import { useOutletContext, useParams } from "react-router-dom";
 import {
   Box,
   Card,
@@ -14,9 +14,10 @@ import { Curso, OutletContextType } from "../typescript/interfaces";
 import CardOverflowReposCount from "./UI/CardOverflowReposCount";
 import useSort, { Sort, SortCursos } from "../hooks/useSort";
 import SortIconButton from "./UI/SortIconButton";
+import { transformarParaUrl } from "../utils/transformText";
 
 function Cursos() {
-  const [searchParams] = useSearchParams();
+  const { materiaName } = useParams();
   const [hover, setHover] = useState<string | null>(null);
   const [sort, setSort, sortFunctions] = useSort<SortCursos>(Sort.ReposCount);
   const { setBreadcrumb, materias } = useOutletContext<OutletContextType>();
@@ -24,13 +25,13 @@ function Cursos() {
 
   useEffect(() => {
     const materia = materias.find(
-      (materia) => materia.id == searchParams.get("materia")
+      (materia) => transformarParaUrl(materia.nombre) == materiaName
     );
 
     setBreadcrumb(["Materias", materia!.nombre]);
 
     setCursos(materia!.cursos);
-  }, [searchParams, setBreadcrumb, materias]);
+  }, [setBreadcrumb, materias]);
 
   return (
     <>
@@ -68,9 +69,7 @@ function Cursos() {
               <Link
                 style={{ textDecoration: "none", flexGrow: 1 }}
                 key={id}
-                to={`./repos?materia=${searchParams.get(
-                  "materia"
-                )}&curso=${id}`}
+                to={transformarParaUrl(nombre)}
               >
                 <Card
                   sx={{ height: "100%" }}

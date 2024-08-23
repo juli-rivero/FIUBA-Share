@@ -5,6 +5,7 @@ import { OutletContextType } from "../typescript/interfaces";
 import CardOverflowReposCount from "./UI/CardOverflowReposCount";
 import useSort, { Sort, SortMaterias } from "../hooks/useSort";
 import SortIconButton from "./UI/SortIconButton";
+import { transformarParaUrl } from "../utils/transformText";
 
 function Materias() {
   const [hover, setHover] = useState<string | null>(null);
@@ -44,7 +45,7 @@ function Materias() {
             <Link
               style={{ textDecoration: "none", flexGrow: 1 }}
               key={id}
-              to={`cursos?materia=${id}`}
+              to={transformarParaUrl(nombre)}
             >
               <Card
                 orientation="horizontal"

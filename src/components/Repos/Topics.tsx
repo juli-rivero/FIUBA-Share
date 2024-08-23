@@ -1,6 +1,5 @@
 import { RiPencilLine } from "react-icons/ri";
 import { Chip, Stack, Typography } from "@mui/joy";
-import { useSearchParams } from "react-router-dom";
 
 const Topic = ({ value }: { value?: string | null }) => (
   <>
@@ -17,9 +16,7 @@ const Topic = ({ value }: { value?: string | null }) => (
   </>
 );
 
-function Topics() {
-  const [searchParams] = useSearchParams();
-
+function Topics({topics}: {topics:string[]}) {
   return (
     <Stack
       direction="row"
@@ -29,15 +26,7 @@ function Topics() {
       gap={0.5}
     >
       <Typography marginRight={1}>Topics:</Typography>
-      <Topic value="fiuba" />
-      <Topic value={searchParams.get("materia")} />
-      <Topic value={searchParams.get("curso")} />
-      {searchParams.has("periodo") && (
-        <Topic value={searchParams.get("periodo")} />
-      )}
-      {searchParams.has("tp") && (
-        <Topic value={"tp-" + searchParams.get("tp")} />
-      )}
+      {topics.map(value=><Topic key={value} value={value} />)}
     </Stack>
   );
 }

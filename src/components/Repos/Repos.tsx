@@ -1,4 +1,4 @@
-import { useOutletContext, useSearchParams } from "react-router-dom";
+import { useOutletContext, useParams, useSearchParams } from "react-router-dom";
 import { Typography, Skeleton, Stack, Grid } from "@mui/joy";
 import { useEffect, useState } from "react";
 import CartaRepo from "./CartaRepo";
@@ -8,40 +8,61 @@ import useSort, { Sort, SortRepos } from "../../hooks/useSort";
 import SortIconButton from "../UI/SortIconButton";
 import Topics from "./Topics";
 import Filtros from "./Filtros";
+import { transformarParaUrl } from "../../utils/transformText";
 
 function Repos() {
+  const { materiaName, cursoName } = useParams();
   const [searchParams] = useSearchParams();
   const { setBreadcrumb, materias, loading } =
     useOutletContext<OutletContextType>();
+  const [topics, setTopics] = useState<string[]>(["fiuba"]);
   const [periodos, setPeriodos] = useState<Periodo[]>([]);
   const [tps, setTps] = useState<Tp[]>([]);
   const [repos, setRepos] = useState<Repository[]>([]);
   const [sort, setSort, sortFunctions] = useSort<SortRepos>(Sort.Points);
 
   useEffect(() => {
-    const materiaId = searchParams.get("materia"),
-      cursoId = searchParams.get("curso"),
-      tpId = searchParams.get("tp"),
-      periodoId = searchParams.get("periodo");
-
-    const materia = materias.find((materia) => materia.id == materiaId);
+    const materia = materias.find(
+      (materia) => transformarParaUrl(materia.nombre) == materiaName
+    );
     if (!materia) return;
-    const curso = materia.cursos.find((curso) => curso.id == cursoId);
+    const curso = materia.cursos.find(
+      (curso) => transformarParaUrl(curso.nombre) == cursoName
+    );
     if (!curso) return;
 
     setBreadcrumb(["Materias", materia.nombre, `${curso.nombre}`]);
-    setPeriodos(curso.periodos);
-    setTps(curso.tps);
     setRepos(() => {
       const filtros = new Set<string>();
-      if (periodoId) filtros.add(periodoId);
-      if (tpId) filtros.add(tpId);
-      if (filtros.size)
+      if (searchParams.has("periodo")) {
+        filtros.add(searchParams.get("periodo")!);
+      }
+      if (searchParams.has("tp")) {
+        filtros.add(searchParams.get("tp")!);
+      }
+      if (filtros.size) {
         return curso.repos.filter(
           (repo) => repo.topics.intersection(filtros).size === filtros.size
         );
+      }
       return curso.repos;
     });
+    setTopics(()=>{
+      topics.length = 0;
+      topics.push("fiuba")
+      topics.push(materia.id)
+      topics.push(curso.id)
+      if (searchParams.has("periodo")) {
+        topics.push(searchParams.get("periodo")!);
+      }
+      if (searchParams.has("tp")) {
+        const tp = searchParams.get("tp")
+        topics.push(/\d/.test(tp!) ? `tp-${tp}` : tp!);
+      }
+      return topics
+    })
+    setPeriodos(curso.periodos);
+    setTps(curso.tps);
   }, [setBreadcrumb, searchParams, materias]);
 
   return (
@@ -53,7 +74,7 @@ function Repos() {
         margin="1rem"
         gap={4}
       >
-        <Topics />
+        <Topics topics={topics}/>
         <Filtros periodos={periodos} tps={tps} totalRepos={repos.length} />
       </Stack>
       <SortIconButton
