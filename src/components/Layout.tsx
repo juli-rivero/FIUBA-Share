@@ -1,4 +1,4 @@
-import Header from "./Header";
+import Header from "./Header/Header";
 import { Stack } from "@mui/joy";
 import { Outlet } from "react-router-dom";
 import { useMemo, useState } from "react";

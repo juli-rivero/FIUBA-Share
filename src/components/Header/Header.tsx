@@ -1,60 +1,15 @@
-import {
-  Breadcrumbs,
-  Card,
-  CardContent,
-  useColorScheme,
-  Divider,
-  Button,
-} from "@mui/joy";
+import { useColorScheme, Divider, Button } from "@mui/joy";
 import { isMobile } from "react-device-detect";
-import { RiArrowRightSLine } from "react-icons/ri";
-import { Link, resolvePath } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-import icon from "../assets/icono.jpeg";
-import GitHubLogo from "../assets/github.svg";
+import icon from "../../assets/icono.jpeg";
+import GitHubLogo from "../../assets/github.svg";
 
-import ThemeToggle from "./UI/ThemeToggle";
+import ThemeToggle from "../UI/ThemeToggle";
 
 import { useState } from "react";
-
-function Navegacion({ breadcrumb }: { breadcrumb: string[] }) {
-  const [hover, setHover] = useState<number | null>(null);
-  const [hash, search] = location.hash.split("?");
-  const path = hash.slice(1);
-
-  return (
-    <Breadcrumbs
-      size="md"
-      separator={<RiArrowRightSLine />}
-      aria-label="breadcrumbs"
-    >
-      {breadcrumb.map((nombre, index) => (
-        <Link
-          key={index}
-          style={{ textDecoration: "none" }}
-          reloadDocument={breadcrumb.length - 1 == index}
-          to={resolvePath(
-            {
-              pathname: "../".repeat(breadcrumb.length - 1 - index),
-              search: search ? search.split("&").slice(0, index).join("&") : "",
-            },
-            path
-          )}
-        >
-          <Card
-            onMouseOver={() => setHover(index)}
-            onMouseLeave={() => setHover(null)}
-            size="sm"
-            color="neutral"
-            variant={hover === index ? "outlined" : "soft"}
-          >
-            <CardContent>{nombre}</CardContent>
-          </Card>
-        </Link>
-      ))}
-    </Breadcrumbs>
-  );
-}
+import Navegacion from "./Navegacion";
+import Info from "./Info";
 
 function Header({ breadcrumb }: { breadcrumb: string[] }) {
   const [scaleLogo, setScaleLogo] = useState(1);
@@ -66,7 +21,7 @@ function Header({ breadcrumb }: { breadcrumb: string[] }) {
         style={{
           borderBottom: "1px solid",
           display: "grid",
-          gridTemplateColumns: "auto 1px 4fr auto auto",
+          gridTemplateColumns: "auto 1px 4fr auto auto auto",
           columnGap: "1rem",
           alignItems: "center",
           justifyContent: "flex-end",
@@ -118,6 +73,8 @@ function Header({ breadcrumb }: { breadcrumb: string[] }) {
             alt="Logo"
           />
         </Button>
+
+        <Info />
 
         <ThemeToggle
           sx={{
