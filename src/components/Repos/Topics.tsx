@@ -1,18 +1,20 @@
 import { RiStickyNoteAddLine, RiCheckDoubleLine } from "react-icons/ri";
 import { Chip, ChipDelete, Stack, Tooltip, Typography } from "@mui/joy";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Topic = ({ value }: { value: string }) => {
-  const [openTooltip, setOpenTooltip] = useState<string | null>(null);
+  const [tooltip, setTooltip] = useState<string | null>(null);
   const [hover, setHover] = useState(false);
+  useEffect(()=>{
+    setTimeout(()=>setTooltip(null), 3000)
+  },[tooltip])
   return (
     <Tooltip
       placement="top"
       arrow
-      open={openTooltip != null}
-      color={openTooltip === "¡Copiado!" ? "primary" : "warning"}
-      onOpen={() => setTimeout(() => setOpenTooltip(null), 3000)}
-      title="¡Copiado!"
+      open={tooltip != null}
+      color={tooltip === "¡Copiado!" ? "primary" : "warning"}
+      title={tooltip}
     >
       <Chip
         variant="outlined"
@@ -24,7 +26,7 @@ const Topic = ({ value }: { value: string }) => {
         }}
         endDecorator={
           <ChipDelete style={{ background: "inherit", cursor: "default" }}>
-            {openTooltip ? (
+            {tooltip ? (
               <RiCheckDoubleLine />
             ) : (
               <RiStickyNoteAddLine
@@ -33,9 +35,9 @@ const Topic = ({ value }: { value: string }) => {
                 onClick={() => {
                   navigator.clipboard
                     .writeText(value)
-                    .then(() => setOpenTooltip("¡Copiado!"))
-                    .catch(() => setOpenTooltip("No se pudo copiar"));
-                  setHover(false)
+                    .then(() => setTooltip("¡Copiado!"))
+                    .catch(() => setTooltip("No se pudo copiar"));
+                  setHover(false);
                 }}
                 style={{
                   padding: ".1rem",
