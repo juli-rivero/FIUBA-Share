@@ -31,7 +31,7 @@ function Repos() {
     );
     if (!curso) return;
 
-    setBreadcrumb(["Materias", materia.nombre, `${curso.nombre}`]);
+    setBreadcrumb([materia.nombre, `${curso.nombre}`]);
     setRepos(() => {
       const filtros = new Set<string>();
       if (searchParams.has("periodo")) {

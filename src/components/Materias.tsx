@@ -1,6 +1,6 @@
 import { Card, CardContent, Grid } from "@mui/joy";
 import { Link, useOutletContext } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { OutletContextType } from "../typescript/interfaces";
 import CardOverflowReposCount from "./UI/CardOverflowReposCount";
 import useSort, { Sort, SortMaterias } from "../hooks/useSort";
@@ -10,10 +10,7 @@ import { transformarParaUrl } from "../utils/transformText";
 function Materias() {
   const [hover, setHover] = useState<string | null>(null);
   const [sort, setSort, sortFunctions] = useSort<SortMaterias>(Sort.ReposCount);
-  const { setBreadcrumb, materias } = useOutletContext<OutletContextType>();
-  useEffect(() => {
-    setBreadcrumb(["Materias"]);
-  }, [setBreadcrumb]);
+  const { materias } = useOutletContext<OutletContextType>();
 
   return (
     <>

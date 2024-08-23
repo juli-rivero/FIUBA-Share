@@ -46,7 +46,7 @@ function Layout() {
   }, [fiubaRepos]);
   return (
     <Stack sx={{ height: "100%" }} gridTemplateRows="auto 2fr">
-      <Header breadcrumb={breadcrumb} />
+      <Header breadcrumb={breadcrumb} setBreadcrumb={setBreadcrumb} />
       <Outlet
         context={{
           setBreadcrumb,

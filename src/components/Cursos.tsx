@@ -28,7 +28,7 @@ function Cursos() {
       (materia) => transformarParaUrl(materia.nombre) == materiaName
     );
 
-    setBreadcrumb(["Materias", materia!.nombre]);
+    setBreadcrumb([materia!.nombre]);
 
     setCursos(materia!.cursos);
   }, [setBreadcrumb, materias]);
