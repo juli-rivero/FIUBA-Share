@@ -7,8 +7,9 @@ type Periodo = {
   reposCount: number;
 };
 
-type Tp = {
+type Actividad = {
   id: string;
+  nombre: string;
   reposCount: number;
 }
 
@@ -17,7 +18,7 @@ type Curso = {
   nombre: string;
   docentes: string;
   repos: Repository[];
-  tps: Tp[];
+  actividades: Actividad[];
   periodos: Periodo[];
 };
 
@@ -34,4 +35,4 @@ type OutletContextType = {
   loading: boolean;
 };
 
-export type { Curso, Periodo, Tp, Materia, OutletContextType };
+export type { Curso, Periodo, Actividad, Materia, OutletContextType };

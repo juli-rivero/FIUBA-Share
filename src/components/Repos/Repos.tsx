@@ -2,7 +2,7 @@ import { useOutletContext, useParams, useSearchParams } from "react-router-dom";
 import { Typography, Skeleton, Stack, Grid } from "@mui/joy";
 import { useEffect, useState } from "react";
 import CartaRepo from "./CartaRepo";
-import { OutletContextType, Periodo, Tp } from "../../typescript/interfaces";
+import { OutletContextType, Periodo, Actividad } from "../../typescript/interfaces";
 import { Repository } from "../../typescript/githubInterfaces";
 import useSort, { Sort, SortRepos } from "../../hooks/useSort";
 import SortIconButton from "../UI/SortIconButton";
@@ -17,7 +17,7 @@ function Repos() {
     useOutletContext<OutletContextType>();
   const [topics, setTopics] = useState<string[]>(["fiuba"]);
   const [periodos, setPeriodos] = useState<Periodo[]>([]);
-  const [tps, setTps] = useState<Tp[]>([]);
+  const [actividades, setActividades] = useState<Actividad[]>([]);
   const [repos, setRepos] = useState<Repository[]>([]);
   const [sort, setSort, sortFunctions] = useSort<SortRepos>(Sort.Points);
 
@@ -37,8 +37,8 @@ function Repos() {
       if (searchParams.has("periodo")) {
         filtros.add(searchParams.get("periodo")!);
       }
-      if (searchParams.has("tp")) {
-        filtros.add(searchParams.get("tp")!);
+      if (searchParams.has("actividad")) {
+        filtros.add(searchParams.get("actividad")!);
       }
       if (filtros.size) {
         return curso.repos.filter(
@@ -55,14 +55,13 @@ function Repos() {
       if (searchParams.has("periodo")) {
         topics.push(searchParams.get("periodo")!);
       }
-      if (searchParams.has("tp")) {
-        const tp = searchParams.get("tp")
-        topics.push(/\d/.test(tp!) ? `tp-${tp}` : tp!);
+      if (searchParams.has("actividad")) {
+        topics.push(searchParams.get("actividad")!);
       }
       return topics
     })
     setPeriodos(curso.periodos);
-    setTps(curso.tps);
+    setActividades(curso.actividades);
   }, [setBreadcrumb, searchParams, materias]);
 
   return (
@@ -75,7 +74,7 @@ function Repos() {
         gap={4}
       >
         <Topics topics={topics}/>
-        <Filtros periodos={periodos} tps={tps} totalRepos={repos.length} />
+        <Filtros periodos={periodos} actividades={actividades}/>
       </Stack>
       <SortIconButton
         onClick={() => {

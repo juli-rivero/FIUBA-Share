@@ -4,6 +4,7 @@ import { Outlet } from "react-router-dom";
 import { useMemo, useState } from "react";
 import useFiubaRepos from "../hooks/useFiubaRepos";
 import json from "../data/data.json";
+import { transformarParaUrl } from "../utils/transformText";
 
 function Layout() {
   const [breadcrumb, setBreadcrumb] = useState<string[]>([]);
@@ -27,12 +28,15 @@ function Layout() {
           ...periodo,
           reposCount: repos.filter((r) => r.topics.has(periodo.id)).length,
         }));
-        const tps = [1, 2, 3, 4].map((id) => ({
+        const actividades = ["Conjunto de actividades","Final", "Parcial 1", "Parcial 2", "Ejercicios", "TP 1", "TP 2", "TP 3", "TP 4", "TP 5"].map((nombre) => {
+          const id = transformarParaUrl(nombre)
+          return {
           id,
-          reposCount: repos.filter((r) => r.topics.has(`tp-${id}`)).length,
-        }));
+          nombre,
+          reposCount: repos.filter((r) => r.topics.has(id)).length,
+        }});
         countReposEnMateria += repos.length;
-        return { ...curso, periodos, tps, repos };
+        return { ...curso, periodos, actividades, repos };
       });
 
       return { ...materia, cursos, reposCount: countReposEnMateria };
