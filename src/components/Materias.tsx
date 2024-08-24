@@ -52,7 +52,7 @@ function Materias() {
                 variant={hover === id ? "solid" : "soft"}
               >
                 <CardContent>{nombre}</CardContent>
-                <CardOverflowReposCount reposCount={reposCount} />
+                <CardOverflowReposCount reposCount={reposCount.conClasificacion} />
               </Card>
             </Link>
           ))}

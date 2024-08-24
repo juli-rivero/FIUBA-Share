@@ -6,6 +6,19 @@ import useFiubaRepos from "../hooks/useFiubaRepos";
 import json from "../data/data.json";
 import { transformarParaUrl } from "../utils/transformText";
 
+const actividades = [
+  "Conjunto de actividades",
+  "Final",
+  "Parcial 1",
+  "Parcial 2",
+  "Ejercicios",
+  "TP 1",
+  "TP 2",
+  "TP 3",
+  "TP 4",
+  "TP 5",
+];
+
 function Layout() {
   const [breadcrumb, setBreadcrumb] = useState<string[]>([]);
   const [fiubaRepos, partialLoading] = useFiubaRepos();
@@ -14,32 +27,45 @@ function Layout() {
     setProcesing(true);
 
     const materias = json.materias.map((materia) => {
-      let countReposEnMateria = 0;
+      let reposCountEnMateriaConClasificacion = 0;
+      const reposEnMateria = fiubaRepos.filter((r) =>
+        r.topics.has(materia.id.toLowerCase())
+      );
       const cursos = materia.cursos.map((curso) => {
-        const topicKeysSet = new Set(
-          [materia.id, curso.id].map((k) => k.toLowerCase())
+        const repos = reposEnMateria.filter((repoEnMateria) =>
+          repoEnMateria.topics.has(curso.id.toLowerCase())
         );
-        const repos = fiubaRepos.filter(
-          (fiubaRepo) =>
-            topicKeysSet.size ===
-            fiubaRepo.topics.intersection(topicKeysSet).size
-        );
-        const periodos = curso.periodos.map((periodo) => ({
-          ...periodo,
-          reposCount: repos.filter((r) => r.topics.has(periodo.id)).length,
-        }));
-        const actividades = ["Conjunto de actividades","Final", "Parcial 1", "Parcial 2", "Ejercicios", "TP 1", "TP 2", "TP 3", "TP 4", "TP 5"].map((nombre) => {
-          const id = transformarParaUrl(nombre)
-          return {
-          id,
-          nombre,
-          reposCount: repos.filter((r) => r.topics.has(id)).length,
-        }});
-        countReposEnMateria += repos.length;
-        return { ...curso, periodos, actividades, repos };
+        reposCountEnMateriaConClasificacion += repos.length;
+
+        return {
+          ...curso,
+
+          periodos: curso.periodos.map((periodo) => ({
+            ...periodo,
+            reposCount: repos.filter((r) => r.topics.has(periodo.id)).length,
+          })),
+
+          actividades: actividades.map((nombre) => {
+            const id = transformarParaUrl(nombre);
+            return {
+              id,
+              nombre,
+              reposCount: repos.filter((r) => r.topics.has(id)).length,
+            };
+          }),
+
+          repos,
+        };
       });
 
-      return { ...materia, cursos, reposCount: countReposEnMateria };
+      return {
+        ...materia,
+        cursos,
+        reposCount: {
+          conClasificacion: reposCountEnMateriaConClasificacion,
+          sinClasificacion: reposEnMateria.length
+        },
+      };
     });
     setProcesing(false);
     return materias;

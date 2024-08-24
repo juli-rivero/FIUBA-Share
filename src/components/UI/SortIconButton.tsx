@@ -1,6 +1,5 @@
 import {
   RiGitRepositoryLine,
-  RiCalendarEventLine,
   RiSortAlphabetAsc,
   RiStarLine,
   RiCalendarScheduleLine,
@@ -23,18 +22,6 @@ const SortIcon = ({ sort }: ISortIcon) => {
         >
           <div>
             <RiSortAlphabetAsc />
-          </div>
-        </Tooltip>
-      );
-    case "periodo":
-      return (
-        <Tooltip
-          placement="left-end"
-          modifiers={[{ name: "offset", options: { offset: [0, 16] } }]}
-          title="Ordenado por actualidad"
-        >
-          <div>
-            <RiCalendarEventLine />
           </div>
         </Tooltip>
       );

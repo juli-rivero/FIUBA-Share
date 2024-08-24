@@ -11,7 +11,7 @@ type Actividad = {
   id: string;
   nombre: string;
   reposCount: number;
-}
+};
 
 type Curso = {
   id: string;
@@ -26,7 +26,10 @@ type Materia = {
   id: string;
   nombre: string;
   cursos: Curso[];
-  reposCount: number;
+  reposCount: {
+    conClasificacion: number;
+    sinClasificacion: number;
+  };
 };
 
 type OutletContextType = {
