@@ -49,14 +49,14 @@ Para agregar el enunciado de el/los trabajos practicos a agregar se deben añadi
 [^1]: `<actividadId>` puede ser: \
   conjunto-de-actividades \
   final \
-  parcial 1 \
-  parcial 2 \
+  parcial-1 \
+  parcial-2 \
   ejercicios \
   tp-1 \
   tp-2 \
   tp-3 \
   tp-4 \
-  tp-5 \
+  tp-5
 
 Para hacerlo hay que hacer un fork y agregar lo necesario en tu repositorio. Luego, hay que hacer un pull request en la pestaña de github a este repositorio, para despues yo aceptarlo (voy a estar continuamente viendo los pull requests).
 
