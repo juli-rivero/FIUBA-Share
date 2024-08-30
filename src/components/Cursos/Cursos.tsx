@@ -1,5 +1,5 @@
 import { useOutletContext, useParams } from "react-router-dom";
-import { Box, Grid } from "@mui/joy";
+import { Grid } from "@mui/joy";
 import { useEffect, useState } from "react";
 import { Curso, OutletContextType } from "../../typescript/interfaces";
 import useSort, { Sort, SortCursos } from "../../hooks/useSort";
