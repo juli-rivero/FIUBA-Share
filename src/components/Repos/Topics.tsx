@@ -65,6 +65,7 @@ function Topics({ topics }: { topics: string[] }) {
       justifyContent="flex-end"
       alignItems="center"
       gap={0.5}
+      flexWrap="wrap"
     >
       <Typography marginRight={1}>Topics:</Typography>
       {topics.map((value) => (
