@@ -42,18 +42,17 @@ function Cursos() {
         }}
         sort={sort}
       />
-      <Box
-        display="flex"
+      <Grid
+        container
         justifyContent="center"
         alignItems="center"
         height="100%"
+        overflow="auto"
+        padding={8}
       >
         <Grid
-          sx={{ height: "fit-content", maxHeight: "100%" }}
           container
           gap={4}
-          padding={8}
-          overflow="auto"
           alignItems="stretch"
           justifyContent="center"
         >
@@ -76,7 +75,7 @@ function Cursos() {
             />
 
         </Grid>
-      </Box>
+      </Grid>
     </>
   );
 }
