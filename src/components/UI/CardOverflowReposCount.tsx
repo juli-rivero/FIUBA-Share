@@ -6,18 +6,25 @@ import { RiGitRepositoryLine } from "react-icons/ri";
 const CardOverflowReposCount = ({ reposCount }: { reposCount: number }) => {
   const { loading } = useOutletContext<OutletContextType>();
   return (
-    <CardOverflow sx={{ alignItems: "start", gap: 1, marginLeft: 1 }}>
-      {loading ? (
+    <CardOverflow
+      sx={{ alignItems: "start", gap: 1, marginLeft: 1, position: "relative" }}
+    >
+      <Typography
+        fontSize="sm"
+        fontFamily="monospace"
+        textAlign="center"
+        position="relative"
+        textColor="gray"
+      >
+        {reposCount}
         <Skeleton
-          variant="text"
-          width="1rem"
-          sx={{ fontSize: "1rem", padding: 0 }}
+          loading={loading}
+          variant="overlay"
+          animation="pulse"
+          sx={{ inset: 0, background: "transparent" }}
+          content={reposCount.toString()}
         />
-      ) : (
-        <Typography fontSize="sm" fontFamily="monospace" textColor="gray">
-          {reposCount}
-        </Typography>
-      )}
+      </Typography>
       <RiGitRepositoryLine fill="gray" />
     </CardOverflow>
   );
